@@ -1,0 +1,675 @@
+/* reset */
+*   {
+    box-sizing: border-box;
+    margin:0;
+    list-style: none;
+    padding: 0;
+    text-decoration-line: none;
+    }
+
+/* paleta de colores
+Rosa: #f5b0a9
+Celeste #1ad6d5
+Blanco #f4f4f4
+Amarillo #fed501
+Rojo #ff6042
+Negro #0b1015 */
+
+/* fonts */
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/TabernaSerif-BlackSh.otf);   
+}
+
+@font-face {
+    font-family: subtitulo;
+    src: url(../fonts/TabernaSerif-Black.otf);    
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../fonts/TabernaSerif-Regular.otf);  
+}
+
+
+
+/* INICIO CSS INDEX */
+/* grilla body */
+#body__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto 30vh;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+/* fin grilla body */
+    /* inicio header */
+    header {
+    grid-area: header;
+    background-image: url(../assets/pexels-cottonbro-5530264.jpg);   
+    background-size: cover; 
+    display: flex;
+    }
+            /* inicio desplegable */
+            .header__menu {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 5vh;
+            font-size: 2.5vw;
+            font-family: titulo;   
+            }
+
+            .header__menu li {
+            display: inline-block;
+            position: relative;
+            font-size: 3.2vw;   
+            }
+
+            .header__menu li a {
+            font-family: subtitulo;
+            color: #f4f4f4;
+            }
+
+            .header__menu__desplegable {
+            position: absolute;
+            display: none;
+            height: 90vh;
+            width: 25vw;
+            }
+
+            .header__menu__desplegable li {
+            display: block;
+            margin: 0.5vw;
+            padding: 1vw;
+            text-align: center;
+            justify-content: center;
+            font-size: 2.1vw;
+            font-weight: bolder;
+            background-color: #0b1015;
+            border: solid 1px white;    
+            }
+
+            .header__menu__desplegable li a {
+            font-family: subtitulo;
+            color: #f4f4f4;    
+            }
+
+            .header__menu li:hover .header__menu__desplegable {
+             display: block;
+            }
+            /* fin desplegable */
+        /* header logo */
+            .header__logo {
+            position: fixed;
+            top: 80%;
+            left: 49.70%;
+            }
+        /* fin header logo */
+    /* fin header */
+
+    /* inicio main */
+    main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) 0.3fr 1fr;
+    grid-template-areas: "TXT1 TXT1 IMG1 IMG1"
+                         "TXT1 TXT1 IMG1 IMG1"
+                         "IMG2 IMG2 TXT2 TXT2"
+                         "IMG2 IMG2 TXT2 TXT2"
+                         "H2 H2 H2 H2"
+                         "INSTA1 INSTA2 INSTA3 INSTA4";  
+    }
+
+        /* inicio seccion 1 */
+        .main__section1 {
+            grid-area: TXT1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: #f4f4f4;  
+        }
+
+        .main__section__h2 {
+            font-family: titulo;
+            font-size: 5vw;
+        }
+
+        .main__section__h3 {
+            font-family: subtitulo;
+            font-size: 4vw;
+        }
+
+        .main__section__p {
+            font-family: texto;
+            font-size: medium;
+            padding: 1em;
+        }
+
+        .main__section1__img1 {
+            grid-area: IMG1;
+            background-image: url(../assets/main/main.jpg);
+            background-size: cover;
+        }
+        /* fin section 1 */
+        /* inicio section2 */
+        .main__section2 {
+            grid-area: TXT2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+            background-color: #f5b0a9; 
+        }
+
+        .main__section2__img {
+            grid-area: IMG2;
+            background-image: url(../assets/main/somos.jpeg);
+            background-size: cover;
+        }
+        /* fin sectio2 */
+        /* inicio section3 */
+        .main__section3__h2 {
+            grid-area: H2;
+            display: flex;
+            font-family: titulo;
+            font-size: 5vw;
+            justify-content: center;
+            padding-bottom: 0.2em;
+        }
+
+        .main__section3__insta1 {
+            grid-area: INSTA1;
+            background-image: url(../assets/main/1.jpg);
+            background-size: cover;
+            border: #f4f4f4 solid 2.5px;
+            min-height: 250px;
+        }
+
+        .main__section3__insta2 {
+            grid-area: INSTA2;
+            background-image: url(../assets/main/2.jpg);
+            background-size: cover;
+            min-height: 250px;
+        }
+
+        .main__section3__insta3 {
+            grid-area: INSTA3;
+            background-image: url(../assets/main/3.jpg);
+            background-size: cover;
+            border: #f4f4f4 solid 2.5px;
+            min-height: 250px;
+        }
+
+        .main__section3__insta4 {
+            grid-area: INSTA4;
+            background-image: url(../assets/main/4.jpg);
+            background-size: cover;
+            min-height: 250px;
+        }
+        /* fin section 3 */
+    /* fin main */ 
+    /* inicio footer */
+    footer {
+    grid-area: footer;
+    }
+    /* fin footer */
+/* FIN CSS INDEX */
+
+/* INICIO CSS CERVEZAS */
+/* grilla body */
+#body__grid__cervezas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto 30vh;
+    grid-template-areas: "headerCerveza"
+                         "mainCerveza"
+                         "footer";
+}
+    /* inicio header */
+    .headerCerveza {
+        grid-area: headerCerveza;
+        background-image: url(../assets/cervezas/header.jpg);   
+        background-size: cover; 
+        display: flex;
+        }
+    /* fin header */
+    /* inicio main */
+    .mainCerveza {
+        grid-area: mainCerveza;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "CER_TXT1 CER_IMG1"
+                             "CER_IMG2 CER_TXT2"
+                             "CER_TXT3 CER_IMG3"
+                             "CER_IMG4 CER_TXT4"
+                             "CER_TXT5 CER_IMG5"
+                             "CER_IMG6 CER_TXT6";  
+        }
+        
+        .main__section1__cerveza {
+            grid-area: CER_TXT1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: #f4f4f4; 
+        }
+        .main__section2__cerveza {
+            grid-area: CER_TXT2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: #f5b0a9; 
+        }
+        .main__section3__cerveza {
+            grid-area: CER_TXT3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: Celeste #1ad6d5; 
+        }
+        .main__section4__cerveza {
+            grid-area: CER_TXT4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: #fed501; 
+        }
+        .main__section5__cerveza {
+            grid-area: CER_TXT5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: #ff6042; 
+        }
+        .main__section6__cerveza {
+            grid-area: CER_TXT6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center; 
+            background-color: #f4f4f4; 
+        }
+        .main__section1__img__cerveza {
+            grid-area: CER_IMG1;
+        }
+        .main__section2__img__cerveza {
+            grid-area: CER_IMG2;
+        }
+        .main__section3__img__cerveza {
+            grid-area: CER_IMG3;
+        }
+        .main__section4__img__cerveza {
+            grid-area: CER_IMG4;
+        }
+        .main__section5__img__cerveza {
+            grid-area: CER_IMG5;
+        }
+        .main__section6__img__cerveza {
+            grid-area: CER_IMG6;
+        }
+
+        .imgok {
+            display: block;
+            height: 75vh;
+            width: 100%;
+            object-fit: cover;
+         }
+/* FIN CSS CERVEZAS */
+
+/* INICIO CSS EVENTOS */
+/* grilla eventos */
+#body__grid__eventos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh auto 30vh;
+    grid-template-areas:    "header" 
+                            "main" 
+                            "footer";
+}
+
+headerReducido {
+    grid-area: header;
+    position: relative;
+    background-color: #0b1015;
+}
+    .header__logo__reducido {
+        position: absolute;
+        left: 49.70%;
+        top: 9%;
+    }
+
+.mainEventos {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "iframe1 iframe1 iframe1 iframe1 iframe1 TXT1 TXT1 TXT1 TXT1"
+                            "card1 card1 card1 card2 card2 card2 card3 card3 card3"
+                            "iframe2 iframe2 iframe2 iframe2 iframe2 TXT2 TXT2 TXT2 TXT2";
+}
+
+.iframe1 {
+    grid-area: iframe1;
+    display: flex;
+}
+.iframe2 {
+    grid-area: iframe2;
+    display: flex;
+}
+#card1 {
+    grid-area: card1;
+    background-color: #f4f4f4 ;
+}
+#card2 {
+    grid-area: card2;
+    background-color:aliceblue;
+}
+#card3 {
+    grid-area: card3;
+    background-color: antiquewhite;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: #0b1015 solid 4px;
+}
+.img__card {
+    display: block;
+    object-fit: cover;
+    border: #f5b0a9 solid 2px;
+    height: 35vh;
+    width: 25vw;
+    min-height: 200px;
+    min-width: 150px;
+}
+/* FIN CSS EVENTOS */
+/* INICIO CSS CARTA */
+/* grilla carta */
+#body__grid__carta {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh auto 30vh;
+    grid-template-areas:    "header" 
+                            "mainCarta" 
+                            "footer"; 
+}
+
+headerReducido {
+    grid-area: header;
+}
+/* fin grilla carta */
+/* grilla main */
+.mainCarta {
+    grid-area: mainCarta;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:    "ENCA ENCA ENCA ENCA"
+                            "IZQ IZQ DER DER" 
+                            "IZQ IZQ DER DER"
+                            "IZQ IZQ DERABA DERABA";
+}
+/* fin grilla main */
+/* grilla encabezado */
+.main__section1__encabezado {
+    grid-area: ENCA;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 79%, rgba(245,176,169,1) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:    "LOGO H1"
+                            "LOGO H2";
+    }
+    /* fin grilla encabezado */
+    .mainCarta__encabezado__h1 {
+        grid-area: H1;
+        font-family: titulo;
+        font-size: 6vw;
+        color:#f4f4f4
+    }
+    .mainCarta__encabezado__h2 {
+        grid-area: H2;
+        font-family: subtitulo;
+        font-size: 4vw;
+        color: #f4f4f4;
+    }
+
+    .main__section2__menuizq {
+    grid-area: IZQ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5b0a9;
+    }
+    .main__section3__menuder {
+    grid-area: DER;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    }
+    .main__section3__menuderaba {
+    grid-area: DERABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .main__section__img__logodemarca {
+    grid-area: LOGO;
+    height: 55vh;
+    width: 27vw;
+    min-height: 200px;
+    min-width: 150px;
+    }
+    .img__logo__carta {
+    height: 100%;
+    width: 100%;
+    }
+
+    .main__h2__carta {
+    font-family: subtitulo;
+    font-size: 3vw;
+    }
+    .main__h3__carta {
+    font-family: subtitulo;
+    font-size: 1.5vw;
+    }
+    .main__h4__carta {
+    font-family: texto;
+    font-size: medium;
+    }
+/* FIN CSS CARTA */
+/* INICIO CSS CONTACTO */
+/* grilla body */
+#body__grid__contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh auto 30vh;
+    grid-template-areas:    "header" 
+                            "mainContacto" 
+                            "footer"; 
+}
+
+headerReducido {
+    grid-area: header;
+}
+
+.mainContacto {
+    grid-area: mainContacto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 75vh;
+    grid-template-areas:    "TXT FORM";
+    align-items: center;
+    justify-items: center;
+}                          
+
+    .main__sectionContacto__text {
+        grid-area: TXT;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: #f4f4f4;
+    }
+        .main__section__h1__contacto {
+            font-size: 3.2vw;
+            font-family: titulo;
+        }
+        .main__section__h2__contacto {
+            font-size: 2vw;
+            font-family: titulo;
+        }
+
+        .main__form {
+        grid-area: FORM;
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border: #f5b0a9 solid 4px;
+        justify-self: auto;
+        text-align: center;    
+        }
+            .main__form__textarea {
+                overflow: hidden;
+            }
+/* FIN CSS CONTACTO */
+
+/* INICIO BREAKPOINTS */
+@media screen and (max-width: 768px) {
+/* CSS INDEX */
+    /* body grid */
+    #body__grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 65vh auto 100vh;
+        grid-template-areas: "header"
+                             "main"
+                             "footer";
+    }
+        /* grid main*/
+        main {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 3fr 3fr 3fr 3fr;
+            grid-template-areas: "TXT1 TXT1" 
+                                "TXT1 TXT1" 
+                                "IMG1 IMG1"
+                                "IMG1 IMG1"
+                                "TXT2 TXT2"
+                                "TXT2 TXT2"
+                                "IMG2 IMG2" 
+                                "IMG2 IMG2"   
+                                "H2 H2"
+                                "INSTA1 INSTA1"
+                                "INSTA2 INSTA2" 
+                                "INSTA3 INSTA3" 
+                                "INSTA4 INSTA4";  
+            }    
+        /* fin grid main */ 
+            /* main_insta */
+            .main__section3__insta1 {
+                margin: 1.5rem;
+                border: 3px solid black;
+            }
+            .main__section3__insta2 {
+                margin: 1.5rem;
+                border: 3px solid black;
+            }
+            .main__section3__insta3 {
+                margin: 1.5rem;
+                border: 3px solid black;
+            }
+            .main__section3__insta4 {
+                margin: 1.5rem;
+                border: 3px solid black;
+            }
+/* FIN CSS INDEX */
+/* INICIO CSS CERVEZAS */
+#body__grid__cervezas {
+    grid-template-rows: 100vh auto 30vh;
+    }
+
+    .mainCerveza {
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+    grid-template-areas:    "CER_TXT1" 
+                            "CER_IMG1"
+                            "CER_TXT2"
+                            "CER_IMG2"
+                            "CER_TXT3" 
+                            "CER_IMG3"
+                            "CER_TXT4"
+                            "CER_IMG4"
+                            "CER_TXT5" 
+                            "CER_IMG5"
+                            "CER_TXT6"
+                            "CER_IMG6";  
+    }
+    .imgok {
+        height: 75vh;
+     }
+/* FIN CSS CERVEZAS */
+/* INICIO CSS EVENTOS */
+.mainEventos {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:    "TXT1"
+                            "iframe1"
+                            "card1" 
+                            "card2" 
+                            "card3" 
+                            "TXT2"
+                            "iframe2";
+}
+/* INICIO CSS CARTA */
+.main__section1__encabezado {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:    "LOGO" 
+                            "LOGO"
+                            "H1" 
+                            "H2";
+    }
+.mainCarta {
+        grid-area: mainCarta;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:    "ENCA"
+                                "IZQ"  
+                                "DER"
+                                "DERABA";
+    }
+/* Inicio CSS Contacto */
+.mainContacto {
+    grid-area: mainContacto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:    "TXT" 
+                            "FORM";
+}                          
+}
+/* FIN BREAKPOINTS */
