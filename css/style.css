@@ -547,10 +547,15 @@ headerReducido {
         width: 90%;
         display: flex;
         flex-direction: column;
-        border:#0b1015 solid 8px;
+        border:#0b1015 solid 6.5px;
         justify-self: auto;
-        text-align: center;  
-        background-color: #f4f4f4;  
+        text-align: center;   
+        }
+
+        .main__form:hover {
+            height: 98%;
+            width: 98%;
+            background-color:#f4f4f4;
         }
             .main__form__textarea {
                 overflow: hidden;
@@ -558,11 +563,11 @@ headerReducido {
             .form__input__transition {
                 width: 200px;
                 height: 20px;
-                transition: all 1s;
             }
             .form__input__transition:focus {
                 width: 90%;
                 height: 40px;
+                transition: all 1s; 
                 font-size: 1.5rem;
                 font-family: texto;
             }
@@ -573,6 +578,7 @@ headerReducido {
             .form__textarea__transition:focus {
                 width: 90%;
                 height: 80%;
+                transition: 0.75s;
                 font-size: 1.5rem;
                 font-family: texto;
             }
