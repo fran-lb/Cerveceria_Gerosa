@@ -100,10 +100,19 @@ Negro #0b1015 */
             }
             /* fin desplegable */
         /* header logo */
-            .header__logo {
+            .header__logo {    
             position: fixed;
             top: 80%;
             left: 49.70%;
+            animation: efecto_logo 2s ease-in 1s infinite;
+            }
+
+            @keyframes efecto_logo {
+                0%  {opacity: 1;;}
+                25% {opacity: 0.75;}
+                50% {opacity: 0.5;}
+                75% {opacity: 0.25;}
+                100% {opacity: 0;}
             }
         /* fin header logo */
     /* fin header */
@@ -134,7 +143,7 @@ Negro #0b1015 */
 
         .main__section__h2 {
             font-family: titulo;
-            font-size: 5vw;
+            font-size: 5vw;      
         }
 
         .main__section__h3 {
@@ -545,26 +554,49 @@ headerReducido {
 
         .main__form {
         grid-area: FORM;
-        height: 90%;
-        width: 90%;
         display: flex;
-        flex-direction: column;
-        border:#0b1015 solid 6.5px;
-        justify-self: auto;
+        flex-direction: column; 
+        justify-self: center;
         text-align: center;   
         }
+            .form__input__transition {
+                height: 25px;
+                width: 240px;
+            }
+            .form__input__transition:focus {
+                height: 45px;
+                width: 350px;
+                transition: 1.2s;
+            }
             .main__form__textarea {
                 overflow: hidden;
             }
+            .form__textarea__transition {
+               width: 400px;
+               height: 250px;
+            }
+            .form__textarea__transition:focus {
+                background-color: #f5b0a9;
+                width: 475px;
+                height: 275px;
+                transition: all 1.2s;
+            }
+        
             .main__form__input__btn {
                 height: 50px;
                 width: 100px;
                 align-self: center;
                 margin-bottom: 5%;
-                background-color: #f5b0a9;
-                border: #0b1015 solid 3px;
+                color: #f4f4f4;
+                background-color:#0b1015;
                 font-size: 1.5rem;
                 font-family: subtitulo;
+            }
+            .main__form__input__btn:hover {
+                height: 65px;
+                width: 110px;
+                transition: 0.4s;
+                font-size: 1.7rem;
             }       
 /* FIN CSS CONTACTO */
 
