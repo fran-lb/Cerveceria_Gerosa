@@ -138,13 +138,15 @@ Negro #0b1015 */
         }
 
         .main__section__h3 {
-            font-family: subtitulo;
-            font-size: 4vw;
+            font-family:Helvetica;
+            font-weight: 400;
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
         }
 
         .main__section__p {
             font-family: texto;
-            font-size: medium;
+            font-size:small;
             padding: 1em;
         }
 
