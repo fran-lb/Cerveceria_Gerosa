@@ -553,36 +553,8 @@ headerReducido {
         justify-self: auto;
         text-align: center;   
         }
-
-        .main__form:hover {
-            height: 98%;
-            width: 98%;
-            background-color:#f4f4f4;
-        }
             .main__form__textarea {
                 overflow: hidden;
-            }
-            .form__input__transition {
-                width: 200px;
-                height: 20px;
-            }
-            .form__input__transition:focus {
-                width: 90%;
-                height: 40px;
-                transition: all 1s; 
-                font-size: 1.5rem;
-                font-family: texto;
-            }
-            .form__textarea__transition {
-                width: 90%;
-                height: 80%;
-            }
-            .form__textarea__transition:focus {
-                width: 90%;
-                height: 80%;
-                transition: 0.75s;
-                font-size: 1.5rem;
-                font-family: texto;
             }
             .main__form__input__btn {
                 height: 50px;
@@ -593,14 +565,7 @@ headerReducido {
                 border: #0b1015 solid 3px;
                 font-size: 1.5rem;
                 font-family: subtitulo;
-            }
-            .main__form__input__btn:hover {
-               height: 70px;
-               width: 130px;
-               background-color:aliceblue;
-               transition: 1s;
-               font-size: 2rem;
-            }
+            }       
 /* FIN CSS CONTACTO */
 
 /* INICIO BREAKPOINTS */
