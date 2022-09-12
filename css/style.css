@@ -377,6 +377,10 @@ headerReducido {
     grid-area: iframe2;
     display: flex;
 }
+.video {
+    height: 100%;
+    width: 100%;
+}
 #card1 {
     grid-area: card1;
     background-color: #f4f4f4 ;
