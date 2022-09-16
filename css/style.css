@@ -47,72 +47,19 @@ Negro #0b1015 */
     /* inicio header */
     header {
     grid-area: header;
-    background-image: url(../assets/pexels-cottonbro-5530264.jpg);   
-    background-size: cover; 
-    display: flex;
+
     }
-            /* inicio desplegable */
-            .header__menu {
-            display: inline-block;
-            margin-top: 20px;
-            margin-left: 5vh;
-            font-size: 2.5vw;
-            font-family: titulo;   
-            }
-
-            .header__menu li {
-            display: inline-block;
-            position: relative;
-            font-size: 3.2vw;   
-            }
-
-            .header__menu li a {
-            font-family: subtitulo;
-            color: #f4f4f4;
-            }
-
-            .header__menu__desplegable {
-            position: absolute;
-            display: none;
-            height: 90vh;
-            width: 25vw;
-            }
-
-            .header__menu__desplegable li {
-            display: block;
-            margin: 0.5vw;
-            padding: 1vw;
-            text-align: center;
-            justify-content: center;
-            font-size: 2.1vw;
-            font-weight: bolder;
-            background-color: #0b1015;
-            border: solid 1px white;    
-            }
-
-            .header__menu__desplegable li a {
-            font-family: subtitulo;
-            color: #f4f4f4;    
-            }
-
-            .header__menu li:hover .header__menu__desplegable {
-             display: block;
-            }
-            /* fin desplegable */
+    .video__header {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+          
         /* header logo */
             .header__logo {    
             position: fixed;
-            top: 80%;
+            top: 3%;
             left: 49.70%;
-            animation: efecto_logo 2s ease-in 1s infinite;
-            }
-
-            @keyframes efecto_logo {
-                0%  {opacity: 1;;}
-                25% {opacity: 0.75;}
-                50% {opacity: 0.5;}
-                75% {opacity: 0.25;}
-                100% {opacity: 0;}
             }
         /* fin header logo */
     /* fin header */
