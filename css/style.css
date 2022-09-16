@@ -9,12 +9,7 @@ Negro #0b1015 */
 /* fonts */
 @font-face {
     font-family: titulo;
-    src: url(../fonts/TabernaSerif-BlackSh.otf);   
-}
-
-@font-face {
-    font-family: subtitulo;
-    src: url(../fonts/TabernaSerif-Black.otf);    
+    src: url(../fonts/TabernaSans-Black.otf);   
 }
 
 @font-face {
@@ -52,7 +47,34 @@ Negro #0b1015 */
         padding: 0!important;
         margin: 0!important;
     }
-
+    .main__section1 {
+        background-color: #f5b0a9;
+    }
+    #lalate {
+        font-family: titulo;
+        font-size: 3.5rem;
+    }
+    #somos {
+        font-family: titulo;
+        font-size: 3.5rem;
+    }
+    .main__section__h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    .main__section__p {
+        font-family: 'DM Sans', Open sans, Helvetica, Arial;
+    }
+    .btn__main {
+        background-color:#0b1015 !important;
+        color:#f4f4f4 !important;
+        font-family: titulo !important;
+        margin: 1.2rem
+    }
+    .btn__main:hover {
+        background-color:#f4f4f4 !important;
+        color:#0b1015 !important;
+    }
 /* INICIO CSS CERVEZAS */
 /* grilla body */
 #body__grid__cervezas {
