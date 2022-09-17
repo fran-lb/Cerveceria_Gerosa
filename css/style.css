@@ -56,8 +56,12 @@ Negro #0b1015 */
         margin: 0!important;
         
     }
+    .main__section0 {
+        background-color:#0b1015;
+        color: #f4f4f4;
+    }
     .main__section1 {
-        background-color:#f4f4f4;
+        background-color:#f5b0a9;
     }
     #lalate {
         font-family: titulo;
@@ -82,7 +86,9 @@ Negro #0b1015 */
         background-color:#0b1015 !important;
         color:#f4f4f4 !important;
         font-family: titulo !important;
-        margin: 1.2rem
+        margin: 1.2rem;
+        border:#0b1015 1rem !important;
+
     }
     .btn__main:hover {
         background-color:#f4f4f4 !important;
