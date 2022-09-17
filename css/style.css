@@ -17,11 +17,6 @@ Negro #0b1015 */
     src: url(../fonts/TabernaSerif-Regular.otf);  
 }
 
-#body__grid {
-    width: 100vw;
-    height: fit-content;
-}
-
 /* INICIO CSS INDEX */
     /* inicio header */
     .video__header {
@@ -31,9 +26,22 @@ Negro #0b1015 */
         padding: 0!important;
         margin: 0!important;
     }
-    .header__logo {
-        align-items: center;
-    }      
+    .header__contenedor__img {
+        margin-top: 1rem !important;
+        margin-left: 50%;
+    } 
+   
+    .header__menu__btn {
+        width: auto!important;
+        margin-top: 2rem !important;
+        margin-left: 1rem;
+        color: #f4f4f4;
+        font-family: titulo !important;
+        font-size: x-large !important;
+    }    
+    .header__menu__btn:hover {
+        background-color:#ff6042 !important;
+    }
     /* fin header */
 
     /* inicio main */
@@ -42,17 +50,22 @@ Negro #0b1015 */
         width: fit-content;
     }
     .img__index {
-        object-fit: cover;
-        height: 75vh;
+        object-fit:cover;
+        height: 70vh;
         padding: 0!important;
         margin: 0!important;
+        
     }
     .main__section1 {
-        background-color: #f5b0a9;
+        background-color:#f4f4f4;
     }
     #lalate {
         font-family: titulo;
         font-size: 3.5rem;
+    }
+    .main__section2 {
+        background-color:#ff6042;
+        color: #f4f4f4;
     }
     #somos {
         font-family: titulo;
