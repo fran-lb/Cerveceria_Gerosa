@@ -1,3 +1,11 @@
+/* inicio reset */
+* {
+    list-style: none;
+    text-decoration: none !important;
+}
+
+/* fin reset */
+
 /* paleta de colores
 Rosa: #f5b0a9
 Celeste #1ad6d5
@@ -9,91 +17,128 @@ Negro #0b1015 */
 /* fonts */
 @font-face {
     font-family: titulo;
-    src: url(../fonts/TabernaSans-Black.otf);   
+    src: url(../fonts/TabernaSans-Black.otf);
 }
 
 @font-face {
     font-family: texto;
-    src: url(../fonts/TabernaSerif-Regular.otf);  
+    src: url(../fonts/TabernaSerif-Regular.otf);
 }
 
 /* INICIO CSS INDEX */
-    /* inicio header */
-    .video__header {
-        height: 100vh;
-        width: 100vw;
-        object-fit: cover;
-        padding: 0!important;
-        margin: 0!important;
-    }
-    .header__contenedor__img {
-        margin-top: 1rem !important;
-        margin-left: 50%;
-    } 
-   
-    .header__menu__btn {
-        width: auto!important;
-        margin-top: 2rem !important;
-        margin-left: 1rem;
-        color: #f4f4f4;
-        font-family: titulo !important;
-        font-size: x-large !important;
-    }    
-    .header__menu__btn:hover {
-        background-color:#ff6042 !important;
-    }
-    /* fin header */
+/* inicio header */
+.video__header {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
-    /* inicio main */
-    .main {
-        height: fit-content;
-        width: fit-content;
-    }
-    .img__index {
-        object-fit:cover;
-        height: 70vh;
-        padding: 0!important;
-        margin: 0!important;
-        
-    }
-    .main__section0 {
-        background-color:#0b1015;
-        color: #f4f4f4;
-    }
-    .main__section1 {
-        background-color:#f5b0a9;
-    }
-    #lalate {
-        font-family: titulo;
-        font-size: 3.5rem;
-    }
-    .main__section2 {
-        background-color:#ff6042;
-        color: #f4f4f4;
-    }
-    #somos {
-        font-family: titulo;
-        font-size: 3.5rem;
-    }
-    .main__section__h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2rem;
-    }
-    .main__section__p {
-        font-family: 'DM Sans', Open sans, Helvetica, Arial;
-    }
-    .btn__main {
-        background-color:#0b1015 !important;
-        color:#f4f4f4 !important;
-        font-family: titulo !important;
-        margin: 1.2rem;
-        border:#0b1015 1rem !important;
+.header__contenedor__img {
+    margin-top: 1rem !important;
+    margin-left: 50%;
+}
 
-    }
-    .btn__main:hover {
-        background-color:#f4f4f4 !important;
-        color:#0b1015 !important;
-    }
+.header__menu__btn {
+    width: auto !important;
+    margin-top: 2rem !important;
+    margin-left: 1rem;
+    color: #f4f4f4;
+    font-family: titulo !important;
+    font-size: x-large !important;
+}
+
+.header__menu__btn:hover {
+    background-color: #ff6042 !important;
+}
+
+/* fin header */
+
+/* inicio main */
+.main {
+    height: fit-content;
+    width: fit-content;
+}
+
+.img__index {
+    object-fit: cover;
+    height: 70vh;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.main__section0 {
+    background-color: #0b1015;
+    color: #f4f4f4;
+}
+
+.main__section1 {
+    background-color: #f5b0a9;
+}
+
+#lalate {
+    font-family: titulo;
+}
+
+.main__section__int {
+    background-color: #fed501;
+    color: #0b1015;
+}
+
+.main__section2 {
+    background-color: #ff6042;
+    color: #f4f4f4;
+}
+
+#somos {
+    font-family: titulo;
+}
+
+.main__section__h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__section__p {
+    font-family: 'DM Sans', Open sans, Helvetica, Arial;
+}
+
+.btn__main {
+    background-color: #0b1015 !important;
+    color: #f4f4f4 !important;
+    font-family: titulo !important;
+    margin: 1.2rem;
+    border: #0b1015 1rem !important;
+
+}
+
+.btn__main:hover {
+    background-color: #f4f4f4 !important;
+    color: #0b1015 !important;
+}
+
+/* fin main */
+/* inicio footer */
+footer {
+    height: 65vh;
+    min-height: 300px;
+    background-color: #f4f4f4 #f5b0a9;
+}
+
+.footer__ul {
+  font-family: titulo;
+  color: #0b1015;
+}
+.ul__redes {
+    font-family: texto;
+}
+
+.img__footer {
+    min-block-size: 100px;
+    max-block-size: 400px;
+}
+
 /* INICIO CSS CERVEZAS */
 /* grilla body */
 #body__grid__cervezas {
@@ -101,104 +146,118 @@ Negro #0b1015 */
     grid-template-columns: 100%;
     grid-template-rows: 100vh auto 30vh;
     grid-template-areas: "headerCerveza"
-                         "mainCerveza"
-                         "footer";
+        "mainCerveza"
+        "footer";
 }
-    /* inicio header */
-    .headerCerveza {
-        grid-area: headerCerveza;
-        background-image: url(../assets/cervezas/header.jpg);   
-        background-size: cover; 
-        display: flex;
-        }
-    /* fin header */
-    /* inicio main */
-    .mainCerveza {
-        grid-area: mainCerveza;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: "CER_TXT1 CER_IMG1"
-                             "CER_IMG2 CER_TXT2"
-                             "CER_TXT3 CER_IMG3"
-                             "CER_IMG4 CER_TXT4"
-                             "CER_TXT5 CER_IMG5"
-                             "CER_IMG6 CER_TXT6";  
-        }
-        
-        .main__section1__cerveza {
-            grid-area: CER_TXT1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center; 
-            background-color: #f4f4f4; 
-        }
-        .main__section2__cerveza {
-            grid-area: CER_TXT2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center; 
-            background-color: #f5b0a9; 
-        }
-        .main__section3__cerveza {
-            grid-area: CER_TXT3;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center; 
-            background-color: Celeste #1ad6d5; 
-        }
-        .main__section4__cerveza {
-            grid-area: CER_TXT4;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center; 
-            background-color: #fed501; 
-        }
-        .main__section5__cerveza {
-            grid-area: CER_TXT5;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center; 
-            background-color: #ff6042; 
-        }
-        .main__section6__cerveza {
-            grid-area: CER_TXT6;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center; 
-            background-color: #f4f4f4; 
-        }
-        .main__section1__img__cerveza {
-            grid-area: CER_IMG1;
-        }
-        .main__section2__img__cerveza {
-            grid-area: CER_IMG2;
-        }
-        .main__section3__img__cerveza {
-            grid-area: CER_IMG3;
-        }
-        .main__section4__img__cerveza {
-            grid-area: CER_IMG4;
-        }
-        .main__section5__img__cerveza {
-            grid-area: CER_IMG5;
-        }
-        .main__section6__img__cerveza {
-            grid-area: CER_IMG6;
-        }
 
-        .imgok {
-            display: block;
-            height: 75vh;
-            width: 100%;
-            object-fit: cover;
-         }
+/* inicio header */
+.headerCerveza {
+    grid-area: headerCerveza;
+    background-image: url(../assets/cervezas/header.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+/* fin header */
+/* inicio main */
+.mainCerveza {
+    grid-area: mainCerveza;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "CER_TXT1 CER_IMG1"
+        "CER_IMG2 CER_TXT2"
+        "CER_TXT3 CER_IMG3"
+        "CER_IMG4 CER_TXT4"
+        "CER_TXT5 CER_IMG5"
+        "CER_IMG6 CER_TXT6";
+}
+
+.main__section1__cerveza {
+    grid-area: CER_TXT1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.main__section2__cerveza {
+    grid-area: CER_TXT2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #f5b0a9;
+}
+
+.main__section3__cerveza {
+    grid-area: CER_TXT3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: Celeste #1ad6d5;
+}
+
+.main__section4__cerveza {
+    grid-area: CER_TXT4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #fed501;
+}
+
+.main__section5__cerveza {
+    grid-area: CER_TXT5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #ff6042;
+}
+
+.main__section6__cerveza {
+    grid-area: CER_TXT6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.main__section1__img__cerveza {
+    grid-area: CER_IMG1;
+}
+
+.main__section2__img__cerveza {
+    grid-area: CER_IMG2;
+}
+
+.main__section3__img__cerveza {
+    grid-area: CER_IMG3;
+}
+
+.main__section4__img__cerveza {
+    grid-area: CER_IMG4;
+}
+
+.main__section5__img__cerveza {
+    grid-area: CER_IMG5;
+}
+
+.main__section6__img__cerveza {
+    grid-area: CER_IMG6;
+}
+
+.imgok {
+    display: block;
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* FIN CSS CERVEZAS */
 
 /* INICIO CSS EVENTOS */
@@ -207,9 +266,9 @@ Negro #0b1015 */
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15vh auto 30vh;
-    grid-template-areas:    "header" 
-                            "main" 
-                            "footer";
+    grid-template-areas: "header"
+        "main"
+        "footer";
 }
 
 headerReducido {
@@ -217,46 +276,53 @@ headerReducido {
     position: relative;
     background-color: #0b1015;
 }
-    .header__logo__reducido {
-        position: absolute;
-        left: 49.70%;
-        top: 9%;
-    }
+
+.header__logo__reducido {
+    position: absolute;
+    left: 49.70%;
+    top: 9%;
+}
 
 .mainEventos {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:    "iframe1 iframe1 iframe1 iframe1 iframe1 TXT1 TXT1 TXT1 TXT1"
-                            "card1 card1 card1 card2 card2 card2 card3 card3 card3"
-                            "iframe2 iframe2 iframe2 iframe2 iframe2 TXT2 TXT2 TXT2 TXT2";
+    grid-template-areas: "iframe1 iframe1 iframe1 iframe1 iframe1 TXT1 TXT1 TXT1 TXT1"
+        "card1 card1 card1 card2 card2 card2 card3 card3 card3"
+        "iframe2 iframe2 iframe2 iframe2 iframe2 TXT2 TXT2 TXT2 TXT2";
 }
 
 .iframe1 {
     grid-area: iframe1;
     display: flex;
 }
+
 .iframe2 {
     grid-area: iframe2;
     display: flex;
 }
+
 .video {
     height: 100%;
     width: 100%;
 }
+
 #card1 {
     grid-area: card1;
-    background-color: #f4f4f4 ;
+    background-color: #f4f4f4;
 }
+
 #card2 {
     grid-area: card2;
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
+
 #card3 {
     grid-area: card3;
     background-color: antiquewhite;
 }
+
 .card {
     display: flex;
     flex-direction: column;
@@ -264,6 +330,7 @@ headerReducido {
     align-items: center;
     border: #0b1015 solid 4px;
 }
+
 .img__card {
     display: block;
     object-fit: cover;
@@ -273,6 +340,7 @@ headerReducido {
     min-height: 200px;
     min-width: 150px;
 }
+
 /* FIN CSS EVENTOS */
 /* INICIO CSS CARTA */
 /* grilla carta */
@@ -280,14 +348,15 @@ headerReducido {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15vh auto 30vh;
-    grid-template-areas:    "header" 
-                            "mainCarta" 
-                            "footer"; 
+    grid-template-areas: "header"
+        "mainCarta"
+        "footer";
 }
 
 headerReducido {
     grid-area: header;
 }
+
 /* fin grilla carta */
 /* grilla main */
 .mainCarta {
@@ -295,83 +364,93 @@ headerReducido {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:    "ENCA ENCA ENCA ENCA"
-                            "IZQ IZQ DER DER" 
-                            "IZQ IZQ DER DER"
-                            "IZQ IZQ DERABA DERABA";
+    grid-template-areas: "ENCA ENCA ENCA ENCA"
+        "IZQ IZQ DER DER"
+        "IZQ IZQ DER DER"
+        "IZQ IZQ DERABA DERABA";
 }
+
 /* fin grilla main */
 /* grilla encabezado */
 .main__section1__encabezado {
     grid-area: ENCA;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 79%, rgba(245,176,169,1) 100%);
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 79%, rgba(245, 176, 169, 1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    grid-template-areas:    "LOGO H1"
-                            "LOGO H2";
-    }
-    /* fin grilla encabezado */
-    .mainCarta__encabezado__h1 {
-        grid-area: H1;
-        font-family: titulo;
-        font-size: 6vw;
-        color:#f4f4f4
-    }
-    .mainCarta__encabezado__h2 {
-        grid-area: H2;
-        font-family: subtitulo;
-        font-size: 4vw;
-        color: #f4f4f4;
-    }
+    grid-template-areas: "LOGO H1"
+        "LOGO H2";
+}
 
-    .main__section2__menuizq {
+/* fin grilla encabezado */
+.mainCarta__encabezado__h1 {
+    grid-area: H1;
+    font-family: titulo;
+    font-size: 6vw;
+    color: #f4f4f4
+}
+
+.mainCarta__encabezado__h2 {
+    grid-area: H2;
+    font-family: subtitulo;
+    font-size: 4vw;
+    color: #f4f4f4;
+}
+
+.main__section2__menuizq {
     grid-area: IZQ;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5b0a9;
-    }
-    .main__section3__menuder {
+}
+
+.main__section3__menuder {
     grid-area: DER;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
-    }
-    .main__section3__menuderaba {
+}
+
+.main__section3__menuderaba {
     grid-area: DERABA;
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-    .main__section__img__logodemarca {
+}
+
+.main__section__img__logodemarca {
     grid-area: LOGO;
     height: 55vh;
     width: 27vw;
     min-height: 200px;
     min-width: 150px;
-    }
-    .img__logo__carta {
+}
+
+.img__logo__carta {
     height: 100%;
     width: 100%;
-    }
+}
 
-    .main__h2__carta {
+.main__h2__carta {
     font-family: subtitulo;
     font-size: 3vw;
-    }
-    .main__h3__carta {
+}
+
+.main__h3__carta {
     font-family: subtitulo;
     font-size: 1.5vw;
-    }
-    .main__h4__carta {
+}
+
+.main__h4__carta {
     font-family: texto;
     font-size: medium;
-    }
+}
+
 /* FIN CSS CARTA */
 /* INICIO CSS CONTACTO */
 /* grilla body */
@@ -379,9 +458,9 @@ headerReducido {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15vh auto 30vh;
-    grid-template-areas:    "header" 
-                            "mainContacto" 
-                            "footer"; 
+    grid-template-areas: "header"
+        "mainContacto"
+        "footer";
 }
 
 headerReducido {
@@ -393,195 +472,217 @@ headerReducido {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 75vh;
-    grid-template-areas:    "TXT FORM";
+    grid-template-areas: "TXT FORM";
     align-items: center;
     justify-items: center;
-}                          
+}
 
-    .main__sectionContacto__text {
-        grid-area: TXT;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        padding-left: 2em;
-        padding-right: 2em;
-        background-color: #f4f4f4;
-    }
-        .main__section__h1__contacto {
-            font-size: 3.2vw;
-            font-family: titulo;
-        }
-        .main__section__h2__contacto {
-            font-size: 2vw;
-            font-family: titulo;
-        }
+.main__sectionContacto__text {
+    grid-area: TXT;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #f4f4f4;
+}
 
-        .main__form {
-        grid-area: FORM;
-        display: flex;
-        flex-direction: column; 
-        justify-self: center;
-        text-align: center;   
-        }
-            .form__input__transition {
-                height: 25px;
-                width: 240px;
-            }
-            .form__input__transition:focus {
-                height: 45px;
-                width: 350px;
-                transition: 1.2s;
-            }
-            .main__form__textarea {
-                overflow: hidden;
-            }
-            .form__textarea__transition {
-               width: 400px;
-               height: 250px;
-            }
-            .form__textarea__transition:focus {
-                background-color: #f5b0a9;
-                width: 475px;
-                height: 275px;
-                transition: all 1.2s;
-            }
-        
-            .main__form__input__btn {
-                height: 50px;
-                width: 100px;
-                align-self: center;
-                margin-bottom: 5%;
-                color: #f4f4f4;
-                background-color:#0b1015;
-                font-size: 1.5rem;
-                font-family: subtitulo;
-            }
-            .main__form__input__btn:hover {
-                height: 65px;
-                width: 110px;
-                transition: 0.4s;
-                font-size: 1.7rem;
-            }       
+.main__section__h1__contacto {
+    font-size: 3.2vw;
+    font-family: titulo;
+}
+
+.main__section__h2__contacto {
+    font-size: 2vw;
+    font-family: titulo;
+}
+
+.main__form {
+    grid-area: FORM;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+}
+
+.form__input__transition {
+    height: 25px;
+    width: 240px;
+}
+
+.form__input__transition:focus {
+    height: 45px;
+    width: 350px;
+    transition: 1.2s;
+}
+
+.main__form__textarea {
+    overflow: hidden;
+}
+
+.form__textarea__transition {
+    width: 400px;
+    height: 250px;
+}
+
+.form__textarea__transition:focus {
+    background-color: #f5b0a9;
+    width: 475px;
+    height: 275px;
+    transition: all 1.2s;
+}
+
+.main__form__input__btn {
+    height: 50px;
+    width: 100px;
+    align-self: center;
+    margin-bottom: 5%;
+    color: #f4f4f4;
+    background-color: #0b1015;
+    font-size: 1.5rem;
+    font-family: subtitulo;
+}
+
+.main__form__input__btn:hover {
+    height: 65px;
+    width: 110px;
+    transition: 0.4s;
+    font-size: 1.7rem;
+}
+
 /* FIN CSS CONTACTO */
 
 /* INICIO BREAKPOINTS */
 @media screen and (max-width: 768px) {
-/* CSS INDEX */
+
+    /* CSS INDEX */
     /* body grid */
     #body__grid {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 65vh auto 100vh;
         grid-template-areas: "header"
-                             "main"
-                             "footer";
+            "main"
+            "footer";
     }
-        /* grid main*/
-        main {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 3fr 3fr 3fr 3fr;
-            grid-template-areas: "TXT1 TXT1" 
-                                "TXT1 TXT1" 
-                                "IMG1 IMG1"
-                                "IMG1 IMG1"
-                                "TXT2 TXT2"
-                                "TXT2 TXT2"
-                                "IMG2 IMG2" 
-                                "IMG2 IMG2"   
-                                "H2 H2"
-                                "INSTA1 INSTA1"
-                                "INSTA2 INSTA2" 
-                                "INSTA3 INSTA3" 
-                                "INSTA4 INSTA4";  
-            }    
-        /* fin grid main */ 
-            /* main_insta */
-            .main__section3__insta1 {
-                margin: 1.5rem;
-                border: 3px solid black;
-            }
-            .main__section3__insta2 {
-                margin: 1.5rem;
-                border: 3px solid black;
-            }
-            .main__section3__insta3 {
-                margin: 1.5rem;
-                border: 3px solid black;
-            }
-            .main__section3__insta4 {
-                margin: 1.5rem;
-                border: 3px solid black;
-            }
-/* FIN CSS INDEX */
-/* INICIO CSS CERVEZAS */
-#body__grid__cervezas {
-    grid-template-rows: 100vh auto 30vh;
+
+    /* grid main*/
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 3fr 3fr 3fr 3fr;
+        grid-template-areas: "TXT1 TXT1"
+            "TXT1 TXT1"
+            "IMG1 IMG1"
+            "IMG1 IMG1"
+            "TXT2 TXT2"
+            "TXT2 TXT2"
+            "IMG2 IMG2"
+            "IMG2 IMG2"
+            "H2 H2"
+            "INSTA1 INSTA1"
+            "INSTA2 INSTA2"
+            "INSTA3 INSTA3"
+            "INSTA4 INSTA4";
+    }
+
+    /* fin grid main */
+    /* main_insta */
+    .main__section3__insta1 {
+        margin: 1.5rem;
+        border: 3px solid black;
+    }
+
+    .main__section3__insta2 {
+        margin: 1.5rem;
+        border: 3px solid black;
+    }
+
+    .main__section3__insta3 {
+        margin: 1.5rem;
+        border: 3px solid black;
+    }
+
+    .main__section3__insta4 {
+        margin: 1.5rem;
+        border: 3px solid black;
+    }
+
+    /* FIN CSS INDEX */
+    /* INICIO CSS CERVEZAS */
+    #body__grid__cervezas {
+        grid-template-rows: 100vh auto 30vh;
     }
 
     .mainCerveza {
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
-    grid-template-areas:    "CER_TXT1" 
-                            "CER_IMG1"
-                            "CER_TXT2"
-                            "CER_IMG2"
-                            "CER_TXT3" 
-                            "CER_IMG3"
-                            "CER_TXT4"
-                            "CER_IMG4"
-                            "CER_TXT5" 
-                            "CER_IMG5"
-                            "CER_TXT6"
-                            "CER_IMG6";  
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+        grid-template-areas: "CER_TXT1"
+            "CER_IMG1"
+            "CER_TXT2"
+            "CER_IMG2"
+            "CER_TXT3"
+            "CER_IMG3"
+            "CER_TXT4"
+            "CER_IMG4"
+            "CER_TXT5"
+            "CER_IMG5"
+            "CER_TXT6"
+            "CER_IMG6";
     }
+
     .imgok {
         height: 75vh;
-     }
-/* FIN CSS CERVEZAS */
-/* INICIO CSS EVENTOS */
-.mainEventos {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas:    "TXT1"
-                            "iframe1"
-                            "card1" 
-                            "card2" 
-                            "card3" 
-                            "TXT2"
-                            "iframe2";
-}
-/* INICIO CSS CARTA */
-.main__section1__encabezado {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:    "LOGO" 
-                            "LOGO"
-                            "H1" 
-                            "H2";
     }
-.mainCarta {
+
+    /* FIN CSS CERVEZAS */
+    /* INICIO CSS EVENTOS */
+    .mainEventos {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: "TXT1"
+            "iframe1"
+            "card1"
+            "card2"
+            "card3"
+            "TXT2"
+            "iframe2";
+    }
+
+    /* INICIO CSS CARTA */
+    .main__section1__encabezado {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "LOGO"
+            "LOGO"
+            "H1"
+            "H2";
+    }
+
+    .mainCarta {
         grid-area: mainCarta;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:    "ENCA"
-                                "IZQ"  
-                                "DER"
-                                "DERABA";
+        grid-template-areas: "ENCA"
+            "IZQ"
+            "DER"
+            "DERABA";
     }
-/* Inicio CSS Contacto */
-.mainContacto {
-    grid-area: mainContacto;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:    "TXT" 
-                            "FORM";
-}                          
+
+    /* Inicio CSS Contacto */
+    .mainContacto {
+        grid-area: mainContacto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "TXT"
+            "FORM";
+    }
 }
+
 /* FIN BREAKPOINTS */
