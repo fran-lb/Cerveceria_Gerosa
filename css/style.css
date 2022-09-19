@@ -67,7 +67,7 @@ Negro #0b1015 */
     color: #f4f4f4;
 }
 .main__section1 {
-    background-color: #f5b0a9;
+    background-color:#f4f4f4;
 }
 #lalate {
     font-family: titulo;
@@ -77,8 +77,8 @@ Negro #0b1015 */
     color: #0b1015;
 }
 .main__section2 {
-    background-color: #ff6042;
-    color: #f4f4f4;
+    background-color:#f5b0a9;
+    color:#0b1015;
 }
 #somos {
     font-family: titulo;
@@ -111,6 +111,9 @@ footer {
   font-family: titulo;
   color: #0b1015;
 }
+.footer__bc {
+    background-color: #ff6042;
+}
 .ul__redes {
     font-family: texto;
 }
@@ -142,8 +145,33 @@ footer {
     background-image: url(../assets/cervezas/header__cervezasok.jpg);
     background-size: cover;
     background-position: center;
+}  
+.main__cervezas__section1 {
+    background-color: #f4f4f4;
 }
-
+.main__cervezas__section2 {
+    background-color: #ff6042;
+    color: #f4f4f4;
+}
+.main__cervezas__section3 {
+    background-color: #fed501;
+}
+.main__cervezas__section4 {
+    background-color:#0b1015;
+    color: #f4f4f4;
+}
+.main__cervezas__section5 {
+    background-color:#1ad6d5;
+    color:#0b1015;
+}
+.main__cervezas__section6 {
+    background-color: #f5b0a9;
+    color: #0b1015;
+}
+.main__cervezas__section7 {
+    background-color:#f4f4f4;
+    color:#0b1015;
+}
 
 /* FIN CSS CERVEZAS */
 
