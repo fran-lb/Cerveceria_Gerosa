@@ -73,6 +73,7 @@ Negro #0b1015 */
 .main__section0 {
     background-color: #0b1015;
     color: #f4f4f4;
+    letter-spacing: 0.04em;
 }
 .main__section1 {
     background-color:#f4f4f4;
@@ -83,6 +84,7 @@ Negro #0b1015 */
 .main__section__int {
     background-color: #fed501;
     color: #0b1015;
+    letter-spacing: 0.04em;
 }
 .main__section2 {
     background-color:#f5b0a9;
@@ -96,6 +98,7 @@ Negro #0b1015 */
 }
 .main__section__p {
     font-family: 'DM Sans', Open sans, Helvetica, Arial;
+    letter-spacing: 0.04em;
 }
 .btn__main {
     background-color: #0b1015 !important;
@@ -187,89 +190,38 @@ footer {
     color:#0b1015;
 }
 /* FIN CSS CERVEZAS */
-
-/* INICIO CSS EVENTOS */
-/* grilla eventos */
-#body__grid__eventos {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15vh auto 30vh;
-    grid-template-areas: "header"
-        "main"
-        "footer";
-}
-
-headerReducido {
-    grid-area: header;
-    position: relative;
-    background-color: #0b1015;
-}
-
-.header__logo__reducido {
-    position: absolute;
-    left: 49.70%;
-    top: 9%;
-}
-
-.mainEventos {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "iframe1 iframe1 iframe1 iframe1 iframe1 TXT1 TXT1 TXT1 TXT1"
-        "card1 card1 card1 card2 card2 card2 card3 card3 card3"
-        "iframe2 iframe2 iframe2 iframe2 iframe2 TXT2 TXT2 TXT2 TXT2";
-}
-
-.iframe1 {
-    grid-area: iframe1;
-    display: flex;
-}
-
-.iframe2 {
-    grid-area: iframe2;
-    display: flex;
-}
-
-.video {
-    height: 100%;
+/* INICIO CSS QUIENES SOMOS */
+.header__somos {
+    height: 100vh;
     width: 100%;
 }
-
-#card1 {
-    grid-area: card1;
+.img__carrousel {
+    height: 100vh;
+    width: 100%;
+}
+.main__somos {
+    height: fit-content;
+}
+.main__somos__section1 {
+    height: fit-content;
+    width: 100%;
+    background-color: #ff6042;
+    color: #f4f4f4;
+}
+.main__somos__section2 {
+    height: fit-content;
+    width: 100%;
     background-color: #f4f4f4;
 }
-
-#card2 {
-    grid-area: card2;
-    background-color: aliceblue;
+.main__section__titulo {
+    font-family: titulo;
+}
+.img__somos {
+    max-height: 100vh;
+    object-fit: cover;  
 }
 
-#card3 {
-    grid-area: card3;
-    background-color: antiquewhite;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: #0b1015 solid 4px;
-}
-
-.img__card {
-    display: block;
-    object-fit: cover;
-    border: #f5b0a9 solid 2px;
-    height: 35vh;
-    width: 25vw;
-    min-height: 200px;
-    min-width: 150px;
-}
-
-/* FIN CSS EVENTOS */
+/* FIN CSS QUIENES SOMOS */
 /* INICIO CSS CARTA */
 .main__carta {
     height: fit-content;
@@ -353,6 +305,9 @@ headerReducido {
 }
 .form__contacto {
     width: 100%;
+}
+.main__contacto {
+    min-height: 80vh;
 }
 .main__section__h1__contacto:hover {
     font-size: 3.1rem;
