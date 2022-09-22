@@ -146,16 +146,6 @@ footer {
     width: 30px;
 }
 
-/* INICIO CSS CERVEZAS */
-/* grilla body */
-#body__grid__cervezas {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100vh auto 30vh;
-    grid-template-areas: "headerCerveza"
-        "mainCerveza"
-        "footer";
-}
 
 /* INICIO CSS CERVEZAS */
 /* inicio header */
@@ -308,18 +298,24 @@ footer {
 /* FIN CSS CARTA */
 /* INICIO CSS CONTACTO */
 .header__reducido {
-    height: 20vh;
+    height: 15vh;
     background-color: #0b1015;
+}
+.redes__canvas {
+    height: fit-content;
+    width:auto;
+    padding-left: 2rem;
+}
+.img__canvas__redes {
+    height: 40px;
+    width: 40px;
+    margin-left: 3px;
 }
 .form__contacto {
     width: 100%;
 }
 .main__contacto {
     min-height: 80vh;
-}
-.main__section__h1__contacto:hover {
-    font-size: 3.1rem;
-    transition: 0.8s;
 }
 .main__section__h2__contacto:hover {
     font-size: 2.1rem;
@@ -340,23 +336,53 @@ footer {
     background-image: url(../assets/contacto/background_form.png);
     background-size: cover;
 }
-
 /* FIN CSS CONTACTO */
 /* INICIO BREAKPOINTS */
-@media screen and (max-width: 992px) and (min-width:150px) {
+@media screen and (max-width: 768px) and (min-width:150px) {
 
+    /* inicio CSS Index */
+    .video__header {
+        height: 70vh;
+    }
+    .img__index {
+        height: 50vh;
+    }
+    /* Fin CSS Index */
+    /* Inicio CSS Cerveza */
+    .header__cerveza {
+        height: 70vh;
+    }
+    /* Fin CSS Cerveza */
+    /* Inicio CSS Somos */
+    .header__somos {
+        height: 70vh !important;
+    }
+    .carousel-inner {
+        height: 70vh;
+    }
+    .img__somos {
+        height: 50vh;
+    }
     /* Inicio CSS Contacto */
     .section__form {
         min-height: 280px;
     }
     /* Fin CSS Contacto */
     /* Inicio CSS Carta */
+    .header__reducido {
+        height: 12vh;
+    }
+    .img__logo {
+        height: 70px;
+        width: 70px;
+    }
     .menu__h4 {
         justify-content: center;
     }
     .menu__h5 {
         justify-content: center;
     }
+    /* Fin CSS Carta */
 }
 
 /* FIN BREAKPOINTS */
