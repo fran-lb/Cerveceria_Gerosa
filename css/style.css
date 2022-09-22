@@ -122,12 +122,15 @@ footer {
 }
 .footer__ul {
   font-family: titulo;
-  color: #0b1015;
+  color:#0b1015;
 }
 .footer__bc {
     background-color: #ff6042;
 }
 .ul__redes {
+    font-family: texto;
+}
+.ul__redes:hover {
     font-family: texto;
 }
 .ul__redes:hover {
@@ -223,6 +226,11 @@ footer {
 
 /* FIN CSS QUIENES SOMOS */
 /* INICIO CSS CARTA */
+.img__logo:hover {
+    height: 90px;
+    width: 90px;
+    transition: 0.4s;
+}
 .main__carta {
     height: fit-content;
     width: 100%;
@@ -250,8 +258,8 @@ footer {
 .btn__main__carta:hover {
     background-color:#ff6042 !important;
     color: #0b1015 !important;
-    transition: 0.8s;
-    font-size: 2.2rem !important;
+    transition: 0.3s;
+    font-size: 1.9rem !important;
 }
 .btn__carta:hover {
     background-color:#ff6042!important;
@@ -278,14 +286,13 @@ footer {
 .menu__h3 {
     font-family: titulo;
     opacity: 75%;
+    text-align: center;
 }
 .menu__h4 {
     font-family: titulo;
-    max-width: fit-content !important;
 }
 .menu__h5 {
     font-family: titulo;
-    max-width: fit-content !important;
 }
 .menu__h6 {
     font-family: titulo;
@@ -295,8 +302,9 @@ footer {
 .menu__p {
     font-family: texto;
     font-size: 1.2rem;
+    padding-left: 3rem;
+    padding-left: 3rem;
 }
-
 /* FIN CSS CARTA */
 /* INICIO CSS CONTACTO */
 .header__reducido {
@@ -335,11 +343,19 @@ footer {
 
 /* FIN CSS CONTACTO */
 /* INICIO BREAKPOINTS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) and (min-width:150px) {
 
     /* Inicio CSS Contacto */
     .section__form {
         min-height: 280px;
+    }
+    /* Fin CSS Contacto */
+    /* Inicio CSS Carta */
+    .menu__h4 {
+        justify-content: center;
+    }
+    .menu__h5 {
+        justify-content: center;
     }
 }
 
