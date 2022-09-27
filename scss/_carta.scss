@@ -1,0 +1,79 @@
+.img__logo:hover {
+    height: 90px;
+    width: 90px;
+    transition: 0.4s;
+}
+.main__carta {
+    height: fit-content;
+    width: 100%;
+}
+.img__container {
+   max-height: 100vh;
+   max-width: 50% !important;
+
+}
+.main__carta__h1 {
+    font-size: 6rem !important;
+    font-family: pesado;
+}
+.main__carta__h2 {
+    font-size: 4rem;
+    font-family: cursiva;   
+}
+.btn__main__carta {
+    background-color: #0b1015 !important;
+    color: #f4f4f4 !important;
+    font-family: titulo !important;
+    margin: 1.2rem;
+    border: #0b1015 1rem !important;
+}
+.btn__main__carta:hover {
+    background-color:#ff6042 !important;
+    color: #0b1015 !important;
+    transition: 0.3s;
+    font-size: 1.9rem !important;
+}
+.btn__carta:hover {
+    background-color:#ff6042!important;
+    color:#0b1015 !important;
+    height: 20%;
+    width: 10%;
+    transition: 0.8s;
+}
+.main__carta__menu {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    background-color: #1ad6d5;
+}
+.section__tapas__menu {
+    width: 75%;
+}
+.menu__h1 {
+    font-family: cursiva;
+}
+.menu__h2 {
+    font-family: titulo;
+} 
+.menu__h3 {
+    font-family: titulo;
+    opacity: 75%;
+    text-align: center;
+}
+.menu__h4 {
+    font-family: titulo;
+}
+.menu__h5 {
+    font-family: titulo;
+}
+.menu__h6 {
+    font-family: titulo;
+    color: #1ad6d5;
+    overflow: hidden !important;
+}
+.menu__p {
+    font-family: texto;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+    padding-left: 3rem;
+}

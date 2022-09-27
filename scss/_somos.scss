@@ -1,0 +1,29 @@
+.header__somos {
+    height: 100vh;
+    width: 100%;
+}
+.img__carrousel {
+    height: 100vh;
+    width: 100%;
+}
+.main__somos {
+    height: fit-content;
+}
+.main__somos__section1 {
+    height: fit-content;
+    width: 100%;
+    background-color: #ff6042;
+    color: #f4f4f4;
+}
+.main__somos__section2 {
+    height: fit-content;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+.main__section__titulo {
+    font-family: titulo;
+}
+.img__somos {
+    max-height: 100vh;
+    object-fit: cover;  
+}
