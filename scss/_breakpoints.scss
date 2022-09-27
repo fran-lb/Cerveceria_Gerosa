@@ -1,0 +1,46 @@
+@media screen and (max-width: 768px) and (min-width:150px) {
+
+    /* inicio CSS Index */
+    .video__header {
+        height: 70vh;
+    }
+    .img__index {
+        height: 50vh;
+    }
+    /* Fin CSS Index */
+    /* Inicio CSS Cerveza */
+    .header__cerveza {
+        height: 70vh;
+    }
+    /* Fin CSS Cerveza */
+    /* Inicio CSS Somos */
+    .header__somos {
+        height: 70vh !important;
+    }
+    .carousel-inner {
+        height: 70vh;
+    }
+    .img__somos {
+        height: 50vh;
+    }
+    /* Inicio CSS Contacto */
+    .section__form {
+        min-height: 280px;
+    }
+    /* Fin CSS Contacto */
+    /* Inicio CSS Carta */
+    .header__reducido {
+        height: 12vh;
+    }
+    .img__logo {
+        height: 70px;
+        width: 70px;
+    }
+    .menu__h4 {
+        justify-content: center;
+    }
+    .menu__h5 {
+        justify-content: center;
+    }
+    /* Fin CSS Carta */
+}

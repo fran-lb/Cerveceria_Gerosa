@@ -21,6 +21,16 @@
 .header__menu__btn:hover {
     background-color: #ff6042 !important;
 }
+.redes__canvas {
+    height: fit-content;
+    width:auto;
+    padding-left: 2rem;
+    .img__canvas__redes {
+        height: 40px;
+        width: 40px;
+        margin-left: 3px;
+    }
+}
 /* fin header */
 /* inicio main */
 .main {
