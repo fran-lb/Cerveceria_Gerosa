@@ -27,3 +27,13 @@
     max-height: 100vh;
     object-fit: cover;  
 }
+.redes__canvas {
+    height: fit-content;
+    width:auto;
+    padding-left: 2rem;
+    .img__canvas__redes {
+        height: 40px;
+        width: 40px;
+        margin-left: 3px;
+    }
+}
