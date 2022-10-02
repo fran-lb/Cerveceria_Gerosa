@@ -1,18 +1,15 @@
 /* inicio header */
 .header__cerveza {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../assets/cervezas/header__cervezasok.jpg);
+    @include size(100vh, 100%);
+    background-image: url(../assets/cervezas/header__cervezasok.webp);
     background-size: cover;
     background-position: center;
 }  
 .redes__canvas {
-    height: fit-content;
-    width:auto;
+    @include size(fit-content, auto);
     padding-left: 2rem;
     .img__canvas__redes {
-        height: 40px;
-        width: 40px;
+        @include size(40px, 40px);
         margin-left: 3px;
     }
 }
