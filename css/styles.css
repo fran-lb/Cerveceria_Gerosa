@@ -4,6 +4,7 @@
 
 /* sizes */
 /* tipografia */
+/* btn */
 /* fonts */
 @font-face {
   font-family: titulo;
@@ -40,14 +41,14 @@
   margin-left: 1rem;
   color: #f4f4f4;
   font-family: titulo !important;
-  font-size: 2vw !important; }
+  font-size: medium; }
 
 .header__menu__btn:hover {
   background-color: #ff6042 !important; }
 
 .footer__ul {
   font-family: titulo;
-  font-size: 2.5vw; }
+  font-size: xx-large; }
 
 .redes__canvas {
   height: fit-content;
@@ -64,44 +65,34 @@
   background-color: #0b1015;
   color: #f4f4f4;
   letter-spacing: 0.04em; }
-  .main__section0 .ver__enlace, .main__section__int .ver__enlace {
-    font-size: 1.5vw; }
-  .main__section0 .h4, .main__section__int .h4 {
-    font-size: 1.2vw; }
-  .main__section0 .h5, .main__section__int .h5 {
-    font-size: 1vw; }
 
 .main__section1, .main__section2 {
   background-color: #f4f4f4; }
   .main__section1 #lalate, .main__section2 #lalate, .main__section2 #somos {
     font-family: titulo;
-    font-size: 3.75vw;
     margin-top: 2vh; }
   .main__section1 .main__section__h2, .main__section2 .main__section__h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.75vw;
     letter-spacing: 0.04em;
     margin-top: 3vh; }
   .main__section1 .main__section__p, .main__section2 .main__section__p {
     font-family: "DM Sans", Open sans, Helvetica, Arial;
-    font-size: 1.2vw;
     letter-spacing: 0.04em; }
   .main__section1 .img__index, .main__section2 .img__index {
     object-fit: cover;
     padding: 0 !important;
     margin: 0 !important; }
-  .main__section1 .btn__main, .main__section2 .btn__main, .main__section1 .btn__main__carta, .main__section2 .btn__main__carta {
+  .main__section1 .btn__main, .main__section2 .btn__main {
     background-color: #0b1015 !important;
     color: #f4f4f4 !important;
     margin: 1.2rem;
     border: #0b1015 1rem !important;
     font-family: titulo !important;
-    font-size: 1.5vw !important; }
-  .main__section1 .btn__main:hover, .main__section2 .btn__main:hover, .main__section1 .btn__main__carta:hover, .main__section2 .btn__main__carta:hover {
+    font-size: medium !important; }
+  .main__section1 .btn__main:hover, .main__section2 .btn__main:hover {
     background-color: #ff6042 !important;
     color: #0b1015 !important;
     transition: 0.2s;
-    font-size: 2.5vw; }
+    font-size: 8vw; }
 
 .main__section__int {
   background-color: #fed501;
@@ -120,11 +111,11 @@ footer {
     background-color: #ff6042; }
     footer .footer__bc .footer__ul {
       font-family: titulo;
-      font-size: 2.5vw;
+      font-size: xx-large;
       color: #0b1015; }
   footer .ul__redes {
     font-family: texto;
-    font-size: 1.2vw; }
+    font-size: medium; }
     footer .ul__redes .icono__footer {
       height: 30px;
       width: 30px; }
@@ -155,6 +146,14 @@ footer {
 .main__carta__h2 {
   font-size: 4rem;
   font-family: cursiva; }
+
+.btn__main__carta {
+  background-color: #0b1015 !important;
+  color: #f4f4f4 !important;
+  margin: 1.2rem;
+  border: #0b1015 1rem !important;
+  font-family: titulo !important;
+  font-size: medium !important; }
 
 .btn__main__carta:hover {
   background-color: #ff6042 !important;
@@ -291,6 +290,9 @@ footer {
   .main__somos .main__somos__section1 .main__section__titulo {
     font-family: titulo;
     font-size: 3.75vw; }
+  .main__somos .main__somos__section1 .main__section__p {
+    font-family: "DM Sans", Open sans, Helvetica, Arial;
+    letter-spacing: 0.04em; }
   .main__somos .main__somos__section1 .img__somos {
     object-fit: cover; }
 
@@ -310,6 +312,9 @@ footer {
   /* inicio CSS Index */
   .video__header {
     height: 70vh; }
+  .img__logo {
+    height: 75%;
+    width: 75%; }
   .img__index {
     height: 50vh; }
   /* Fin CSS Index */
@@ -341,3 +346,48 @@ footer {
   /* Fin CSS Carta */ }
 
 /* pantallas grandes */
+@media screen and (min-width: 1200px) {
+  /* inicio header */
+  .header__menu__btn {
+    font-family: titulo !important;
+    font-size: 1.75vw !important; }
+  .header__menu__btn:hover {
+    background-color: #ff6042 !important; }
+  /* fin header */
+  /* inicio main */
+  .main__section0 .ver__enlace, .main__section__int .ver__enlace {
+    font-size: 1.5vw !important; }
+  .main__section0 .h4, .main__section__int .h4 {
+    font-size: 1.2vw !important; }
+  .main__section0 .h5, .main__section__int .h5 {
+    font-size: 1vw !important; }
+  .main__section1 #lalate, .main__section2 #lalate, .main__section2 #somos {
+    font-size: 3.75vw !important; }
+  .main__section1 .main__section__h2, .main__section2 .main__section__h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.75vw !important; }
+  .main__section1 .main__section__p, .main__section2 .main__section__p {
+    font-family: "DM Sans", Open sans, Helvetica, Arial !important;
+    font-size: 1.2vw !important; }
+  .main__section1 .btn__main, .main__section2 .btn__main {
+    font-family: titulo !important;
+    font-size: 1.5vw !important; }
+  .main__section1 .btn__main:hover, .main__section2 .btn__main:hover {
+    font-size: 1.6vw !important; }
+  /* fin main */
+  /* incio footer */
+  .footer__ul {
+    font-family: titulo !important;
+    font-size: 2.5vw !important; }
+  .ul__redes {
+    font-family: texto !important;
+    font-size: 1.2vw !important; }
+  .ul__redes:hover {
+    font-size: 1.5vw !important; }
+  /* fin footer */ }
+
+/* pantallas muy grandes */
+@media screen and (max-width: 3000px) and (min-width: 1600px) {
+  .footer__ul {
+    font-family: titulo !important;
+    font-size: 2vw !important; } }

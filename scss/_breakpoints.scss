@@ -5,6 +5,9 @@
     .video__header {
         height: 70vh;
     }
+    .img__logo {
+        @include size(75%, 75%);
+    }
     .img__index {
         height: 50vh;
     }
@@ -45,9 +48,61 @@
     }
     /* Fin CSS Carta */
 }
-
-/* pantallas grandes */
+ /* pantallas grandes */
 @media screen and (min-width: 1200px) {
-
-   
+    /* inicio header */
+    .header__menu__btn {
+        @include tipo (titulo !important, 1.75vw !important);
+    }
+    .header__menu__btn:hover {
+        background-color: #ff6042 !important;
+    }
+    /* fin header */    
+    /* inicio main */
+    .main__section0{
+        .ver__enlace {
+            font-size: 1.5vw !important;
+        }
+        .h4 {
+            font-size: 1.2vw !important;
+        }
+        .h5 {
+            font-size: 1vw !important;
+        }
+    } 
+    .main__section1 {
+        #lalate {
+            font-size: 3.75vw !important;
+        }
+        .main__section__h2 {
+            @include tipo ($h2, 2.75vw !important);
+        }
+        .main__section__p {
+            @include tipo ($parrafo!important, 1.2vw !important);
+        }
+        .btn__main {
+            @include tipo (titulo !important, 1.5vw !important);
+        }
+        .btn__main:hover {
+            font-size: 1.6vw !important;
+        }
+    }
+    /* fin main */
+    /* incio footer */
+    .footer__ul {
+        @include tipo (titulo !important, 2.5vw !important);
+    }
+    .ul__redes {
+        @include tipo(texto!important, 1.2vw!important);
+    }
+    .ul__redes:hover {
+        font-size: 1.5vw !important;
+    }
+    /* fin footer */
+}
+ /* pantallas muy grandes */
+@media screen and (max-width: 3000px) and (min-width:1600px) {
+    .footer__ul {
+        @include tipo (titulo !important, 2vw !important);
+    }
 }

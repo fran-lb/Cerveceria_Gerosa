@@ -21,7 +21,7 @@
     font-family: cursiva;   
 }
 .btn__main__carta {
-    @extend .btn__main
+    @include btn;
 }
 .btn__main__carta:hover {
     background-color:#ff6042 !important;

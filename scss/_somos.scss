@@ -23,6 +23,10 @@
         .main__section__titulo {
             @include tipo(titulo, 3.75vw)
         }
+        .main__section__p {
+            font-family: $parrafo;
+            letter-spacing: 0.04em;
+        }
         .img__somos {
             object-fit: cover;  
         }
