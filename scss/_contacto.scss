@@ -1,5 +1,5 @@
 .header__reducido {
-    @include size(15vh, 100%);
+    @include size(20vh, 100%);
     background-color: map-get($color, $key: negro);
 }
 

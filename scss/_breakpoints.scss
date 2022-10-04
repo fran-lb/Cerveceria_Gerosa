@@ -1,12 +1,20 @@
 /* pantallas chicas */
-@media screen and (max-width: 768px) and (min-width:150px) {
+@media screen and (max-width: 150px) and (min-width:768px) {
 
     /* inicio CSS Index */
     .video__header {
         height: 70vh;
     }
     .img__logo {
-        @include size(75%, 75%);
+        @include size(7vw, 7vw);
+        min-height: 65px;
+        min-width: 65px;
+    }
+    .img__logo:hover {
+        @include size(8vw, 8vw);
+        min-height: 69px;
+        min-width: 69px;
+        transition: 0.2s;
     }
     .img__index {
         height: 50vh;
@@ -25,7 +33,7 @@
         height: 70vh;
     }
     .img__somos {
-        height: 50vh;
+        height: 60vh;
     }
     /* Inicio CSS Contacto */
     .section__form {
@@ -34,11 +42,7 @@
     /* Fin CSS Contacto */
     /* Inicio CSS Carta */
     .header__reducido {
-        height: 12vh;
-    }
-    .img__logo {
-        height: 70px;
-        width: 70px;
+        height: 17vh;
     }
     .menu__h4 {
         justify-content: center;
@@ -48,9 +52,18 @@
     }
     /* Fin CSS Carta */
 }
+
  /* pantallas grandes */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width:1599px) {
+    /* inicio _index */
     /* inicio header */
+    .img__logo {
+        @include size(7vw, 7vw);
+    }
+    .img__logo:hover {
+        @include size(7.2vw, 7.2vw);
+        transition: 0.1s;
+    }
     .header__menu__btn {
         @include tipo (titulo !important, 1.75vw !important);
     }
@@ -99,10 +112,34 @@
         font-size: 1.5vw !important;
     }
     /* fin footer */
+    /* fin _index */
+    /* inicio CSS Somos */
+    .img__somos {
+        height: 100vh;
+    }
+    /* Fin CSS Somos */
 }
+
  /* pantallas muy grandes */
-@media screen and (max-width: 3000px) and (min-width:1600px) {
+@media screen and (max-width: 1600px) and (min-width:3000px) {
     .footer__ul {
         @include tipo (titulo !important, 2vw !important);
     }
+    .img__logo {
+        @include size(7vw, 7vw);
+    }
+    .img__logo:hover {
+        @include size(7.2vw, 7.2vw);
+        transition: 0.1s;
+    }
+     /* Inicio CSS Carta */
+     .header__reducido {
+        height: 18vh;
+    }
+    /* Fin CSS Carta */
+    /* inicio CSS Somos */
+    .img__somos {
+        height: 100vh;
+    }
+    /* Fin CSS Somos */
 }

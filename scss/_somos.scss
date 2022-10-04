@@ -28,7 +28,7 @@
             letter-spacing: 0.04em;
         }
         .img__somos {
-            object-fit: cover;  
+            object-fit: cover; 
         }
     }
     .main__somos__section2 {
@@ -38,8 +38,7 @@
             @include tipo(titulo, 3.75vw)
         }
         .img__somos {
-            height: inherit;
-            object-fit: cover;
+            object-fit: cover; 
         }
     }   
 }

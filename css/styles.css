@@ -126,11 +126,6 @@ footer {
     min-block-size: 100px;
     max-block-size: 400px; }
 
-.img__logo:hover {
-  height: 90px;
-  width: 90px;
-  transition: 0.4s; }
-
 .main__carta {
   height: fit-content;
   width: 100%; }
@@ -242,7 +237,7 @@ footer {
   color: #0b1015; }
 
 .header__reducido {
-  height: 15vh;
+  height: 20vh;
   width: 100%;
   background-color: #0b1015; }
 
@@ -304,17 +299,24 @@ footer {
     font-family: titulo;
     font-size: 3.75vw; }
   .main__somos .main__somos__section2 .img__somos {
-    height: inherit;
     object-fit: cover; }
 
 /* pantallas chicas */
-@media screen and (max-width: 768px) and (min-width: 150px) {
+@media screen and (max-width: 150px) and (min-width: 768px) {
   /* inicio CSS Index */
   .video__header {
     height: 70vh; }
   .img__logo {
-    height: 75%;
-    width: 75%; }
+    height: 7vw;
+    width: 7vw;
+    min-height: 65px;
+    min-width: 65px; }
+  .img__logo:hover {
+    height: 8vw;
+    width: 8vw;
+    min-height: 69px;
+    min-width: 69px;
+    transition: 0.2s; }
   .img__index {
     height: 50vh; }
   /* Fin CSS Index */
@@ -328,17 +330,14 @@ footer {
   .carousel-inner {
     height: 70vh; }
   .img__somos {
-    height: 50vh; }
+    height: 60vh; }
   /* Inicio CSS Contacto */
   .section__form {
     min-height: 280px; }
   /* Fin CSS Contacto */
   /* Inicio CSS Carta */
   .header__reducido {
-    height: 12vh; }
-  .img__logo {
-    height: 70px;
-    width: 70px; }
+    height: 17vh; }
   .menu__h4 {
     justify-content: center; }
   .menu__h5 {
@@ -346,8 +345,16 @@ footer {
   /* Fin CSS Carta */ }
 
 /* pantallas grandes */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  /* inicio _index */
   /* inicio header */
+  .img__logo {
+    height: 7vw;
+    width: 7vw; }
+  .img__logo:hover {
+    height: 7.2vw;
+    width: 7.2vw;
+    transition: 0.1s; }
   .header__menu__btn {
     font-family: titulo !important;
     font-size: 1.75vw !important; }
@@ -384,10 +391,30 @@ footer {
     font-size: 1.2vw !important; }
   .ul__redes:hover {
     font-size: 1.5vw !important; }
-  /* fin footer */ }
+  /* fin footer */
+  /* fin _index */
+  /* inicio CSS Somos */
+  .img__somos {
+    height: 100vh; }
+  /* Fin CSS Somos */ }
 
 /* pantallas muy grandes */
-@media screen and (max-width: 3000px) and (min-width: 1600px) {
+@media screen and (max-width: 1600px) and (min-width: 3000px) {
   .footer__ul {
     font-family: titulo !important;
-    font-size: 2vw !important; } }
+    font-size: 2vw !important; }
+  .img__logo {
+    height: 7vw;
+    width: 7vw; }
+  .img__logo:hover {
+    height: 7.2vw;
+    width: 7.2vw;
+    transition: 0.1s; }
+  /* Inicio CSS Carta */
+  .header__reducido {
+    height: 18vh; }
+  /* Fin CSS Carta */
+  /* inicio CSS Somos */
+  .img__somos {
+    height: 100vh; }
+  /* Fin CSS Somos */ }
