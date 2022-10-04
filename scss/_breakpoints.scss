@@ -1,3 +1,4 @@
+/* pantallas chicas */
 @media screen and (max-width: 768px) and (min-width:150px) {
 
     /* inicio CSS Index */
@@ -43,4 +44,10 @@
         justify-content: center;
     }
     /* Fin CSS Carta */
+}
+
+/* pantallas grandes */
+@media screen and (min-width: 1200px) {
+
+   
 }

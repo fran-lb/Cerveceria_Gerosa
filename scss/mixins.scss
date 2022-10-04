@@ -3,3 +3,9 @@
     height: $height;
     width: $width;   
 }
+/* tipografia */
+@mixin tipo ($font, $size) {
+    font-family: $font;
+    font-size: $size;
+    
+}

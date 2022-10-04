@@ -3,6 +3,7 @@
   text-decoration: none !important; }
 
 /* sizes */
+/* tipografia */
 /* fonts */
 @font-face {
   font-family: titulo;
@@ -39,10 +40,14 @@
   margin-left: 1rem;
   color: #f4f4f4;
   font-family: titulo !important;
-  font-size: x-large !important; }
+  font-size: 2vw !important; }
 
 .header__menu__btn:hover {
   background-color: #ff6042 !important; }
+
+.footer__ul {
+  font-family: titulo;
+  font-size: 2.5vw; }
 
 .redes__canvas {
   height: fit-content;
@@ -55,58 +60,55 @@
 
 /* fin header */
 /* inicio main */
-.main {
-  height: fit-content;
-  width: fit-content; }
-
-.img__index {
-  object-fit: cover;
-  height: 70vh;
-  padding: 0 !important;
-  margin: 0 !important; }
-
-.main__section0 {
+.main__section0, .main__section__int {
   background-color: #0b1015;
   color: #f4f4f4;
   letter-spacing: 0.04em; }
+  .main__section0 .ver__enlace, .main__section__int .ver__enlace {
+    font-size: 1.5vw; }
+  .main__section0 .h4, .main__section__int .h4 {
+    font-size: 1.2vw; }
+  .main__section0 .h5, .main__section__int .h5 {
+    font-size: 1vw; }
 
-.main__section1 {
+.main__section1, .main__section2 {
   background-color: #f4f4f4; }
-
-#lalate {
-  font-family: titulo; }
+  .main__section1 #lalate, .main__section2 #lalate, .main__section2 #somos {
+    font-family: titulo;
+    font-size: 3.75vw;
+    margin-top: 2vh; }
+  .main__section1 .main__section__h2, .main__section2 .main__section__h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.75vw;
+    letter-spacing: 0.04em;
+    margin-top: 3vh; }
+  .main__section1 .main__section__p, .main__section2 .main__section__p {
+    font-family: "DM Sans", Open sans, Helvetica, Arial;
+    font-size: 1.2vw;
+    letter-spacing: 0.04em; }
+  .main__section1 .img__index, .main__section2 .img__index {
+    object-fit: cover;
+    padding: 0 !important;
+    margin: 0 !important; }
+  .main__section1 .btn__main, .main__section2 .btn__main, .main__section1 .btn__main__carta, .main__section2 .btn__main__carta {
+    background-color: #0b1015 !important;
+    color: #f4f4f4 !important;
+    margin: 1.2rem;
+    border: #0b1015 1rem !important;
+    font-family: titulo !important;
+    font-size: 1.5vw !important; }
+  .main__section1 .btn__main:hover, .main__section2 .btn__main:hover, .main__section1 .btn__main__carta:hover, .main__section2 .btn__main__carta:hover {
+    background-color: #ff6042 !important;
+    color: #0b1015 !important;
+    transition: 0.2s;
+    font-size: 2.5vw; }
 
 .main__section__int {
   background-color: #fed501;
-  color: #0b1015;
-  letter-spacing: 0.04em; }
-
-.main__section2 {
-  background-color: #f5b0a9;
   color: #0b1015; }
 
-#somos {
-  font-family: titulo; }
-
-.main__section__h2 {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.main__section__p {
-  font-family: 'DM Sans', Open sans, Helvetica, Arial;
-  letter-spacing: 0.04em; }
-
-.btn__main, .btn__main__carta {
-  background-color: #0b1015 !important;
-  color: #f4f4f4 !important;
-  font-family: titulo !important;
-  margin: 1.2rem;
-  border: #0b1015 1rem !important; }
-
-.btn__main:hover, .btn__main__carta:hover {
-  background-color: #ff6042 !important;
-  color: #0b1015 !important;
-  transition: 0.8s;
-  font-size: 1.5rem; }
+.main__section2 {
+  background-color: #f5b0a9; }
 
 /* fin main */
 /* inicio footer */
@@ -114,31 +116,24 @@ footer {
   height: 65vh;
   min-height: 300px;
   background-color: #f4f4f4 #f5b0a9; }
-
-.footer__ul {
-  font-family: titulo;
-  color: #0b1015; }
-
-.footer__bc {
-  background-color: #ff6042; }
-
-.ul__redes {
-  font-family: texto; }
-
-.ul__redes:hover {
-  font-family: texto; }
-
-.ul__redes:hover {
-  font-size: 1.7rem;
-  transition: 0.5s; }
-
-.img__footer {
-  min-block-size: 100px;
-  max-block-size: 400px; }
-
-.icono__footer {
-  height: 30px;
-  width: 30px; }
+  footer .footer__bc {
+    background-color: #ff6042; }
+    footer .footer__bc .footer__ul {
+      font-family: titulo;
+      font-size: 2.5vw;
+      color: #0b1015; }
+  footer .ul__redes {
+    font-family: texto;
+    font-size: 1.2vw; }
+    footer .ul__redes .icono__footer {
+      height: 30px;
+      width: 30px; }
+  footer .ul__redes:hover {
+    font-size: 1.5vw;
+    transition: 0.5s; }
+  footer .img__footer {
+    min-block-size: 100px;
+    max-block-size: 400px; }
 
 .img__logo:hover {
   height: 90px;
@@ -274,43 +269,43 @@ footer {
 .header__somos {
   height: 100vh;
   width: 100%; }
+  .header__somos .img__carrousel {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+  .header__somos .redes__canvas {
+    height: fit-content;
+    width: auto;
+    padding-left: 2rem; }
+    .header__somos .redes__canvas .img__canvas__redes {
+      height: 40px;
+      width: 40px;
+      margin-left: 3px; }
 
-.img__carrousel {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  object-position: center; }
-
-.main__somos {
-  height: fit-content; }
-
-.main__somos__section1 {
+.main__somos .main__somos__section1 {
   height: fit-content;
   width: 100%;
   background-color: #ff6042;
   color: #f4f4f4; }
+  .main__somos .main__somos__section1 .main__section__titulo {
+    font-family: titulo;
+    font-size: 3.75vw; }
+  .main__somos .main__somos__section1 .img__somos {
+    object-fit: cover; }
 
-.main__somos__section2 {
+.main__somos .main__somos__section2 {
   height: fit-content;
   width: 100%;
   background-color: #f4f4f4; }
+  .main__somos .main__somos__section2 .main__section__titulo {
+    font-family: titulo;
+    font-size: 3.75vw; }
+  .main__somos .main__somos__section2 .img__somos {
+    height: inherit;
+    object-fit: cover; }
 
-.main__section__titulo {
-  font-family: titulo; }
-
-.img__somos {
-  max-height: 100vh;
-  object-fit: cover; }
-
-.redes__canvas {
-  height: fit-content;
-  width: auto;
-  padding-left: 2rem; }
-  .redes__canvas .img__canvas__redes {
-    height: 40px;
-    width: 40px;
-    margin-left: 3px; }
-
+/* pantallas chicas */
 @media screen and (max-width: 768px) and (min-width: 150px) {
   /* inicio CSS Index */
   .video__header {
@@ -344,3 +339,5 @@ footer {
   .menu__h5 {
     justify-content: center; }
   /* Fin CSS Carta */ }
+
+/* pantallas grandes */
