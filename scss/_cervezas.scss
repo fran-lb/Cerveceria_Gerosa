@@ -13,6 +13,8 @@
         margin-left: 3px;
     }
 }
+/* fin header */
+/* inicio main */
 .main__cervezas__section1 {
     background-color: #f4f4f4;
 }
@@ -39,3 +41,8 @@
     background-color:#f4f4f4;
     color:#0b1015;
 }
+.img__index {
+    object-fit: cover;
+    height: 85vh !important;
+}
+/* fin main */

@@ -4,6 +4,7 @@
 
 /* sizes */
 /* tipografia */
+/* flex*/
 /* btn */
 /* fonts */
 @font-face {
@@ -23,22 +24,18 @@
   src: url(../fonts/Taberna-Script.otf); }
 
 /* mapa colores */
+/* pages */
 /* inicio header */
 .video__header {
   height: 100vh;
   width: 100vw;
-  object-fit: cover;
-  padding: 0 !important;
-  margin: 0 !important; }
+  object-fit: cover; }
 
 .header__contenedor__img {
-  margin-top: 1rem !important;
   margin-left: 47%; }
 
 .header__menu__btn {
   width: auto !important;
-  margin-top: 2rem !important;
-  margin-left: 1rem;
   color: #f4f4f4;
   font-family: titulo !important;
   font-size: medium; }
@@ -61,7 +58,7 @@
 
 /* fin header */
 /* inicio main */
-.main__section0, .main__section__int {
+.main__section0 {
   background-color: #0b1015;
   color: #f4f4f4;
   letter-spacing: 0.04em; }
@@ -79,8 +76,7 @@
     letter-spacing: 0.04em; }
   .main__section1 .img__index, .main__section2 .img__index {
     object-fit: cover;
-    padding: 0 !important;
-    margin: 0 !important; }
+    height: 85vh !important; }
   .main__section1 .btn__main, .main__section2 .btn__main {
     background-color: #0b1015 !important;
     color: #f4f4f4 !important;
@@ -113,34 +109,48 @@ footer {
       font-family: titulo;
       font-size: xx-large;
       color: #0b1015; }
-  footer .ul__redes {
-    font-family: texto;
-    font-size: medium; }
-    footer .ul__redes .icono__footer {
-      height: 30px;
-      width: 30px; }
-  footer .ul__redes:hover {
-    font-size: 1.5vw;
-    transition: 0.5s; }
-  footer .img__footer {
-    min-block-size: 100px;
-    max-block-size: 400px; }
+  footer .footer__redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end; }
+    footer .footer__redes .ul__redes {
+      font-family: texto;
+      font-size: medium; }
+      footer .footer__redes .ul__redes .icono__footer {
+        height: 30px;
+        width: 30px; }
+    footer .footer__redes .ul__redes:hover {
+      font-size: 1.5vw;
+      transition: 0.5s; }
+  footer .cont__img__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end; }
+    footer .cont__img__footer .img__footer {
+      min-block-size: 100px;
+      max-block-size: 400px; }
 
+/* fin footer */
+/* inicio section main */
 .main__carta {
   height: fit-content;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .img__container {
-  max-height: 100vh;
-  max-width: 50% !important; }
+  max-height: 100vh; }
 
 .main__carta__h1 {
-  font-size: 6rem !important;
-  font-family: pesado; }
+  font-family: pesado;
+  font-size: 6rem; }
 
 .main__carta__h2 {
-  font-size: 4rem;
-  font-family: cursiva; }
+  font-family: cursiva;
+  font-size: 4rem; }
 
 .btn__main__carta {
   background-color: #0b1015 !important;
@@ -153,14 +163,8 @@ footer {
 .btn__main__carta:hover {
   background-color: #ff6042 !important;
   color: #0b1015 !important;
-  transition: 0.3s;
-  font-size: 1.9rem !important; }
-
-.main__carta__menu {
-  height: 100vh;
-  width: 100%;
-  display: none;
-  background-color: #1ad6d5; }
+  transition: 0.2s;
+  font-size: 8vw; }
 
 .section__tapas__menu {
   width: 75%; }
@@ -193,6 +197,7 @@ footer {
   padding-left: 3rem;
   padding-left: 3rem; }
 
+/* fin section main */
 /* inicio header */
 .header__cerveza {
   height: 100vh;
@@ -210,6 +215,8 @@ footer {
     width: 40px;
     margin-left: 3px; }
 
+/* fin header */
+/* inicio main */
 .main__cervezas__section1 {
   background-color: #f4f4f4; }
 
@@ -236,18 +243,27 @@ footer {
   background-color: #f4f4f4;
   color: #0b1015; }
 
+.img__index {
+  object-fit: cover;
+  height: 85vh !important; }
+
+/* fin main */
+/* inicio header */
 .header__reducido {
-  height: 20vh;
+  height: 14vh;
   width: 100%;
   background-color: #0b1015; }
 
+/* fin header */
+/* inicio main */
 .main__contacto {
   min-height: 80vh; }
   .main__contacto .section__texto {
-    background-color: rgba(0, 0, 0, 0); }
-    .main__contacto .section__texto .main__section__h2__contacto:hover {
-      font-size: 2.1rem;
-      transition: 0.8s; }
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .main__contacto .section__form {
     background-image: url(../assets/contacto/background_form.png);
     background-size: cover; }
@@ -260,6 +276,8 @@ footer {
     .main__contacto .section__form .form__contacto {
       width: 100%; }
 
+/* fin main */
+/* inicio header */
 .header__somos {
   height: 100vh;
   width: 100%; }
@@ -277,6 +295,8 @@ footer {
       width: 40px;
       margin-left: 3px; }
 
+/* fin header */
+/* inicio main */
 .main__somos .main__somos__section1 {
   height: fit-content;
   width: 100%;
@@ -301,6 +321,8 @@ footer {
   .main__somos .main__somos__section2 .img__somos {
     object-fit: cover; }
 
+/* fin main */
+/* breakpoints */
 /* pantallas chicas */
 @media screen and (min-width: 150px) and (max-width: 768px) {
   /* inicio CSS Index */
@@ -318,7 +340,8 @@ footer {
     min-width: 69px;
     transition: 0.2s; }
   .img__index {
-    height: 50vh; }
+    height: 65vh;
+    object-fit: cover; }
   /* Fin CSS Index */
   /* Inicio CSS Cerveza */
   .header__cerveza {
@@ -331,6 +354,7 @@ footer {
     height: 70vh; }
   .img__somos {
     height: 60vh; }
+  /* Fin CSS Somos */
   /* Inicio CSS Contacto */
   .section__form {
     min-height: 280px; }
@@ -365,11 +389,11 @@ footer {
     font-size: 2.1vw !important; }
   /* fin header */
   /* inicio main */
-  .main__section0 .ver__enlace, .main__section__int .ver__enlace {
+  .main__section0 .ver__enlace {
     font-size: 1.5vw !important; }
-  .main__section0 .h4, .main__section__int .h4 {
+  .main__section0 .h4 {
     font-size: 1.2vw !important; }
-  .main__section0 .h5, .main__section__int .h5 {
+  .main__section0 .h5 {
     font-size: 1vw !important; }
   .main__section1 #lalate, .main__section2 #lalate, .main__section2 #somos {
     font-size: 3.75vw !important; }

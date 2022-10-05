@@ -1,35 +1,22 @@
-
+/* inicio section main */
 .main__carta {
-    height: fit-content;
-    width: 100%;
+    @include size (fit-content, 100%);
+    @include flex-row;
 }
 .img__container {
    max-height: 100vh;
-   max-width: 50% !important;
-
 }
 .main__carta__h1 {
-    font-size: 6rem !important;
-    font-family: pesado;
+    @include tipo (pesado, 6rem);   
 }
 .main__carta__h2 {
-    font-size: 4rem;
-    font-family: cursiva;   
+    @include tipo (cursiva, 4rem);   
 }
 .btn__main__carta {
     @include btn;
 }
 .btn__main__carta:hover {
-    background-color:#ff6042 !important;
-    color: #0b1015 !important;
-    transition: 0.3s;
-    font-size: 1.9rem !important;
-}
-.main__carta__menu {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    background-color: #1ad6d5;
+    @include btn--hover
 }
 .section__tapas__menu {
     width: 75%;
@@ -62,3 +49,4 @@
     padding-left: 3rem;
     padding-left: 3rem;
 }
+/* fin section main */

@@ -1,16 +1,15 @@
+/* inicio header */
 .header__reducido {
-    @include size(20vh, 100%);
+    @include size(14vh, 100%);
     background-color: map-get($color, $key: negro);
 }
-
+/* fin header */
+/* inicio main */
 .main__contacto {
     min-height: 80vh;
     .section__texto{
         background-color: rgba(0, 0, 0, 0);
-        .main__section__h2__contacto:hover {
-            font-size: 2.1rem;
-            transition: 0.8s;
-        }
+        @include flex
     }
     .section__form {
         background-image: url(../assets/contacto/background_form.png);
@@ -28,6 +27,7 @@
         }
     }
 }
+/* fin main */
 
 
 

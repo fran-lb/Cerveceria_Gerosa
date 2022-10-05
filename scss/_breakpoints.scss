@@ -17,7 +17,8 @@
         transition: 0.2s;
     }
     .img__index {
-        height: 50vh;
+        height: 65vh;
+        object-fit: cover;
     }
     /* Fin CSS Index */
     /* Inicio CSS Cerveza */
@@ -35,6 +36,7 @@
     .img__somos {
         height: 60vh;
     }
+    /* Fin CSS Somos */
     /* Inicio CSS Contacto */
     .section__form {
         min-height: 280px;

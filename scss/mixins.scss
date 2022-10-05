@@ -8,12 +8,31 @@
     font-family: $font;
     font-size: $size;
 }
-    
+/* flex*/
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+@mixin flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* btn */
 @mixin btn {
-        background-color: #0b1015 !important;
-        color: #f4f4f4 !important;
-        margin: 1.2rem;
-        border: #0b1015 1rem !important;
-        @include tipo (titulo!important, medium!important);
+    background-color: #0b1015 !important;
+    color: #f4f4f4 !important;
+    margin: 1.2rem;
+    border: #0b1015 1rem !important;
+    @include tipo (titulo!important, medium!important);
 }
+@mixin btn--hover {
+    background-color:#ff6042 !important;
+    color: #0b1015 !important;
+    transition: 0.2s;
+    font-size: 8vw;
+}
+

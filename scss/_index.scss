@@ -3,17 +3,12 @@
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    padding: 0 !important;
-    margin: 0 !important;
 }
 .header__contenedor__img {
-    margin-top: 1rem !important;
     margin-left: 47%;
 }
 .header__menu__btn {
     width: auto !important;
-    margin-top: 2rem !important;
-    margin-left: 1rem;
     color: #f4f4f4;
     @include tipo (titulo !important, medium);
 }
@@ -33,7 +28,6 @@
         margin-left: 3px;
     }
 }
-
 /* fin header */
 /* inicio main */
 .main__section0 {
@@ -57,21 +51,16 @@
     }
     .img__index {
         object-fit: cover;
-        padding: 0 !important;
-        margin: 0 !important;
+        height: 85vh !important;
     }
     .btn__main {
         @include btn;    
     }
     .btn__main:hover {
-        background-color:#ff6042 !important;
-        color: #0b1015 !important;
-        transition: 0.2s;
-        font-size: 8vw;
+        @include btn--hover;
     }
 }
 .main__section__int {
-    @extend .main__section0;
     background-color: #fed501;
     color: #0b1015;    
 }
@@ -95,22 +84,35 @@ footer {
             color:#0b1015;
           }
     }
-    .ul__redes {
-        @include tipo (texto, medium);
-        .icono__footer {
-            height: 30px;
-            width: 30px;
+    .footer__redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-end;
+        .ul__redes {
+            @include tipo (texto, medium);
+            .icono__footer {
+                @include size(30px, 30px);
+            }
+        }
+        .ul__redes:hover {
+            font-size: 1.5vw;
+            transition: 0.5s;
         }
     }
-    .ul__redes:hover {
-        font-size: 1.5vw;
-        transition: 0.5s;
+    .cont__img__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        .img__footer {
+            min-block-size: 100px;
+            max-block-size: 400px;
+        } 
     }
-    .img__footer {
-        min-block-size: 100px;
-        max-block-size: 400px;
-    }  
+   
 }
+/* fin footer */
 
 
 

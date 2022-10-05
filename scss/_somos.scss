@@ -1,3 +1,4 @@
+/* inicio header */
 .header__somos {
     @include size(100vh, 100%);
     .img__carrousel {
@@ -15,6 +16,8 @@
     }
 }
 }
+/* fin header */
+/* inicio main */
 .main__somos {
     .main__somos__section1 {
         @include size(fit-content, 100%);
@@ -42,6 +45,7 @@
         }
     }   
 }
+/* fin main */
 
 
 
