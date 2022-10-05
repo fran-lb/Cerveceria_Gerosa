@@ -1,17 +1,17 @@
 /* pantallas chicas */
-@media screen and (max-width: 150px) and (min-width:768px) {
+@media screen and (min-width: 150px) and (max-width:768px) {
 
     /* inicio CSS Index */
     .video__header {
         height: 70vh;
     }
     .img__logo {
-        @include size(7vw, 7vw);
+        @include size(5vw, 5vw);
         min-height: 65px;
         min-width: 65px;
     }
     .img__logo:hover {
-        @include size(8vw, 8vw);
+        @include size(6vw, 6vw);
         min-height: 69px;
         min-width: 69px;
         transition: 0.2s;
@@ -54,14 +54,14 @@
 }
 
  /* pantallas grandes */
-@media screen and (min-width: 1200px) and (max-width:1599px) {
+@media screen and (min-width: 1200px) and (max-width:3000px) {
     /* inicio _index */
     /* inicio header */
     .img__logo {
-        @include size(7vw, 7vw);
+        @include size(5vw, 5vw);
     }
     .img__logo:hover {
-        @include size(7.2vw, 7.2vw);
+        @include size(5.2vw, 5.2vw);
         transition: 0.1s;
     }
     .header__menu__btn {
@@ -69,6 +69,9 @@
     }
     .header__menu__btn:hover {
         background-color: #ff6042 !important;
+    }
+    .header__ul__canvas {
+        @include tipo (titulo, 2.1vw !important);
     }
     /* fin header */    
     /* inicio main */
@@ -117,29 +120,9 @@
     .img__somos {
         height: 100vh;
     }
+    .main__section__titulo {
+        font-size: 3.50vw!important;
+    }
     /* Fin CSS Somos */
 }
 
- /* pantallas muy grandes */
-@media screen and (max-width: 1600px) and (min-width:3000px) {
-    .footer__ul {
-        @include tipo (titulo !important, 2vw !important);
-    }
-    .img__logo {
-        @include size(7vw, 7vw);
-    }
-    .img__logo:hover {
-        @include size(7.2vw, 7.2vw);
-        transition: 0.1s;
-    }
-     /* Inicio CSS Carta */
-     .header__reducido {
-        height: 18vh;
-    }
-    /* Fin CSS Carta */
-    /* inicio CSS Somos */
-    .img__somos {
-        height: 100vh;
-    }
-    /* Fin CSS Somos */
-}

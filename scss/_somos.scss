@@ -21,7 +21,7 @@
         background-color: #ff6042;
         color: #f4f4f4;
         .main__section__titulo {
-            @include tipo(titulo, 3.75vw)
+           @include tipo(titulo, xx-large)
         }
         .main__section__p {
             font-family: $parrafo;
@@ -35,7 +35,7 @@
         @include size(fit-content, 100%);
         background-color: #f4f4f4;
         .main__section__titulo {
-            @include tipo(titulo, 3.75vw)
+            @include tipo(titulo, xx-large)
         }
         .img__somos {
             object-fit: cover; 

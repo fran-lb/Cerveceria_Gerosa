@@ -46,7 +46,7 @@
 .header__menu__btn:hover {
   background-color: #ff6042 !important; }
 
-.footer__ul {
+.canvas__ul {
   font-family: titulo;
   font-size: xx-large; }
 
@@ -284,7 +284,7 @@ footer {
   color: #f4f4f4; }
   .main__somos .main__somos__section1 .main__section__titulo {
     font-family: titulo;
-    font-size: 3.75vw; }
+    font-size: xx-large; }
   .main__somos .main__somos__section1 .main__section__p {
     font-family: "DM Sans", Open sans, Helvetica, Arial;
     letter-spacing: 0.04em; }
@@ -297,23 +297,23 @@ footer {
   background-color: #f4f4f4; }
   .main__somos .main__somos__section2 .main__section__titulo {
     font-family: titulo;
-    font-size: 3.75vw; }
+    font-size: xx-large; }
   .main__somos .main__somos__section2 .img__somos {
     object-fit: cover; }
 
 /* pantallas chicas */
-@media screen and (max-width: 150px) and (min-width: 768px) {
+@media screen and (min-width: 150px) and (max-width: 768px) {
   /* inicio CSS Index */
   .video__header {
     height: 70vh; }
   .img__logo {
-    height: 7vw;
-    width: 7vw;
+    height: 5vw;
+    width: 5vw;
     min-height: 65px;
     min-width: 65px; }
   .img__logo:hover {
-    height: 8vw;
-    width: 8vw;
+    height: 6vw;
+    width: 6vw;
     min-height: 69px;
     min-width: 69px;
     transition: 0.2s; }
@@ -345,21 +345,24 @@ footer {
   /* Fin CSS Carta */ }
 
 /* pantallas grandes */
-@media screen and (min-width: 1200px) and (max-width: 1599px) {
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
   /* inicio _index */
   /* inicio header */
   .img__logo {
-    height: 7vw;
-    width: 7vw; }
+    height: 5vw;
+    width: 5vw; }
   .img__logo:hover {
-    height: 7.2vw;
-    width: 7.2vw;
+    height: 5.2vw;
+    width: 5.2vw;
     transition: 0.1s; }
   .header__menu__btn {
     font-family: titulo !important;
     font-size: 1.75vw !important; }
   .header__menu__btn:hover {
     background-color: #ff6042 !important; }
+  .header__ul__canvas {
+    font-family: titulo;
+    font-size: 2.1vw !important; }
   /* fin header */
   /* inicio main */
   .main__section0 .ver__enlace, .main__section__int .ver__enlace {
@@ -396,25 +399,6 @@ footer {
   /* inicio CSS Somos */
   .img__somos {
     height: 100vh; }
-  /* Fin CSS Somos */ }
-
-/* pantallas muy grandes */
-@media screen and (max-width: 1600px) and (min-width: 3000px) {
-  .footer__ul {
-    font-family: titulo !important;
-    font-size: 2vw !important; }
-  .img__logo {
-    height: 7vw;
-    width: 7vw; }
-  .img__logo:hover {
-    height: 7.2vw;
-    width: 7.2vw;
-    transition: 0.1s; }
-  /* Inicio CSS Carta */
-  .header__reducido {
-    height: 18vh; }
-  /* Fin CSS Carta */
-  /* inicio CSS Somos */
-  .img__somos {
-    height: 100vh; }
+  .main__section__titulo {
+    font-size: 3.5vw !important; }
   /* Fin CSS Somos */ }
