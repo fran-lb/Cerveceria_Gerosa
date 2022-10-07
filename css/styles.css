@@ -75,8 +75,7 @@
     font-family: "DM Sans", Open sans, Helvetica, Arial;
     letter-spacing: 0.04em; }
   .main__section1 .img__index, .main__section2 .img__index {
-    object-fit: cover;
-    height: 85vh !important; }
+    object-fit: cover; }
   .main__section1 .btn__main, .main__section2 .btn__main {
     background-color: #0b1015 !important;
     color: #f4f4f4 !important;
@@ -243,7 +242,7 @@ footer {
   background-color: #f4f4f4;
   color: #0b1015; }
 
-.img__index {
+.cervezas__main__img {
   object-fit: cover;
   height: 85vh !important; }
 
