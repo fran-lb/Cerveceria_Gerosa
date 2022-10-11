@@ -36,3 +36,64 @@
     font-size: 8vw;
 }
 
+/* header */
+@mixin header__reducido {
+    @include size($altura__header__reducido, 100%);
+    align-items: center;
+    background-color: transparent;
+    .img__logo {
+        height: ($altura__header__reducido)-5vh;
+    }
+    .img__logo:hover {
+        height: (($altura__header__reducido)-5vh)+1vh;
+        transition: 0.2s;
+    }
+    .img__tienda {
+        height: ($altura__header__reducido)-5vh;
+    }
+    .img__tienda:hover {
+        height: (($altura__header__reducido)-5vh)+1vh;
+        transition: 0.2s;
+    }
+}
+/* footer */
+@mixin footer {
+    height: 60vh;
+    min-height: 300px;
+    background-color: map-get($map: $color, $key: blanco__footer);
+    .footer__bc {
+        background-color: map-get($map: $color, $key: rojo);
+        .footer__ul {
+            @include tipo (titulo, xx-large);
+            color:map-get($map: $color, $key: negro);
+          }
+    }
+    .footer__redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-end;
+        .ul__redes {
+            @include tipo (texto, medium);
+            .icono__footer {
+                @include size(30px, 30px);
+            }
+        }
+        .ul__redes:hover {
+            font-size: 1.5vw;
+            transition: 0.5s;
+        }
+    }
+    .cont__img__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        .img__footer {
+            min-block-size: 100px;
+            max-block-size: 400px;
+        } 
+    }  
+}
+/* fin footer */
+

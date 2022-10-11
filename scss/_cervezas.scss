@@ -4,6 +4,9 @@
     background-image: url(../assets/cervezas/header__cervezasok.webp);
     background-size: cover;
     background-position: center;
+    .header__reducido {
+        @include header__reducido;
+    }
 }  
 .redes__canvas {
     @include size(fit-content, auto);

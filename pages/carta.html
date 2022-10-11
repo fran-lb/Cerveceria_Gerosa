@@ -27,14 +27,14 @@
 <body>
     <div class="container-fluid m-0 p-0">
         <!-- inicio header -->
-        <header class="row header__reducido m-0 p-0 ">
+        <header class="header__reducido d-flex m-0 p-0">
             <!-- logo de marca -->
-            <div class="header__contenedor__img position-fixed mt-3">
-                <a href="../index.html#inicio"><img class="img__logo" src="../assets/index/logoheader.png" alt="Logo de marca La Lateria"></a>
+            <div class="header__contenedor__img">
+                <a href="../index.html#inicio"><img class="img__logo" src="../assets/index/logoheader.webp" alt="Logo de marca La Lateria"></a>
             </div>
             <!-- fin logo de marca -->
             <!-- menu offcanvas -->
-            <button class="header__menu__btn btn-lg btn-dark btn btn-primary position-absolute mt-4 ms-3" type="button"
+            <button class="header__menu__btn btn-lg btn-dark btn btn-primary position-absolute ms-3" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                 aria-controls="offcanvasScrolling">MENU</button>
             <div class="offcanvas offcanvas-start opacity-1 dark" data-bs-scroll="true" data-bs-backdrop="false"
@@ -62,6 +62,7 @@
                     </div>
                 </div>
                 <!-- fin menu offcanvas -->
+            </div>
         </header>
         <!-- fin header -->
         <!-- inicio main -->
@@ -76,7 +77,7 @@
                     alt="Logo de Menu de Comida de la Lateria">
             </div>
             <!-- fin img de carta -->
-            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-column justify-content-center align-items-start mt-4 p-0">
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-column justify-content-center align-items-center mt-4 p-0">
                 <a href="#tapas"><button data-aos="flip-left" class="btn__main__carta btn btn-primary btn-lg fs-4">TAPAS</button></a>
                 <a href="#empanadas"><button data-aos="flip-right" class="btn__main__carta btn btn-primary btn-lg fs-4">EMPANADAS</button></a>
                 <a href=""><button data-aos="flip-up" class="btn__main__carta btn btn-primary btn-lg fs-4">PIZZAS</button></a>
@@ -333,8 +334,8 @@
                 <img class="img-fluid img__footer" src="../assets/index/img__footer.jpeg"
                     alt="Ilustración de Cerveza artesanal tirada">
             </div>
+        </footer>
     </div>
-    </footer>
     <!-- fin footer -->
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -1,7 +1,7 @@
 /* inicio header */
 .header__reducido {
-    @include size(14vh, 100%);
-    background-color: map-get($color, $key: negro);
+    @include header__reducido;
+    background-color: map-get($color, $key: negro);   
 }
 /* fin header */
 /* inicio main */

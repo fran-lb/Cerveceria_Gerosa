@@ -2,19 +2,19 @@
 .header__somos {
     @include size(100vh, 100%);
     .img__carrousel {
-        @include size(100vh, 100%);
+        @include size(85vh, 100%);
         object-fit:cover;
         object-position: center;
     }   
-.redes__canvas {
-    @include size(fit-content, auto);
-    padding-left: 2rem;
-    .img__canvas__redes {
-        height: 40px;
-        width: 40px;
-        margin-left: 3px;
-    }
-}
+        .redes__canvas {
+            @include size(fit-content, auto);
+            padding-left: 2rem;
+            .img__canvas__redes {
+                height: 40px;
+                width: 40px;
+                margin-left: 3px;
+            }
+        }
 }
 /* fin header */
 /* inicio main */

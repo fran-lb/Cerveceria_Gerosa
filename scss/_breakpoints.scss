@@ -6,12 +6,10 @@
         height: 70vh;
     }
     .img__logo {
-        @include size(5vw, 5vw);
         min-height: 65px;
         min-width: 65px;
     }
     .img__logo:hover {
-        @include size(6vw, 6vw);
         min-height: 69px;
         min-width: 69px;
         transition: 0.2s;
@@ -31,10 +29,10 @@
         height: 70vh !important;
     }
     .carousel-inner {
-        height: 70vh;
+        height: 55vh;
     }
     .img__somos {
-        height: 60vh;
+        height: 55vh;
     }
     /* Fin CSS Somos */
     /* Inicio CSS Contacto */
@@ -43,9 +41,6 @@
     }
     /* Fin CSS Contacto */
     /* Inicio CSS Carta */
-    .header__reducido {
-        height: 17vh;
-    }
     .menu__h4 {
         justify-content: center;
     }
@@ -59,13 +54,6 @@
 @media screen and (min-width: 1200px) and (max-width:3000px) {
     /* inicio _index */
     /* inicio header */
-    .img__logo {
-        @include size(5vw, 5vw);
-    }
-    .img__logo:hover {
-        @include size(5.2vw, 5.2vw);
-        transition: 0.1s;
-    }
     .header__menu__btn {
         @include tipo (titulo !important, 1.75vw !important);
     }
@@ -124,6 +112,9 @@
     }
     .main__section__titulo {
         font-size: 3.50vw!important;
+    }
+    .main__section__p {
+        @include tipo ($parrafo!important, 1.2vw !important);
     }
     /* Fin CSS Somos */
 }

@@ -2,10 +2,6 @@
   list-style: none;
   text-decoration: none !important; }
 
-/* sizes */
-/* tipografia */
-/* flex*/
-/* btn */
 /* fonts */
 @font-face {
   font-family: titulo;
@@ -24,6 +20,15 @@
   src: url(../fonts/Taberna-Script.otf); }
 
 /* mapa colores */
+/*header__reducido */
+/*carrousel page somos */
+/* sizes */
+/* tipografia */
+/* flex*/
+/* btn */
+/* header */
+/* footer */
+/* fin footer */
 /* pages */
 /* inicio header */
 .video__header {
@@ -32,7 +37,12 @@
   object-fit: cover; }
 
 .header__contenedor__img {
-  margin-left: 47%; }
+  margin-left: 48%; }
+  .header__contenedor__img .img__logo {
+    height: 10vh; }
+  .header__contenedor__img .img__logo:hover {
+    height: 11vh;
+    transition: 0.2s; }
 
 .header__menu__btn {
   width: auto !important;
@@ -99,9 +109,8 @@
 /* fin main */
 /* inicio footer */
 footer {
-  height: 65vh;
-  min-height: 300px;
-  background-color: #f4f4f4 #f5b0a9; }
+  height: 60vh;
+  min-height: 300px; }
   footer .footer__bc {
     background-color: #ff6042; }
     footer .footer__bc .footer__ul {
@@ -132,6 +141,24 @@ footer {
       max-block-size: 400px; }
 
 /* fin footer */
+/* inicio header*/
+.header__reducido {
+  height: 15vh;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  background-color: #0b1015; }
+  .header__reducido .img__logo {
+    height: 10vh; }
+  .header__reducido .img__logo:hover {
+    height: 11vh;
+    transition: 0.2s; }
+  .header__reducido .img__tienda {
+    height: 10vh; }
+  .header__reducido .img__tienda:hover {
+    height: 11vh;
+    transition: 0.2s; }
+
 /* inicio section main */
 .main__carta {
   height: fit-content;
@@ -204,6 +231,21 @@ footer {
   background-image: url(../assets/cervezas/header__cervezasok.webp);
   background-size: cover;
   background-position: center; }
+  .header__cerveza .header__reducido {
+    height: 15vh;
+    width: 100%;
+    align-items: center;
+    background-color: transparent; }
+    .header__cerveza .header__reducido .img__logo {
+      height: 10vh; }
+    .header__cerveza .header__reducido .img__logo:hover {
+      height: 11vh;
+      transition: 0.2s; }
+    .header__cerveza .header__reducido .img__tienda {
+      height: 10vh; }
+    .header__cerveza .header__reducido .img__tienda:hover {
+      height: 11vh;
+      transition: 0.2s; }
 
 .redes__canvas {
   height: fit-content;
@@ -249,9 +291,21 @@ footer {
 /* fin main */
 /* inicio header */
 .header__reducido {
-  height: 14vh;
+  height: 15vh;
   width: 100%;
+  align-items: center;
+  background-color: transparent;
   background-color: #0b1015; }
+  .header__reducido .img__logo {
+    height: 10vh; }
+  .header__reducido .img__logo:hover {
+    height: 11vh;
+    transition: 0.2s; }
+  .header__reducido .img__tienda {
+    height: 10vh; }
+  .header__reducido .img__tienda:hover {
+    height: 11vh;
+    transition: 0.2s; }
 
 /* fin header */
 /* inicio main */
@@ -281,7 +335,7 @@ footer {
   height: 100vh;
   width: 100%; }
   .header__somos .img__carrousel {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     object-fit: cover;
     object-position: center; }
@@ -328,13 +382,9 @@ footer {
   .video__header {
     height: 70vh; }
   .img__logo {
-    height: 5vw;
-    width: 5vw;
     min-height: 65px;
     min-width: 65px; }
   .img__logo:hover {
-    height: 6vw;
-    width: 6vw;
     min-height: 69px;
     min-width: 69px;
     transition: 0.2s; }
@@ -350,17 +400,15 @@ footer {
   .header__somos {
     height: 70vh !important; }
   .carousel-inner {
-    height: 70vh; }
+    height: 55vh; }
   .img__somos {
-    height: 60vh; }
+    height: 55vh; }
   /* Fin CSS Somos */
   /* Inicio CSS Contacto */
   .section__form {
     min-height: 280px; }
   /* Fin CSS Contacto */
   /* Inicio CSS Carta */
-  .header__reducido {
-    height: 17vh; }
   .menu__h4 {
     justify-content: center; }
   .menu__h5 {
@@ -371,13 +419,6 @@ footer {
 @media screen and (min-width: 1200px) and (max-width: 3000px) {
   /* inicio _index */
   /* inicio header */
-  .img__logo {
-    height: 5vw;
-    width: 5vw; }
-  .img__logo:hover {
-    height: 5.2vw;
-    width: 5.2vw;
-    transition: 0.1s; }
   .header__menu__btn {
     font-family: titulo !important;
     font-size: 1.75vw !important; }
@@ -424,4 +465,7 @@ footer {
     height: 100vh; }
   .main__section__titulo {
     font-size: 3.5vw !important; }
+  .main__section__p {
+    font-family: "DM Sans", Open sans, Helvetica, Arial !important;
+    font-size: 1.2vw !important; }
   /* Fin CSS Somos */ }
