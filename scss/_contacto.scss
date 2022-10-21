@@ -1,7 +1,14 @@
 /* inicio header */
 .header__reducido {
     @include header__reducido;
-    background-color: map-get($color, $key: negro);   
+    background-color: map-get($color, $key: negro); 
+    justify-content: space-between; 
+    .btn__tienda {
+        background-image: url(../assets/contacto/carrito-de-compras.png);
+    }
+    .btn__tienda:hover {
+        background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
+    }
 }
 /* fin header */
 /* inicio main */
@@ -11,22 +18,59 @@
         background-color: rgba(0, 0, 0, 0);
         @include flex
     }
-    .section__form {
+    .contacto__main__titulo {
+        font-family: titulo;
+        font-size: xx-large;
+        justify-self: flex-start;
+    }
+    .main__section__h2__contacto {
+        font-family: texto_contacto;
+    }
+    .main__section__form {
+        @include flex;
         background-image: url(../assets/contacto/background_form.png);
         background-size: cover;
-        .contacto__form__btn {
-            font-family: texto !important;
-            &:hover {
-                font-family: texto !important;
-                font-size: 1.5rem;
-                background-color: map-get($color, $key: rojo) !important;
+        .container__form {
+            @include flex;
+            @include size (100%, 80%);
+            color: map-get($map: $color, $key: negro);
+            .main__form__label {
+                @include tipo (texto, x-large);
+            }
+            .form__input {
+                height: 40px;
+                width: 65%;
+                background-color: map-get($map: $color, $key: blanco);
+                border-width: 2px;
+            }
+            .form__input:focus {
+                height: 45px;
+                width: 68%;
+                background-color: map-get($map: $color, $key: rosa);
+            }
+            .form__input__textarea {
+                height: 120px;
+                width: 65%;
+                background-color: map-get($map: $color, $key: blanco);
+                border-width: 2px;
+            }
+            .form__input__textarea:focus {
+                height: 130px;
+                width: 68%;
+                background-color: map-get($map: $color, $key: rosa);
+            }
+            .btn__form {
+                @include btn;
+                border-radius: 9px;
+            }
+            .btn__form:hover {
+                @include btn--hover;
             }
         }
-        .form__contacto {
-            width: 100%;
-        }
+            
     }
 }
+
 /* fin main */
 
 

@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: texto;
-  src: url(../fonts/TabernaSerif-Regular.otf); }
+  src: url(../fonts/TabernaSans-Regular.otf); }
 
 @font-face {
   font-family: pesado;
@@ -18,6 +18,14 @@
 @font-face {
   font-family: cursiva;
   src: url(../fonts/Taberna-Script.otf); }
+
+@font-face {
+  font-family: lateria;
+  src: url(../fonts/TabernaSerif-Black.otf); }
+
+@font-face {
+  font-family: texto_contacto;
+  src: url(../fonts/TabernaSerif-Regular.otf); }
 
 /* mapa colores */
 /*header__reducido */
@@ -39,14 +47,15 @@
 .header__contenedor__img {
   margin-left: 48%; }
   .header__contenedor__img .img__logo {
-    height: 10vh; }
+    height: 13vh; }
   .header__contenedor__img .img__logo:hover {
-    height: 11vh;
+    height: 14vh;
     transition: 0.2s; }
 
 .header__menu__btn {
   width: auto !important;
   color: #f4f4f4;
+  margin-left: 1.5vw;
   font-family: titulo !important;
   font-size: medium; }
 
@@ -75,29 +84,48 @@
 
 .main__section1, .main__section2 {
   background-color: #f4f4f4; }
-  .main__section1 #lalate, .main__section2 #lalate, .main__section2 #somos {
-    font-family: titulo;
-    margin-top: 2vh; }
-  .main__section1 .main__section__h2, .main__section2 .main__section__h2 {
-    letter-spacing: 0.04em;
-    margin-top: 3vh; }
-  .main__section1 .main__section__p, .main__section2 .main__section__p {
-    font-family: "DM Sans", Open sans, Helvetica, Arial;
-    letter-spacing: 0.04em; }
-  .main__section1 .img__index, .main__section2 .img__index {
-    object-fit: cover; }
-  .main__section1 .btn__main, .main__section2 .btn__main {
-    background-color: #0b1015 !important;
-    color: #f4f4f4 !important;
-    margin: 1.2rem;
-    border: #0b1015 1rem !important;
-    font-family: titulo !important;
-    font-size: medium !important; }
-  .main__section1 .btn__main:hover, .main__section2 .btn__main:hover {
-    background-color: #ff6042 !important;
-    color: #0b1015 !important;
-    transition: 0.2s;
-    font-size: 8vw; }
+  .main__section1 .main__section__cont, .main__section2 .main__section__cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main__section1 .main__section__cont #lalate, .main__section2 .main__section__cont #lalate, .main__section1 .main__section__cont .main__section2 #somos, .main__section2 .main__section__cont #somos {
+      font-family: lateria;
+      letter-spacing: 0.04em;
+      margin-top: 1vh;
+      padding-left: 5vh;
+      padding-right: 5vh; }
+    .main__section1 .main__section__cont .main__section__h2, .main__section2 .main__section__cont .main__section__h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 0.04em;
+      margin-top: 1vh;
+      padding-left: 5vh;
+      padding-right: 5vh; }
+    .main__section1 .main__section__cont .main__section__p, .main__section2 .main__section__cont .main__section__p {
+      font-family: texto;
+      letter-spacing: 0.04em;
+      padding-left: 5vh;
+      padding-right: 5vh; }
+    .main__section1 .main__section__cont .img__index, .main__section2 .main__section__cont .img__index {
+      height: 100vh;
+      object-fit: cover; }
+    .main__section1 .main__section__cont .btn__main, .main__section2 .main__section__cont .btn__main {
+      background-color: #0b1015 !important;
+      color: #f4f4f4 !important;
+      margin: 1.2rem;
+      border: #0b1015 1rem !important;
+      letter-spacing: 0.06em;
+      font-family: texto !important;
+      font-size: large;
+      margin-left: 5vh;
+      margin-right: 5vh; }
+    .main__section1 .main__section__cont .btn__main:hover, .main__section2 .main__section__cont .btn__main:hover {
+      background-color: #ff6042 !important;
+      color: #0b1015 !important;
+      transition: 0.2s; }
+    .main__section1 .main__section__cont .index__img__section, .main__section2 .main__section__cont .index__img__section {
+      height: 20vh;
+      object-fit: cover; }
 
 .main__section__int {
   background-color: #fed501;
@@ -105,40 +133,51 @@
 
 .main__section2 {
   background-color: #f5b0a9; }
+  .main__section2 .img__index {
+    height: 100vh;
+    object-fit: cover; }
 
 /* fin main */
 /* inicio footer */
 footer {
-  height: 60vh;
-  min-height: 300px; }
+  height: fit-content;
+  min-height: 200px;
+  background-color: #0b1015; }
   footer .footer__bc {
-    background-color: #ff6042; }
-    footer .footer__bc .footer__ul {
+    width: fit-content;
+    background-image: url(../assets/index/fondo.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .footer__bc .footer__ul__items {
       font-family: titulo;
       font-size: xx-large;
       color: #0b1015; }
+    footer .footer__bc .footer__ul__items:hover {
+      color: #f4f4f4 !important; }
   footer .footer__redes {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-end; }
+    justify-content: center;
+    align-items: end; }
     footer .footer__redes .ul__redes {
       font-family: texto;
-      font-size: medium; }
-      footer .footer__redes .ul__redes .icono__footer {
-        height: 30px;
-        width: 30px; }
+      font-size: medium;
+      color: #f4f4f4; }
+    footer .footer__redes .icono__footer {
+      height: 30px;
+      width: 30px; }
     footer .footer__redes .ul__redes:hover {
       font-size: 1.5vw;
       transition: 0.5s; }
   footer .cont__img__footer {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-end; }
-    footer .cont__img__footer .img__footer {
-      min-block-size: 100px;
-      max-block-size: 400px; }
 
 /* fin footer */
 /* inicio header*/
@@ -147,17 +186,30 @@ footer {
   width: 100%;
   align-items: center;
   background-color: transparent;
-  background-color: #0b1015; }
+  background-color: #0b1015;
+  justify-content: space-between; }
   .header__reducido .img__logo {
-    height: 10vh; }
+    height: 13vh; }
   .header__reducido .img__logo:hover {
-    height: 11vh;
+    height: 14vh;
     transition: 0.2s; }
   .header__reducido .img__tienda {
-    height: 10vh; }
-  .header__reducido .img__tienda:hover {
-    height: 11vh;
-    transition: 0.2s; }
+    height: 5vh;
+    margin-right: 5vw; }
+  .header__reducido .btn__tienda {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6vh;
+    width: 6vh;
+    margin-right: 4vw;
+    border: none; }
+  .header__reducido .header__menu__btn {
+    margin-left: 1vw; }
+  .header__reducido .btn__tienda {
+    background-image: url(../assets/contacto/carrito-de-compras.png); }
+  .header__reducido .btn__tienda:hover {
+    background-image: url(../assets/contacto/carrito-de-compras_rojo.png); }
 
 /* inicio section main */
 .main__carta {
@@ -165,7 +217,9 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-image: url(../assets/contacto/background_form.png);
+  background-size: contain; }
 
 .img__container {
   max-height: 100vh; }
@@ -183,14 +237,14 @@ footer {
   color: #f4f4f4 !important;
   margin: 1.2rem;
   border: #0b1015 1rem !important;
-  font-family: titulo !important;
-  font-size: medium !important; }
+  letter-spacing: 0.06em;
+  font-family: texto !important;
+  font-size: large; }
 
 .btn__main__carta:hover {
   background-color: #ff6042 !important;
   color: #0b1015 !important;
-  transition: 0.2s;
-  font-size: 8vw; }
+  transition: 0.2s; }
 
 .section__tapas__menu {
   width: 75%; }
@@ -212,10 +266,22 @@ footer {
 .menu__h5 {
   font-family: titulo; }
 
-.menu__h6 {
+.menu__h6__tapas, .menu__h6__empanadas, .menu__h6__pizas, .menu__h6__tragos, .menu__h6__meriendas {
   font-family: titulo;
   color: #1ad6d5;
   overflow: hidden !important; }
+
+.menu__h6__empanadas {
+  color: #fed501; }
+
+.menu__h6__pizas {
+  color: #ff6042; }
+
+.menu__h6__tragos {
+  color: #f5b0a9; }
+
+.menu__h6__meriendas {
+  color: #fed501; }
 
 .menu__p {
   font-family: texto;
@@ -226,26 +292,40 @@ footer {
 /* fin section main */
 /* inicio header */
 .header__cerveza {
-  height: 100vh;
+  height: 82vh;
   width: 100%;
-  background-image: url(../assets/cervezas/header__cervezasok.webp);
+  background-image: url(../assets/cervezas/trama.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   .header__cerveza .header__reducido {
     height: 15vh;
     width: 100%;
     align-items: center;
-    background-color: transparent; }
+    background-color: transparent;
+    justify-content: space-between; }
     .header__cerveza .header__reducido .img__logo {
-      height: 10vh; }
+      height: 13vh; }
     .header__cerveza .header__reducido .img__logo:hover {
-      height: 11vh;
+      height: 14vh;
       transition: 0.2s; }
     .header__cerveza .header__reducido .img__tienda {
-      height: 10vh; }
-    .header__cerveza .header__reducido .img__tienda:hover {
-      height: 11vh;
-      transition: 0.2s; }
+      height: 5vh;
+      margin-right: 5vw; }
+    .header__cerveza .header__reducido .btn__tienda {
+      background-color: transparent;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 6vh;
+      width: 6vh;
+      margin-right: 4vw;
+      border: none; }
+    .header__cerveza .header__reducido .header__menu__btn {
+      margin-left: 1vw; }
+    .header__cerveza .header__reducido .btn__tienda {
+      background-image: url(../assets/cervezas/carrito-de-compras_negro.png); }
+    .header__cerveza .header__reducido .btn__tienda:hover {
+      background-image: url(../assets/contacto/carrito-de-compras_rojo.png); }
 
 .redes__canvas {
   height: fit-content;
@@ -258,35 +338,35 @@ footer {
 
 /* fin header */
 /* inicio main */
-.main__cervezas__section1 {
-  background-color: #f4f4f4; }
+.main__somos__section0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #0b1015; }
+  .main__somos__section0 .somos__h1 {
+    font-family: titulo;
+    font-size: 5vw;
+    color: #f4f4f4; }
 
-.main__cervezas__section2 {
-  background-color: #ff6042;
-  color: #f4f4f4; }
+.carousel {
+  padding: 0 !important; }
 
-.main__cervezas__section3 {
-  background-color: #fed501; }
+.carousel_img {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover; }
 
-.main__cervezas__section4 {
-  background-color: #0b1015;
-  color: #f4f4f4; }
-
-.main__cervezas__section5 {
-  background-color: #1ad6d5;
-  color: #0b1015; }
-
-.main__cervezas__section6 {
-  background-color: #f5b0a9;
-  color: #0b1015; }
-
-.main__cervezas__section7 {
-  background-color: #f4f4f4;
-  color: #0b1015; }
-
-.cervezas__main__img {
-  object-fit: cover;
-  height: 85vh !important; }
+.carousel-caption {
+  height: fit-content;
+  width: fit-content; }
+  .carousel-caption .carrousel__h5 {
+    font-family: lateria;
+    font-size: xx-large; }
+  .carousel-caption .carrousel__p {
+    font-family: texto;
+    font-size: medium; }
 
 /* fin main */
 /* inicio header */
@@ -295,17 +375,30 @@ footer {
   width: 100%;
   align-items: center;
   background-color: transparent;
-  background-color: #0b1015; }
+  background-color: #0b1015;
+  justify-content: space-between; }
   .header__reducido .img__logo {
-    height: 10vh; }
+    height: 13vh; }
   .header__reducido .img__logo:hover {
-    height: 11vh;
+    height: 14vh;
     transition: 0.2s; }
   .header__reducido .img__tienda {
-    height: 10vh; }
-  .header__reducido .img__tienda:hover {
-    height: 11vh;
-    transition: 0.2s; }
+    height: 5vh;
+    margin-right: 5vw; }
+  .header__reducido .btn__tienda {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6vh;
+    width: 6vh;
+    margin-right: 4vw;
+    border: none; }
+  .header__reducido .header__menu__btn {
+    margin-left: 1vw; }
+  .header__reducido .btn__tienda {
+    background-image: url(../assets/contacto/carrito-de-compras.png); }
+  .header__reducido .btn__tienda:hover {
+    background-image: url(../assets/contacto/carrito-de-compras_rojo.png); }
 
 /* fin header */
 /* inicio main */
@@ -317,68 +410,174 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .main__contacto .section__form {
+  .main__contacto .contacto__main__titulo {
+    font-family: titulo;
+    font-size: xx-large;
+    justify-self: flex-start; }
+  .main__contacto .main__section__h2__contacto {
+    font-family: texto_contacto; }
+  .main__contacto .main__section__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(../assets/contacto/background_form.png);
     background-size: cover; }
-    .main__contacto .section__form .contacto__form__btn {
-      font-family: texto !important; }
-      .main__contacto .section__form .contacto__form__btn:hover {
+    .main__contacto .main__section__form .container__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 80%;
+      color: #0b1015; }
+      .main__contacto .main__section__form .container__form .main__form__label {
+        font-family: texto;
+        font-size: x-large; }
+      .main__contacto .main__section__form .container__form .form__input {
+        height: 40px;
+        width: 65%;
+        background-color: #f4f4f4;
+        border-width: 2px; }
+      .main__contacto .main__section__form .container__form .form__input:focus {
+        height: 45px;
+        width: 68%;
+        background-color: #f5b0a9; }
+      .main__contacto .main__section__form .container__form .form__input__textarea {
+        height: 120px;
+        width: 65%;
+        background-color: #f4f4f4;
+        border-width: 2px; }
+      .main__contacto .main__section__form .container__form .form__input__textarea:focus {
+        height: 130px;
+        width: 68%;
+        background-color: #f5b0a9; }
+      .main__contacto .main__section__form .container__form .btn__form {
+        background-color: #0b1015 !important;
+        color: #f4f4f4 !important;
+        margin: 1.2rem;
+        border: #0b1015 1rem !important;
+        letter-spacing: 0.06em;
         font-family: texto !important;
-        font-size: 1.5rem;
-        background-color: #ff6042 !important; }
-    .main__contacto .section__form .form__contacto {
-      width: 100%; }
+        font-size: large;
+        border-radius: 9px; }
+      .main__contacto .main__section__form .container__form .btn__form:hover {
+        background-color: #ff6042 !important;
+        color: #0b1015 !important;
+        transition: 0.2s; }
 
 /* fin main */
 /* inicio header */
 .header__somos {
-  height: 100vh;
-  width: 100%; }
-  .header__somos .img__carrousel {
-    height: 85vh;
+  height: 60vh;
+  width: 100%;
+  background-image: url(../assets/cervezas/header__cervezasok.webp);
+  background-size: cover;
+  background-attachment: fixed; }
+  .header__somos .header__reducido {
+    height: 15vh;
     width: 100%;
-    object-fit: cover;
-    object-position: center; }
-  .header__somos .redes__canvas {
-    height: fit-content;
-    width: auto;
-    padding-left: 2rem; }
-    .header__somos .redes__canvas .img__canvas__redes {
-      height: 40px;
-      width: 40px;
-      margin-left: 3px; }
+    align-items: center;
+    background-color: transparent; }
+    .header__somos .header__reducido .img__logo {
+      height: 13vh; }
+    .header__somos .header__reducido .img__logo:hover {
+      height: 14vh;
+      transition: 0.2s; }
+    .header__somos .header__reducido .img__tienda {
+      height: 5vh;
+      margin-right: 5vw; }
+    .header__somos .header__reducido .btn__tienda {
+      background-color: transparent;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 6vh;
+      width: 6vh;
+      margin-right: 4vw;
+      border: none; }
+    .header__somos .header__reducido .header__menu__btn {
+      margin-left: 1vw; }
+    .header__somos .header__reducido .redes__canvas {
+      height: fit-content;
+      width: auto;
+      padding-left: 2rem; }
+      .header__somos .header__reducido .redes__canvas .img__canvas__redes {
+        height: 40px;
+        width: 40px;
+        margin-left: 3px; }
+    .header__somos .header__reducido .btn__tienda {
+      background-image: url(../assets/cervezas/carrito-de-compras_negro.png); }
+    .header__somos .header__reducido .btn__tienda:hover {
+      background-image: url(../assets/contacto/carrito-de-compras_rojo.png); }
 
 /* fin header */
 /* inicio main */
+.main__somos .main__somos__section0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #0b1015; }
+  .main__somos .main__somos__section0 .somos__h1 {
+    font-family: titulo;
+    font-size: 5vw;
+    color: #f4f4f4; }
+
+.main__somos .container__acordeon {
+  height: 70vh;
+  width: 100%; }
+  .main__somos .container__acordeon .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh; }
+  .main__somos .container__acordeon .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.4s ease; }
+    .main__somos .container__acordeon .item:hover {
+      flex: 3; }
+  .main__somos .container__acordeon .item-1 {
+    background-image: url(../assets/somos/nacho.webp); }
+  .main__somos .container__acordeon .item-2 {
+    background-image: url(../assets/somos/marce.webp); }
+  .main__somos .container__acordeon .item-3 {
+    background-image: url(../assets/somos/juli.webp); }
+  .main__somos .container__acordeon .item-4 {
+    background-image: url(../assets/somos/mati.webp); }
+
 .main__somos .main__somos__section1 {
   height: fit-content;
   width: 100%;
-  background-color: #ff6042;
-  color: #f4f4f4; }
+  background-color: #f4f4f4;
+  color: #0b1015; }
   .main__somos .main__somos__section1 .main__section__titulo {
-    font-family: titulo;
+    font-family: lateria;
     font-size: xx-large; }
   .main__somos .main__somos__section1 .main__section__p {
-    font-family: "DM Sans", Open sans, Helvetica, Arial;
+    font-family: texto;
     letter-spacing: 0.04em; }
+  .main__somos .main__somos__section1 .somos__img__section {
+    height: 20vh;
+    object-fit: cover; }
   .main__somos .main__somos__section1 .img__somos {
-    object-fit: cover; }
-
-.main__somos .main__somos__section2 {
-  height: fit-content;
-  width: 100%;
-  background-color: #f4f4f4; }
-  .main__somos .main__somos__section2 .main__section__titulo {
-    font-family: titulo;
-    font-size: xx-large; }
-  .main__somos .main__somos__section2 .img__somos {
-    object-fit: cover; }
+    object-fit: cover;
+    height: 100vh; }
 
 /* fin main */
 /* breakpoints */
 /* pantallas chicas */
 @media screen and (min-width: 150px) and (max-width: 768px) {
-  /* inicio CSS Index */
+  /* MIXIN HEADER */
+  .btn__tienda {
+    height: 5vh !important;
+    width: 5vh !important; }
+  /* FIN MIXIN HEADER */
+  /* INICIO CSS INDEX */
   .video__header {
     height: 70vh; }
   .img__logo {
@@ -391,33 +590,41 @@ footer {
   .img__index {
     height: 65vh;
     object-fit: cover; }
-  /* Fin CSS Index */
-  /* Inicio CSS Cerveza */
+  .footer__bc {
+    width: 100vw !important; }
+  .footer__redes {
+    align-items: center !important;
+    margin-top: 5vh !important; }
+  /* FIN CSS INDEX */
+  /* INICIO CSS CERVEZA */
   .header__cerveza {
     height: 70vh; }
-  /* Fin CSS Cerveza */
-  /* Inicio CSS Somos */
+  /* FIN CSS CERVEZA */
+  /* INICIO CSS SOMOS */
   .header__somos {
     height: 70vh !important; }
   .carousel-inner {
     height: 55vh; }
+  .somos__h1 {
+    font-family: titulo;
+    font-size: xx-large !important; }
   .img__somos {
     height: 55vh; }
-  /* Fin CSS Somos */
-  /* Inicio CSS Contacto */
+  /* FIN CSS SOMOS */
+  /* INICIO CSS CONTACTO */
   .section__form {
     min-height: 280px; }
-  /* Fin CSS Contacto */
-  /* Inicio CSS Carta */
+  /* FIN CSS CONTACTO */
+  /* INICIO CSS CARTA */
   .menu__h4 {
     justify-content: center; }
   .menu__h5 {
     justify-content: center; }
-  /* Fin CSS Carta */ }
+  /* FIN CSS CARTA */ }
 
 /* pantallas grandes */
-@media screen and (min-width: 1200px) and (max-width: 3000px) {
-  /* inicio _index */
+@media screen and (min-width: 769px) and (max-width: 3000px) {
+  /* INICIO CSS INDEX */
   /* inicio header */
   .header__menu__btn {
     font-family: titulo !important;
@@ -436,36 +643,41 @@ footer {
   .main__section0 .h5 {
     font-size: 1vw !important; }
   .main__section1 #lalate, .main__section2 #lalate, .main__section2 #somos {
-    font-size: 3.75vw !important; }
+    font-size: 4vw !important; }
   .main__section1 .main__section__h2, .main__section2 .main__section__h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.75vw !important; }
+    font-size: 2vw !important; }
   .main__section1 .main__section__p, .main__section2 .main__section__p {
-    font-family: "DM Sans", Open sans, Helvetica, Arial !important;
+    font-family: texto !important;
     font-size: 1.2vw !important; }
   .main__section1 .btn__main, .main__section2 .btn__main {
     font-family: titulo !important;
     font-size: 1.5vw !important; }
-  .main__section1 .btn__main:hover, .main__section2 .btn__main:hover {
-    font-size: 1.6vw !important; }
   /* fin main */
   /* incio footer */
   .footer__ul {
     font-family: titulo !important;
-    font-size: 2.5vw !important; }
+    font-size: 1.75vw !important; }
   .ul__redes {
     font-family: texto !important;
     font-size: 1.2vw !important; }
   .ul__redes:hover {
     font-size: 1.5vw !important; }
+  .img__footer {
+    width: 15vw; }
   /* fin footer */
-  /* fin _index */
-  /* inicio CSS Somos */
+  /* FIN CSS INDEX */
+  /* INICIO CSS SOMOS */
   .img__somos {
     height: 100vh; }
   .main__section__titulo {
     font-size: 3.5vw !important; }
   .main__section__p {
-    font-family: "DM Sans", Open sans, Helvetica, Arial !important;
+    font-family: texto;
     font-size: 1.2vw !important; }
-  /* Fin CSS Somos */ }
+  /* FIN CSS SOMOS */
+  /* INICIO CSS CONTACTO */
+  .contacto__main__titulo {
+    font-family: titulo;
+    font-size: 2.5vw !important; }
+  /* INICIO CSS CONTACTO */ }

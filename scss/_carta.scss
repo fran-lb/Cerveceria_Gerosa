@@ -1,12 +1,21 @@
 /* inicio header*/
 .header__reducido {
     @include header__reducido;
-    background-color: map-get($color, $key: negro);   
+    background-color: map-get($color, $key: negro);  
+    justify-content: space-between;  
+    .btn__tienda {
+        background-image: url(../assets/contacto/carrito-de-compras.png);
+    }
+    .btn__tienda:hover {
+        background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
+    }
 }
 /* inicio section main */
 .main__carta {
     @include size (fit-content, 100%);
     @include flex-row;
+    background-image: url(../assets/contacto/background_form.png);
+    background-size: contain;
 }
 .img__container {
    max-height: 100vh;
@@ -43,10 +52,26 @@
 .menu__h5 {
     font-family: titulo;
 }
-.menu__h6 {
+.menu__h6__tapas {
     font-family: titulo;
-    color: #1ad6d5;
+    color: map-get($map: $color, $key: celeste);
     overflow: hidden !important;
+}
+.menu__h6__empanadas {
+    @extend .menu__h6__tapas;
+    color: map-get($map: $color, $key: amarillo);
+}
+.menu__h6__pizas {
+    @extend .menu__h6__tapas;
+    color: map-get($map: $color, $key: rojo);
+}
+.menu__h6__tragos {
+    @extend .menu__h6__tapas;
+    color: map-get($map: $color, $key: rosa);
+}
+.menu__h6__meriendas {
+    @extend .menu__h6__tapas;
+    color: map-get($map: $color, $key: amarillo);
 }
 .menu__p {
     font-family: texto;

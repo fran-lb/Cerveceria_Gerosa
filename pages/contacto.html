@@ -30,13 +30,8 @@
     <div class="container-fluid m-0 p-0">
         <!-- inicio header -->
         <header class="container-fluid header__reducido d-flex m-0 p-0">
-            <!-- logo de marca -->
-            <div class="header__contenedor__img">
-                <a href="../index.html#inicio"><img class="img__logo" src="../assets/index/logoheader.webp" alt="Logo de marca La Lateria"></a>
-            </div>
-            <!-- fin logo de marca -->
             <!-- menu offcanvas -->
-            <button class="header__menu__btn  btn-lg btn-dark btn btn-primary position-absolute ms-3" type="button"
+            <button class="header__menu__btn btn-lg btn-dark btn btn-primary" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                 aria-controls="offcanvasScrolling">MENU</button>
             <div class="offcanvas offcanvas-start opacity-1 dark" data-bs-scroll="true" data-bs-backdrop="false"
@@ -57,99 +52,88 @@
                     </ul>
                     <div class="redes__canvas">
                         <a href="https://www.instagram.com/lalateria.ba/?hl=es"><img class="img__canvas__redes" src="../assets/index/icono insta.jpeg" alt="foto de logo de instagram"></a>
-                        <a href="https://api.whatsapp.com/send?phone=541132008954"><img class="img__canvas__redes" src="../assets/index/icono__whatsapp.jpeg" alt="foto de logo de whatsapp"></a>
+                        <a href="https://api.whatsapp.com/send?phone=541130268632"><img class="img__canvas__redes" src="../assets/index/icono__whatsapp.jpeg" alt="foto de logo de whatsapp"></a>
                         <a href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w"><img class="img__canvas__redes" src="../assets/index/icono__spotify.jpeg" alt="foto de logo de spotify"></a>
                         <a href="https://www.youtube.com/watch?v=WvR-zD4Jrlg"><img class="img__canvas__redes" src="../assets/index/icono__youtube.jpeg" alt="foto de logo de youtube"></a>
                         <a href=""><img class="img__canvas__redes" src="../assets/index/incono__linkedin (1).jpeg" alt="foto de logo de linkedin"></a>
                     </div>
                 </div>
+            </div>
             <!-- fin menu offcanvas -->
+            <!-- logo de marca -->
+            <a href="../index.html"><img class="img__logo" src="../assets/index/logoheader.webp" alt="Logo de marca La Lateria"></a>
+             <!-- fin logo de marca -->
+            <!-- logo de tienda -->
+            <button class="btn__tienda">
+            </button>
+             <!-- fin logo de tienda -->
         </header>
         <!-- fin header -->
         <!-- inicio main -->
         <main class="row main__contacto m-0 p-0">
             <!-- inicio section texto -->
             <section class="section__texto col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-4">
-                <h1 class="text-decoration-underline">info@lalateria.com.ar</h1>
-                <p class="main__section__p p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique neque doloremque sit alias
-                    placeat quis magnam itaque illum incidunt esse modi accusantium recusandae, nihil distinctio fugiat
-                </p>
-                <div class="row d-flex flex-column flex-start mb-4">
-                    <h2 class="main__section__h2__contacto">+(54)1130268632</h2>
-                    <h2 class="main__section__h2__contacto">@lalateria</h2>
-                    <h2 class="main__section__h2">Martes a Sábados entre las 16hs y las 23 hs</h2>
-                    <h2 class="main__section__h2">Pinzon 1155, Barracas, Caba </h2>
-                </div>
+                <h1 class="contacto__main__titulo"> CONTACTO</h1>
+                <h4 class="main__section__h2__contacto mt-4">lalateria.ba@gmail.com</h4>
+                <h4 class="main__section__h2__contacto">+(54)1130268632</h4>
+                <h4 class="main__section__h2__contacto">@lalateria.ba</h4>
+                <h4 class="main__section__h2__contacto">Lunes a Sábados de 16 a 22 hs</h4>
+                <h4 class="main__section__h2__contacto">Pinzón 1665, Barracas, CABA </h4>
             </section>
             <!-- fin section texto -->
             <!-- inicio section form -->
-            <section class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-center align-items-center pt-5 section__form" action="" method="post">
-                    <p>
-                        <button class="contacto__form__btn btn-lg btn-dark btn btn-primary animate__animated animate__shakeX" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Nos gusta escucharte
-                        </button>
-                    </p>
-                    <div class="collapse form__contacto p-3" id="collapseExample">
-                        <div class="card card-body card__body__contacto">
-                            <!-- inicio contenido de desplegable -->
-                            <form class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column align-items-center mt-5" action="" method="post">
-                                <div class="row">
-                                    <label class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" for="nombre">
-                                        <h2 class="main__section__h2">Nombre </h2>
-                                    </label>
-                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 main__form__label__nombre__input"><input class="form__input__transition" type="text" id="nombre"></div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 main__form__label__email" for="email"> <h2 class="main__section__h2">E-mail </h2>
-                                    </label>
-                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 main__form__label__email__input"><input class="form__input__transition" type="text" id="email"></div>
-                                </div>
-                                <div class="row align-self-center">
-                                    <div class="row"><label class="main_form__label__comentarios mt-5 col-12" for="comentarios"> <h2 class="main__section__h2"> Comentarios </h2>
-                                    <div class="row"></label>
-                                    <div class="row"><div class="main__form__textarea col-12"><textarea class="form__textarea__transition" name="comenarios" id="comenarios" cols="30" rows="10"></textarea></div>
-                                    <input class="main__form__input__btn mb-5" type="submit" value="Enviar">
-                                </div>
-                                <!-- fin contenido desplegable -->
-                            </form>
-                        </div>
-                  </div>
+            <section class="row col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 main__section__form m-0 p-0" action="" method="post">
+                <form class="container-fluid container__form m-0 p-0" action="" method="post">
+                    <label class="main__form__label" for="nombre">
+                        <p class="m-0 p-0">Nombre </p>
+                    </label>
+                    <input class="form__input" type="text" id="nombre">
+                    <label class="main__form__label" for="email"> 
+                        <p class="m-0 p-0">E-mail </p>
+                    </label>
+                    <input class="form__input" type="text" id="email">
+                    <label class="main__form__label" for="comentarios"> 
+                        <p class="m-0 p-0"> Comentarios</p>
+                    </label>
+                    <textarea class="form__input__textarea m-0 p-0" name="comenarios" id="comenarios" cols="30" rows="10"></textarea>
+                    <input class="btn__form mt-2 p-2" type="submit" value="Enviar">
+                </form>
             </section>
             <!-- fin section form -->
         </main>
         <!-- fin main -->
         <!-- inicio footer -->
-        <footer class="row col-12 m-0 p-0">
+        <footer class="row m-0 p-0">
             <!-- inicio mapa del footer -->
             <div
-                class="footer__bc col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 p-0 m-0 d-flex flex-column align-items-center">
-                <ul class="text-uppercase m-3 footer__ul">
-                    <li><a class="text-reset footer__ul" href="../index.html#inicio"> Inicio </a></li>
-                    <li><a class="text-reset footer__ul" href="../index.html#lalate"> La Lateria </a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/somos.html"> Quienes Somos</a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/cervezas.html">Cervezas</a></li>
-                    <li><a class="text-reset footer__ul" href="https://menu.fu.do/lalater%C3%ADa">Tienda</a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/carta.html"> Carta</a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/contacto.html">Contacto</a></li>
+                class="footer__bc col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 p-0 m-0">
+                <ul class="text-uppercase footer__ul m-3">
+                    <li><a class="text-reset footer__ul__items" href="../index.html#inicio"> Inicio </a></li>
+                    <li><a class="text-reset footer__ul__items" href="../index.html#lalate"> La Lateria </a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/somos.html"> Quienes Somos</a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/cervezas.html">Cervezas</a></li>
+                    <li><a class="text-reset footer__ul__items" href="https://menu.fu.do/lalater%C3%ADa">Tienda</a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/carta.html"> Carta</a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <!-- fin mapa del footer -->
             <!-- inicio redes -->
             <div
-                class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-5 p-0 m-0 footer__redes fs-5 d-flex flex-column align-items-end  justify-content-start">
+                class="footer__redes col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-0 m-0 fs-5">
                 <ul class="mt-3">
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://www.instagram.com/lalateria.ba/?hl=es">@lalateria.ba <img class="img-fluid icono__footer" src="../assets/index/icono insta.jpeg" alt="icono de instagram"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://www.youtube.com/watch?v=WvR-zD4Jrlg">La Latería <img class="img-fluid icono__footer" src="../assets/index/icono__youtube.jpeg" alt="icono de youtube"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="">/lalateriaba <img class="img-fluid icono__footer" src="../assets/index/incono__linkedin (1).jpeg" alt="icono de linkedin"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w">La Latería Playlist <img class="img-fluid icono__footer" src="../assets/index/icono__spotify.jpeg" alt="icono de spotify"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://api.whatsapp.com/send?phone=541132008954">+54 11 33266744 <img class="img-fluid icono__footer" src="../assets/index/icono__whatsapp.jpeg" alt="icono de whatsapp"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://www.instagram.com/lalateria.ba/?hl=es">@lalateria.ba <img class="img-fluid icono__footer" src="../assets/index/icono insta.jpeg" alt="icono de instagram"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://www.youtube.com/watch?v=WvR-zD4Jrlg">La Latería <img class="img-fluid icono__footer" src="../assets/index/icono__youtube.jpeg" alt="icono de youtube"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="">/lalateriaba <img class="img-fluid icono__footer" src="../assets/index/incono__linkedin (1).jpeg" alt="icono de linkedin"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w">La Latería Playlist <img class="img-fluid icono__footer" src="../assets/index/icono__spotify.jpeg" alt="icono de spotify"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://api.whatsapp.com/send?phone=541130268632">+54 11 30268632 <img class="img-fluid icono__footer" src="../assets/index/icono__whatsapp.jpeg" alt="icono de whatsapp"></a></li>
                 </ul>
             </div>
             <!-- fin redes -->
             <!-- inicio img footer -->
             <div
-                class="cont__img__footer col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-0 m-0">
-                <img class="img-fluid img__footer" src="../assets/index/img__footer.jpeg"
+                class="cont__img__footer col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 p-0 m-0">
+                <img class="img-fluid img__footer" src="../assets/index/img__footer.png"
                     alt="Ilustración de Cerveza artesanal tirada">
             </div>
         </footer>

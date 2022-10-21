@@ -1,11 +1,19 @@
 /* inicio header */
 .header__cerveza {
-    @include size(100vh, 100%);
-    background-image: url(../assets/cervezas/header__cervezasok.webp);
+    @include size(82vh, 100%);
+    background-image: url(../assets/cervezas/trama.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     .header__reducido {
         @include header__reducido;
+        justify-content: space-between;  
+        .btn__tienda {
+            background-image: url(../assets/cervezas/carrito-de-compras_negro.png);
+        }
+        .btn__tienda:hover {
+            background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
+        }
     }
 }  
 .redes__canvas {
@@ -18,34 +26,30 @@
 }
 /* fin header */
 /* inicio main */
-.main__cervezas__section1 {
-    background-color: #f4f4f4;
+.main__somos__section0 {
+    @include flex;
+    height: 20vh;
+    background-color: map-get($map: $color , $key: negro);
+    .somos__h1 { 
+      @include tipo (titulo, 5vw);
+      color: map-get($map: $color, $key: blanco);
+    }
+  }
+
+.carousel {
+    padding: 0!important;
 }
-.main__cervezas__section2 {
-    background-color: #ff6042;
-    color: #f4f4f4;
-}
-.main__cervezas__section3 {
-    background-color: #fed501;
-}
-.main__cervezas__section4 {
-    background-color:#0b1015;
-    color: #f4f4f4;
-}
-.main__cervezas__section5 {
-    background-color:#1ad6d5;
-    color:#0b1015;
-}
-.main__cervezas__section6 {
-    background-color: #f5b0a9;
-    color: #0b1015;
-}
-.main__cervezas__section7 {
-    background-color:#f4f4f4;
-    color:#0b1015;
-}
-.cervezas__main__img {
-    object-fit: cover;
-    height: 85vh !important;
-}
+    .carousel_img {
+        height: 85vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .carousel-caption {
+        @include size (fit-content, fit-content);
+        .carrousel__h5 {
+            @include tipo (lateria, xx-large);
+        }
+        .carrousel__p {
+            @include tipo (texto, medium);        }
+    }
 /* fin main */

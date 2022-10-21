@@ -7,16 +7,17 @@
 .header__contenedor__img {
     margin-left: 48%;
     .img__logo {
-        height: ($altura__header__reducido)-5vh;
+        height: ($altura__header__reducido)-2vh;
     }
     .img__logo:hover {
-    height: (($altura__header__reducido)-5vh)+1vh;
+    height: (($altura__header__reducido)-2vh)+1vh;
     transition: 0.2s;
     }
 }
 .header__menu__btn {
     width: auto !important;
     color: #f4f4f4;
+    margin-left: 1.5vw;
     @include tipo (titulo !important, medium);
 }
 .header__menu__btn:hover {
@@ -41,30 +42,49 @@
     background-color: #0b1015;
     color: #f4f4f4;
     letter-spacing: 0.04em;
+    
 } 
 .main__section1 {
-    background-color:#f4f4f4;
-    #lalate {
-        font-family: titulo;
-        margin-top: 2vh;
-    }
-    .main__section__h2 {
-        letter-spacing: 0.04em;
-        margin-top: 3vh
-    }
-    .main__section__p {
-        font-family: $parrafo;
-        letter-spacing: 0.04em;
-    }
-    .img__index {
-        object-fit: cover;
-    }
-    .btn__main {
-        @include btn;    
-    }
-    .btn__main:hover {
-        @include btn--hover;
-    }
+    background-color: map-get($map: $color, $key: blanco);
+    .main__section__cont {
+        @include flex;
+        #lalate {
+            font-family: lateria;
+            letter-spacing: 0.04em;
+            margin-top: 1vh;
+            padding-left: 5vh;
+            padding-right: 5vh;
+        }
+        .main__section__h2 {
+            font-family: $h2;
+            letter-spacing: 0.04em;
+            margin-top: 1vh;
+            padding-left: 5vh;
+            padding-right: 5vh;
+        }
+        .main__section__p {
+            font-family: texto;
+            letter-spacing: 0.04em;
+            padding-left: 5vh;
+            padding-right: 5vh;
+        }
+        .img__index {
+            height: 100vh;
+            object-fit: cover;
+        }
+        .btn__main {
+            @include btn;  
+            margin-left: 5vh;
+            margin-right: 5vh;
+        }
+        .btn__main:hover {
+            @include btn--hover;
+        } 
+        .index__img__section {
+            height: 20vh;
+            object-fit: cover;
+        }   
+    }   
 }
 .main__section__int {
     background-color: #fed501;
@@ -72,7 +92,11 @@
 }
 .main__section2 {
     @extend .main__section1;
-    background-color:#f5b0a9;
+    .img__index {
+        height: 100vh;
+        object-fit: cover;
+    }
+    background-color:map-get($map: $color, $key: rosa);
     #somos {
         @extend #lalate;
     }

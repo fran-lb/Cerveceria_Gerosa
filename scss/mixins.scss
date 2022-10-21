@@ -27,13 +27,13 @@
     color: #f4f4f4 !important;
     margin: 1.2rem;
     border: #0b1015 1rem !important;
-    @include tipo (titulo!important, medium!important);
+    letter-spacing: 0.06em;
+    @include tipo (texto !important, large);   
 }
 @mixin btn--hover {
     background-color:#ff6042 !important;
     color: #0b1015 !important;
     transition: 0.2s;
-    font-size: 8vw;
 }
 
 /* header */
@@ -42,42 +42,59 @@
     align-items: center;
     background-color: transparent;
     .img__logo {
-        height: ($altura__header__reducido)-5vh;
+        height: ($altura__header__reducido)-2vh;
     }
     .img__logo:hover {
-        height: (($altura__header__reducido)-5vh)+1vh;
+        height: (($altura__header__reducido)-2vh)+1vh;
         transition: 0.2s;
     }
     .img__tienda {
-        height: ($altura__header__reducido)-5vh;
+        height: ($altura__header__reducido)-10vh;
+        margin-right: 5vw;
     }
-    .img__tienda:hover {
-        height: (($altura__header__reducido)-5vh)+1vh;
-        transition: 0.2s;
+    .btn__tienda {
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: ($altura__header__reducido)-9vh;
+        width: ($altura__header__reducido)-9vh;
+        margin-right: 4vw;
+        border: none;
+    }
+    .header__menu__btn {
+        margin-left: 1vw;
     }
 }
 /* footer */
 @mixin footer {
-    height: 60vh;
-    min-height: 300px;
-    background-color: map-get($map: $color, $key: blanco__footer);
+    height: fit-content;
+    min-height: 200px;
+    background-color: map-get($map: $color, $key: negro);
     .footer__bc {
-        background-color: map-get($map: $color, $key: rojo);
-        .footer__ul {
-            @include tipo (titulo, xx-large);
-            color:map-get($map: $color, $key: negro);
-          }
+        width: fit-content;
+        background-image: url(../assets/index/fondo.png);
+        background-size: cover;
+        background-position: center;
+        @include flex;
+        .footer__ul__items{
+            @include tipo (titulo, xx-large); 
+            color: map-get($map: $color, $key: negro);
+        }
+        .footer__ul__items:hover {
+            color: map-get($map: $color, $key: blanco) !important;
+        }
     }
     .footer__redes {
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: end;
         .ul__redes {
             @include tipo (texto, medium);
-            .icono__footer {
-                @include size(30px, 30px);
-            }
+            color: map-get($map: $color, $key: blanco)
+        }
+        .icono__footer {
+            @include size(30px, 30px);
         }
         .ul__redes:hover {
             font-size: 1.5vw;
@@ -87,12 +104,8 @@
     .cont__img__footer {
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         align-items: flex-end;
-        .img__footer {
-            min-block-size: 100px;
-            max-block-size: 400px;
-        } 
     }  
 }
 /* fin footer */

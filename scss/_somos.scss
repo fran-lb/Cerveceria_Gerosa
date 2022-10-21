@@ -1,49 +1,99 @@
 /* inicio header */
 .header__somos {
-    @include size(100vh, 100%);
-    .img__carrousel {
-        @include size(85vh, 100%);
-        object-fit:cover;
-        object-position: center;
-    }   
-        .redes__canvas {
-            @include size(fit-content, auto);
-            padding-left: 2rem;
-            .img__canvas__redes {
-                height: 40px;
-                width: 40px;
-                margin-left: 3px;
+    @include size(60vh, 100%);
+    background-image: url(../assets/cervezas/header__cervezasok.webp);
+    background-size: cover;
+    background-attachment: fixed;
+        .header__reducido {
+            @include header__reducido;
+            .redes__canvas {
+                @include size(fit-content, auto);
+                padding-left: 2rem;
+                .img__canvas__redes {
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 3px;
+                }
             }
+          .btn__tienda {
+            background-image: url(../assets/cervezas/carrito-de-compras_negro.png);
+          }
+          .btn__tienda:hover {
+            background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
+          }
         }
-}
+}  
 /* fin header */
 /* inicio main */
 .main__somos {
+    .main__somos__section0 {
+      @include flex;
+      height: 20vh;
+      background-color: map-get($map: $color , $key: negro);
+      .somos__h1 { 
+        @include tipo (titulo, 5vw);
+        color: map-get($map: $color, $key: blanco);
+      }
+    }
+    .container__acordeon {
+        height: 70vh;
+        width: 100%;
+        .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+          }
+          
+          .item {
+            flex: 1;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            transition: flex 0.4s ease;
+            
+            &:hover{
+              flex: 3;
+            }
+          }
+          
+          .item-1 { 
+            background-image: url(../assets/somos/nacho.webp);
+          }
+          
+          .item-2 { 
+            background-image: url(../assets/somos/marce.webp);
+          }
+          
+          .item-3 { 
+            background-image: url(../assets/somos/juli.webp);
+          }
+          
+          .item-4 { 
+            background-image: url(../assets/somos/mati.webp);
+          }
+    }
     .main__somos__section1 {
         @include size(fit-content, 100%);
-        background-color: #ff6042;
-        color: #f4f4f4;
+        background-color: map-get($map: $color, $key: blanco);
+        color: map-get($map: $color, $key: negro);
         .main__section__titulo {
-           @include tipo(titulo, xx-large)
+           @include tipo(lateria, xx-large)
         }
         .main__section__p {
-            font-family: $parrafo;
+            font-family: texto;
             letter-spacing: 0.04em;
         }
-        .img__somos {
-            object-fit: cover; 
-        }
-    }
-    .main__somos__section2 {
-        @include size(fit-content, 100%);
-        background-color: #f4f4f4;
-        .main__section__titulo {
-            @include tipo(titulo, xx-large)
+        .somos__img__section {
+          height: 20vh;
+          object-fit: cover;
         }
         .img__somos {
             object-fit: cover; 
+            height: 100vh;
         }
-    }   
+    }  
 }
 /* fin main */
 

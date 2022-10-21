@@ -27,18 +27,13 @@
 <body>
     <div class="container-fluid m-0 p-0">
         <!-- inicio header -->
-        <header class="container-fluid header__cerveza m-0 p-0">
-            <div class="header__reducido d-flex m-0 p-0">
-                <!-- logo de marca -->
-                <div class="header__contenedor__img">
-                    <a href="../index.html#inicio"><img class="img__logo" src="../assets/index/logoheader.webp" alt="Logo de marca La Lateria"></a>
-                </div>
-                <!-- fin logo de marca -->
+        <header class="header__cerveza">
+            <div class="container-fluid header__reducido d-flex m-0 p-0">
                 <!-- menu offcanvas -->
-                <button class="header__menu__btn  btn-lg btn-dark btn btn-primary position-absolute ms-3" type="button"
+                <button class="header__menu__btn btn-lg btn-dark btn btn-primary" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                    aria-controls="offcanvasScrolling">MENU</button>
-                <div class="offcanvas offcanvas-start opacity-75 dark" data-bs-scroll="true" data-bs-backdrop="false"
+                    aria-controls="offcanvasScrolling">MENÚ</button>
+                <div class="offcanvas offcanvas-start opacity-1 dark" data-bs-scroll="true" data-bs-backdrop="false"
                     tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
@@ -49,195 +44,267 @@
                             <li><a class="text-reset" href="../index.html#inicio"> Inicio </a></li>
                             <li><a class="text-reset" href="../index.html#lalate"> La Lateria </a></li>
                             <li><a class="text-reset" href="../pages/somos.html"> Quienes Somos</a></li>
-                            <li><a class="text-reset" href="../pages/cervezas.html">Cervezas</a></li>
+                            <li><a class="text-reset" href="../pages/cervezas.html"> Cervezas</a></li>
                             <li><a class="text-reset" href="https://menu.fu.do/lalater%C3%ADa">Tienda</a></li>
                             <li><a class="text-reset" href="../pages/carta.html"> Carta</a></li>
                             <li><a class="text-reset" href="../pages/contacto.html">Contacto</a></li>
                         </ul>
-                    <div class="redes__canvas">
-                        <a href="https://www.instagram.com/lalateria.ba/?hl=es"><img class="img__canvas__redes" src="../assets/index/icono insta.jpeg" alt="foto de logo de instagram"></a>
-                        <a href="https://api.whatsapp.com/send?phone=541132008954"><img class="img__canvas__redes" src="../assets/index/icono__whatsapp.jpeg" alt="foto de logo de whatsapp"></a>
-                        <a href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w"><img class="img__canvas__redes" src="../assets/index/icono__spotify.jpeg" alt="foto de logo de spotify"></a>
-                        <a href="https://www.youtube.com/watch?v=WvR-zD4Jrlg"><img class="img__canvas__redes" src="../assets/index/icono__youtube.jpeg" alt="foto de logo de youtube"></a>
-                        <a href=""><img class="img__canvas__redes" src="../assets/index/incono__linkedin (1).jpeg" alt="foto de logo de linkedin"></a>
+                        <div class="redes__canvas">
+                            <a href="https://www.instagram.com/lalateria.ba/?hl=es"><img class="img__canvas__redes" src="../assets/index/icono insta.jpeg" alt="foto de logo de instagram"></a>
+                            <a href="https://api.whatsapp.com/send?phone=541130268632"><img class="img__canvas__redes" src="../assets/index/icono__whatsapp.jpeg" alt="foto de logo de whatsapp"></a>
+                            <a href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w"><img class="img__canvas__redes" src="../assets/index/icono__spotify.jpeg" alt="foto de logo de spotify"></a>
+                            <a href="https://www.youtube.com/watch?v=WvR-zD4Jrlg"><img class="img__canvas__redes" src="../assets/index/icono__youtube.jpeg" alt="foto de logo de youtube"></a>
+                            <a href=""><img class="img__canvas__redes" src="../assets/index/incono__linkedin (1).jpeg" alt="foto de logo de linkedin"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- fin menu offcanvas -->
+                <!-- fin menu offcanvas -->
+                <!-- logo de marca -->
+                <a href="../index.html"><img class="img__logo" src="../assets/index/logoheader.webp" alt="Logo de marca La Lateria"></a>
+                 <!-- fin logo de marca -->
+                 <!-- logo de tienda -->
+                 <button class="btn__tienda">
+                </button>
+                 <!-- fin logo de tienda -->
         </header>
         <!-- fin header -->
         <!-- inicio main -->
         <main class="row m-0 p-0">
             <!-- inicio seccion 0 -->
-            <section class="row main__section0 m-0 p-0">
-                <div class="d-flex flex-column p-3">
-                    <h1 class="m-2.5 mb-1 fs-5">7 canillas de Cerveza Artesanal tirada todos los días. Variedad de estilos y como siempre, las mejores fábricas</h1>
-                    <h4 class="m-2.5 mt-1 fs-5">Si la cerveza que buscás no está en canilla, no dejés de visitar nuestra <a class="text-reset text-decoration-underline fs-5 fw-bolder" href="">Tienda Online</a> que seguro la tenemos en lata</h4>
-                    <h5 class="m-2.5 mt-3 fs-6">Recarga y venta de growler para que disfrutes de las mejores canillas en la comodidad de tu casa</h5>
-                </div>
+            <section class="main__somos__section0 container-fluid p-3 m-0 p-0">
+                <h1 class="somos__h1"> NUESTRAS CERVEZAS TIRADAS</h1>
             </section>
             <!-- fin seccion 0 -->
-            <!-- inicio section 1 -->
-            <section class="row col-12 m-0 p-0">
-                <!-- Cerveza 1 -->
-                <div
-                    class="main__cervezas__section1 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/1.webp" alt="Foto de lata de Cerveza Two Coast American IPA">
             </section>
-                <!-- fin Cerveza 1 -->
-                <!-- Cerveza 2 -->
-                <div
-                    class="main__cervezas__section2 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/2.webp" alt="Foto de lata de Cerveza Gente Despierta SESSION IPA">
-                <!-- fin Cerveza 2 -->
-                <!-- Cerveza 3 -->
-                <div
-                    class="main__cervezas__section3 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/3.webp" alt="Foto de lata de Cerveza de Pantalones Blancos Neipa">
-                <!-- fin Cerveza 3 -->
-                <!-- Cerveza 4 -->
-                <div
-                    class="main__cervezas__section4 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/4.webp" alt="Foto de lata de Cerveza Aguante Skeletor NEIPA">
-                <!-- fin Cerveza 4 -->
-                <!-- Cerveza 5 -->
-                <div
-                    class="main__cervezas__section5 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/5.webp" alt="Foto de lata de Cerveza Vientos del Norte Experimental DIPA">
-                <!-- fin Cerveza 5 -->
-                <!-- Cerveza 6 -->
-                <div
-                    class="main__cervezas__section6 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/6.webp" alt="Foto de lata de Cerveza Satoru Hazy Ipa">
-                <!-- fin Cerveza 6 -->
-                <!-- Cerveza 7 -->
-                <div
-                    class="main__cervezas__section7 d-flex flex-column justify-content-around align-items-center col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <h2 class="main__section__h2 mt-4">Two Coast American IPA</h2>
-                    <h3 class="main__section__h2">Alc 6.5%</h3>
-                    <p class="main__section__p p-5 fs-7 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-                        laudantium,
-                        eligendi est quia quidem enim. Aliquam voluptatibus possimus tempora qui, consectetur, dolorem
-                        pariatur
-                        magnam maxime sit facilis animi, consequuntur ut tempore dolor tenetur. Obcaecati earum dolorem
-                        corporis
-                        maiores hic, esse sint eius cumque accusantium mollitia!
-                    </p>
-                </div>
-                <img class="cervezas__main__img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-0 m-0"
-                    src="../assets/cervezas/7.webp" alt="Foto de lata de Cerveza American IPA">
-                    <!-- fin Cerveza 7 -->
+            <!-- fin seccion 0 -->
+            <!-- inicio carrousel -->
+            <section class="row m-0 p-0">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/cervezas/1.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/cervezas/2.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/cervezas/3.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/cervezas/4.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/cervezas/5.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/cervezas/6.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/cervezas/7.webp" class="d-block w-100 carousel_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <br>
+                            <br>
+                            <h5 class="carrousel__h5">Sabores NEIPA</h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="carrousel__h5">4.5 Alc</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="carrousel__p">Some representative placeholder content for the first slide.</p>
+                            <br>
+                            <br>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
         </main>
         <!-- fin main -->
-        <!-- inicio footer -->
-        <footer class="row m-0 p-0">
+         <!-- inicio footer -->
+         <footer class="row m-0 p-0">
             <!-- inicio mapa del footer -->
             <div
-                class="footer__bc col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 p-0 m-0">
-                <ul class="text-uppercase m-3 footer__ul">
-                    <li><a class="text-reset footer__ul" href="../index.html#inicio"> Inicio </a></li>
-                    <li><a class="text-reset footer__ul" href="../index.html#lalate"> La Lateria </a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/somos.html"> Quienes Somos</a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/cervezas.html">Cervezas</a></li>
-                    <li><a class="text-reset footer__ul" href="https://menu.fu.do/lalater%C3%ADa">Tienda</a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/carta.html"> Carta</a></li>
-                    <li><a class="text-reset footer__ul" href="../pages/contacto.html">Contacto</a></li>
+                class="footer__bc col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 p-0 m-0">
+                <ul class="text-uppercase footer__ul m-3">
+                    <li><a class="text-reset footer__ul__items" href="../index.html#inicio"> Inicio </a></li>
+                    <li><a class="text-reset footer__ul__items" href="../index.html#lalate"> La Lateria </a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/somos.html"> Quienes Somos</a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/cervezas.html">Cervezas</a></li>
+                    <li><a class="text-reset footer__ul__items" href="https://menu.fu.do/lalater%C3%ADa">Tienda</a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/carta.html"> Carta</a></li>
+                    <li><a class="text-reset footer__ul__items" href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <!-- fin mapa del footer -->
             <!-- inicio redes -->
             <div
-                class="footer__redes col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-5 p-0 m-0">
+                class="footer__redes col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-0 m-0 fs-5">
                 <ul class="mt-3">
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://www.instagram.com/lalateria.ba/?hl=es">@lalateria.ba <img class="img-fluid icono__footer" src="../assets/index/icono insta.jpeg" alt="icono de instagram"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://www.youtube.com/watch?v=WvR-zD4Jrlg">La Latería <img class="img-fluid icono__footer" src="../assets/index/icono__youtube.jpeg" alt="icono de youtube"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="">/lalateriaba <img class="img-fluid icono__footer" src="../assets/index/incono__linkedin (1).jpeg" alt="icono de linkedin"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w">La Latería Playlist <img class="img-fluid icono__footer" src="../assets/index/icono__spotify.jpeg" alt="icono de spotify"></a></li>
-                    <li class=" d-flex justify-content-end"><a class="text-reset fw-semibold ul__redes" href="https://api.whatsapp.com/send?phone=541132008954">+54 11 33266744 <img class="img-fluid icono__footer" src="../assets/index/icono__whatsapp.jpeg" alt="icono de whatsapp"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://www.instagram.com/lalateria.ba/?hl=es">@lalateria.ba <img class="img-fluid icono__footer" src="../assets/index/icono insta.jpeg" alt="icono de instagram"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://www.youtube.com/watch?v=WvR-zD4Jrlg">La Latería <img class="img-fluid icono__footer" src="../assets/index/icono__youtube.jpeg" alt="icono de youtube"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="">/lalateriaba <img class="img-fluid icono__footer" src="../assets/index/incono__linkedin (1).jpeg" alt="icono de linkedin"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://open.spotify.com/album/1nDTw13U4zW8YuelhilKW5?si=gXnYHKmyQiWyurOBSV6L0w">La Latería Playlist <img class="img-fluid icono__footer" src="../assets/index/icono__spotify.jpeg" alt="icono de spotify"></a></li>
+                    <li class=" d-flex justify-content-end"><a class="ul__redes" href="https://api.whatsapp.com/send?phone=541130268632">+54 11 30268632 <img class="img-fluid icono__footer" src="../assets/index/icono__whatsapp.jpeg" alt="icono de whatsapp"></a></li>
                 </ul>
             </div>
             <!-- fin redes -->
             <!-- inicio img footer -->
             <div
-                class="cont__img__footer col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-0 m-0">
-                <img class="img-fluid img__footer" src="../assets/index/img__footer.jpeg"
+                class="cont__img__footer col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 p-0 m-0">
+                <img class="img-fluid img__footer" src="../assets/index/img__footer.png"
                     alt="Ilustración de Cerveza artesanal tirada">
             </div>
         </footer>
-    </div>
-    <!-- fin footer --> 
+        <!-- fin footer -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> 
     </script>
     <script>

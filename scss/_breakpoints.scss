@@ -1,7 +1,13 @@
 /* pantallas chicas */
 @media screen and (min-width: 150px) and (max-width:768px) {
+    /* MIXIN HEADER */
+    .btn__tienda {
+        height: (($altura__header__reducido)-10vh) !important;
+        width: (($altura__header__reducido)-10vh) !important;
+    }
+    /* FIN MIXIN HEADER */
 
-    /* inicio CSS Index */
+    /* INICIO CSS INDEX */
     .video__header {
         height: 70vh;
     }
@@ -18,41 +24,55 @@
         height: 65vh;
         object-fit: cover;
     }
-    /* Fin CSS Index */
-    /* Inicio CSS Cerveza */
+    .footer__bc {
+        width: 100vw !important;
+    }
+    .footer__redes {
+        align-items: center !important;
+        margin-top: 5vh !important;
+    }
+    /* FIN CSS INDEX */
+
+    /* INICIO CSS CERVEZA */
     .header__cerveza {
         height: 70vh;
     }
-    /* Fin CSS Cerveza */
-    /* Inicio CSS Somos */
+    /* FIN CSS CERVEZA */
+
+    /* INICIO CSS SOMOS */
     .header__somos {
         height: 70vh !important;
     }
     .carousel-inner {
         height: 55vh;
     }
+    .somos__h1 { 
+        @include tipo (titulo, xx-large!important);
+    }
     .img__somos {
         height: 55vh;
     }
-    /* Fin CSS Somos */
-    /* Inicio CSS Contacto */
+    /* FIN CSS SOMOS */
+
+    /* INICIO CSS CONTACTO */
     .section__form {
         min-height: 280px;
     }
-    /* Fin CSS Contacto */
-    /* Inicio CSS Carta */
+    /* FIN CSS CONTACTO */
+
+    /* INICIO CSS CARTA */
     .menu__h4 {
         justify-content: center;
     }
     .menu__h5 {
         justify-content: center;
     }
-    /* Fin CSS Carta */
+    /* FIN CSS CARTA */
 }
 
  /* pantallas grandes */
-@media screen and (min-width: 1200px) and (max-width:3000px) {
-    /* inicio _index */
+@media screen and (min-width: 769px) and (max-width:3000px) {
+    /* INICIO CSS INDEX */
     /* inicio header */
     .header__menu__btn {
         @include tipo (titulo !important, 1.75vw !important);
@@ -78,25 +98,22 @@
     } 
     .main__section1 {
         #lalate {
-            font-size: 3.75vw !important;
+            font-size: 4vw !important;
         }
         .main__section__h2 {
-            @include tipo ($h2, 2.75vw !important);
+            @include tipo ($h2, 2vw !important);
         }
         .main__section__p {
-            @include tipo ($parrafo!important, 1.2vw !important);
+            @include tipo (texto !important, 1.2vw !important);
         }
         .btn__main {
             @include tipo (titulo !important, 1.5vw !important);
-        }
-        .btn__main:hover {
-            font-size: 1.6vw !important;
         }
     }
     /* fin main */
     /* incio footer */
     .footer__ul {
-        @include tipo (titulo !important, 2.5vw !important);
+        @include tipo (titulo !important, 1.75vw !important);
     }
     .ul__redes {
         @include tipo(texto!important, 1.2vw!important);
@@ -104,9 +121,13 @@
     .ul__redes:hover {
         font-size: 1.5vw !important;
     }
+    .img__footer {
+        width: 15vw;
+    } 
     /* fin footer */
-    /* fin _index */
-    /* inicio CSS Somos */
+    /* FIN CSS INDEX */
+
+    /* INICIO CSS SOMOS */
     .img__somos {
         height: 100vh;
     }
@@ -114,8 +135,15 @@
         font-size: 3.50vw!important;
     }
     .main__section__p {
-        @include tipo ($parrafo!important, 1.2vw !important);
+        @include tipo (texto, 1.2vw !important);
     }
-    /* Fin CSS Somos */
+    /* FIN CSS SOMOS */
+
+    /* INICIO CSS CONTACTO */
+    .contacto__main__titulo {
+        font-family: titulo;
+        font-size: 2.5vw !important;
+    }
+    /* INICIO CSS CONTACTO */  
 }
 

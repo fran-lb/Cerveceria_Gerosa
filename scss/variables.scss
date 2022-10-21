@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: texto;
-    src: url(../fonts/TabernaSerif-Regular.otf);
+    src: url(../fonts/TabernaSans-Regular.otf);
 }
 @font-face {
     font-family: pesado;
@@ -15,6 +15,15 @@
     font-family: cursiva;
     src: url(../fonts/Taberna-Script.otf);
 }
+@font-face {
+    font-family: lateria;
+    src: url(../fonts/TabernaSerif-Black.otf);
+}
+@font-face {
+    font-family: texto_contacto;
+    src: url(../fonts/TabernaSerif-Regular.otf);
+}
+
 
 $parrafo: 'DM Sans', Open sans, Helvetica, Arial;
 $h2: Arial, Helvetica, sans-serif;
