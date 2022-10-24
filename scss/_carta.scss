@@ -62,7 +62,7 @@
     @extend .menu__h6__tapas;
     color: map-get($map: $color, $key: amarillo);
 }
-.menu__h6__pizas {
+.menu__h6__pizzas {
     @extend .menu__h6__tapas;
     color: map-get($map: $color, $key: rojo);
 }
