@@ -26,11 +26,25 @@
     }
     .footer__bc {
         width: 100vw !important;
+        .footer__ul__items{
+            padding: 0 !important;
+            padding-left: 1rem !important;
+        }
     }
     .footer__redes {
         align-items: center !important;
         margin-top: 5vh !important;
+        justify-content: center !important;
     }
+    .cont__img__footer {
+        width: 100% !important;
+        display: flex;
+        align-items: center !important;
+        .img__footer {
+            @include size (200px, 200px);
+        }
+    }
+    
     /* FIN CSS INDEX */
 
     /* INICIO CSS CERVEZA */
@@ -109,6 +123,9 @@
         .btn__main {
             @include tipo (titulo !important, 1.5vw !important);
         }
+    }
+    .main__section__int__p {
+        font-size: 1.2vw !important;
     }
     /* fin main */
     /* incio footer */

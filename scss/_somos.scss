@@ -1,27 +1,21 @@
 /* inicio header */
 .header__somos {
-    @include size(60vh, 100%);
-    background-image: url(../assets/cervezas/header__cervezasok.webp);
-    background-size: cover;
-    background-attachment: fixed;
-        .header__reducido {
-            @include header__reducido;
-            .redes__canvas {
-                @include size(fit-content, auto);
-                padding-left: 2rem;
-                .img__canvas__redes {
-                    height: 40px;
-                    width: 40px;
-                    margin-left: 3px;
-                }
-            }
-          .btn__tienda {
-            background-image: url(../assets/cervezas/carrito-de-compras_negro.png);
-          }
-          .btn__tienda:hover {
-            background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
-          }
-        }
+  @include size(82vh, 100%);
+  background-image: url(../assets/cervezas/trama.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  .header__reducido {
+      @include header__reducido;
+      @include canvas;
+      justify-content: space-between;  
+      .btn__tienda {
+          background-image: url(../assets/cervezas/carrito-de-compras_negro.png);
+      }
+      .btn__tienda:hover {
+          background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
+      }
+  }
 }  
 /* fin header */
 /* inicio main */
@@ -96,6 +90,5 @@
     }  
 }
 /* fin main */
-
 
 

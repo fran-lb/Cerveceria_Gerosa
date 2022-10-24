@@ -35,6 +35,8 @@
 /* flex*/
 /* btn */
 /* header */
+/* inicio mixin canvas */
+/* fin mixin canvas */
 /* footer */
 /* fin footer */
 /* pages */
@@ -66,21 +68,31 @@
   font-family: titulo;
   font-size: xx-large; }
 
+.header__ul__canvas li:hover {
+  color: #1ad6d5; }
+
 .redes__canvas {
-  height: fit-content;
-  width: auto;
-  padding-left: 2rem; }
+  height: 100px;
+  width: 100%;
+  padding-left: 2rem;
+  display: flex; }
   .redes__canvas .img__canvas__redes {
-    height: 40px;
-    width: 40px;
-    margin-left: 3px; }
+    width: 2em; }
+  .redes__canvas .img__canvas__redes:hover {
+    width: 3em; }
+
+.img__canvas__redes {
+  width: 1em; }
 
 /* fin header */
 /* inicio main */
 .main__section0 {
   background-color: #0b1015;
   color: #f4f4f4;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0.06em;
+  font-family: texto; }
+  .main__section0 .ver__enlace:hover {
+    color: #ff6042; }
 
 .main__section1, .main__section2 {
   background-color: #f4f4f4; }
@@ -129,7 +141,11 @@
 
 .main__section__int {
   background-color: #fed501;
-  color: #0b1015; }
+  color: #0b1015;
+  letter-spacing: 0.06em;
+  font-family: texto; }
+  .main__section__int .ver__enlace:hover {
+    color: #ff6042; }
 
 .main__section2 {
   background-color: #f5b0a9; }
@@ -152,32 +168,43 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    footer .footer__bc .footer__ul__items {
-      font-family: titulo;
-      font-size: xx-large;
-      color: #0b1015; }
-    footer .footer__bc .footer__ul__items:hover {
-      color: #f4f4f4 !important; }
+    footer .footer__bc .footer__ul {
+      padding-right: 1em;
+      padding-left: 1em; }
+      footer .footer__bc .footer__ul .footer__ul__items {
+        font-family: titulo;
+        font-size: xx-large;
+        color: #0b1015;
+        margin: 0;
+        padding: 0; }
+      footer .footer__bc .footer__ul .footer__ul__items:hover {
+        color: #f4f4f4 !important; }
   footer .footer__redes {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end; }
-    footer .footer__redes .ul__redes {
-      font-family: texto;
-      font-size: medium;
-      color: #f4f4f4; }
-    footer .footer__redes .icono__footer {
-      height: 30px;
-      width: 30px; }
-    footer .footer__redes .ul__redes:hover {
-      font-size: 1.5vw;
-      transition: 0.5s; }
+    align-items: flex-start; }
+    footer .footer__redes .footer__redes__ul {
+      width: fit-content; }
+      footer .footer__redes .footer__redes__ul .footer__redes__ul li {
+        margin-top: 1vh; }
+      footer .footer__redes .footer__redes__ul .ul__redes {
+        font-family: texto;
+        font-size: medium;
+        color: #f4f4f4;
+        margin-left: 1em; }
+      footer .footer__redes .footer__redes__ul .icono__footer {
+        height: 30px;
+        width: 30px; }
+      footer .footer__redes .footer__redes__ul .ul__redes:hover {
+        font-size: 1.5vw;
+        transition: 0.5s; }
   footer .cont__img__footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: center;
+    width: fit-content; }
 
 /* fin footer */
 /* inicio header*/
@@ -206,6 +233,32 @@ footer {
     border: none; }
   .header__reducido .header__menu__btn {
     margin-left: 1vw; }
+  .header__reducido .img__canvas__redes {
+    width: 1em; }
+  .header__reducido .header__menu__btn {
+    width: auto !important;
+    color: #f4f4f4;
+    margin-left: 1.5vw;
+    font-family: titulo !important;
+    font-size: medium; }
+  .header__reducido .header__menu__btn:hover {
+    background-color: #ff6042 !important; }
+  .header__reducido .header__ul__canvas {
+    font-family: titulo;
+    font-size: xx-large; }
+  .header__reducido .header__ul__canvas li:hover {
+    color: #1ad6d5; }
+  .header__reducido .redes__canvas {
+    height: 100px;
+    width: 100%;
+    padding-left: 2rem;
+    display: flex; }
+    .header__reducido .redes__canvas .img__canvas__redes {
+      width: 2em; }
+    .header__reducido .redes__canvas .img__canvas__redes:hover {
+      width: 3em; }
+  .header__reducido .img__canvas__redes {
+    width: 1em; }
   .header__reducido .btn__tienda {
     background-image: url(../assets/contacto/carrito-de-compras.png); }
   .header__reducido .btn__tienda:hover {
@@ -218,7 +271,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/contacto/background_form.png);
+  background-image: url(../assets/contacto/background_form.webp);
   background-size: contain; }
 
 .img__container {
@@ -294,7 +347,7 @@ footer {
 .header__cerveza {
   height: 82vh;
   width: 100%;
-  background-image: url(../assets/cervezas/trama.png);
+  background-image: url(../assets/cervezas/trama.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -322,19 +375,36 @@ footer {
       border: none; }
     .header__cerveza .header__reducido .header__menu__btn {
       margin-left: 1vw; }
+    .header__cerveza .header__reducido .img__canvas__redes {
+      width: 1em; }
+    .header__cerveza .header__reducido .header__menu__btn {
+      width: auto !important;
+      color: #f4f4f4;
+      margin-left: 1.5vw;
+      font-family: titulo !important;
+      font-size: medium; }
+    .header__cerveza .header__reducido .header__menu__btn:hover {
+      background-color: #ff6042 !important; }
+    .header__cerveza .header__reducido .header__ul__canvas {
+      font-family: titulo;
+      font-size: xx-large; }
+    .header__cerveza .header__reducido .header__ul__canvas li:hover {
+      color: #1ad6d5; }
+    .header__cerveza .header__reducido .redes__canvas {
+      height: 100px;
+      width: 100%;
+      padding-left: 2rem;
+      display: flex; }
+      .header__cerveza .header__reducido .redes__canvas .img__canvas__redes {
+        width: 2em; }
+      .header__cerveza .header__reducido .redes__canvas .img__canvas__redes:hover {
+        width: 3em; }
+    .header__cerveza .header__reducido .img__canvas__redes {
+      width: 1em; }
     .header__cerveza .header__reducido .btn__tienda {
       background-image: url(../assets/cervezas/carrito-de-compras_negro.png); }
     .header__cerveza .header__reducido .btn__tienda:hover {
       background-image: url(../assets/contacto/carrito-de-compras_rojo.png); }
-
-.redes__canvas {
-  height: fit-content;
-  width: auto;
-  padding-left: 2rem; }
-  .redes__canvas .img__canvas__redes {
-    height: 40px;
-    width: 40px;
-    margin-left: 3px; }
 
 /* fin header */
 /* inicio main */
@@ -395,6 +465,32 @@ footer {
     border: none; }
   .header__reducido .header__menu__btn {
     margin-left: 1vw; }
+  .header__reducido .img__canvas__redes {
+    width: 1em; }
+  .header__reducido .header__menu__btn {
+    width: auto !important;
+    color: #f4f4f4;
+    margin-left: 1.5vw;
+    font-family: titulo !important;
+    font-size: medium; }
+  .header__reducido .header__menu__btn:hover {
+    background-color: #ff6042 !important; }
+  .header__reducido .header__ul__canvas {
+    font-family: titulo;
+    font-size: xx-large; }
+  .header__reducido .header__ul__canvas li:hover {
+    color: #1ad6d5; }
+  .header__reducido .redes__canvas {
+    height: 100px;
+    width: 100%;
+    padding-left: 2rem;
+    display: flex; }
+    .header__reducido .redes__canvas .img__canvas__redes {
+      width: 2em; }
+    .header__reducido .redes__canvas .img__canvas__redes:hover {
+      width: 3em; }
+  .header__reducido .img__canvas__redes {
+    width: 1em; }
   .header__reducido .btn__tienda {
     background-image: url(../assets/contacto/carrito-de-compras.png); }
   .header__reducido .btn__tienda:hover {
@@ -421,7 +517,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/contacto/background_form.png);
+    background-image: url(../assets/contacto/background_form.webp);
     background-size: cover; }
     .main__contacto .main__section__form .container__form {
       display: flex;
@@ -469,16 +565,18 @@ footer {
 /* fin main */
 /* inicio header */
 .header__somos {
-  height: 60vh;
+  height: 82vh;
   width: 100%;
-  background-image: url(../assets/cervezas/header__cervezasok.webp);
+  background-image: url(../assets/cervezas/trama.webp);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed; }
   .header__somos .header__reducido {
     height: 15vh;
     width: 100%;
     align-items: center;
-    background-color: transparent; }
+    background-color: transparent;
+    justify-content: space-between; }
     .header__somos .header__reducido .img__logo {
       height: 13vh; }
     .header__somos .header__reducido .img__logo:hover {
@@ -497,14 +595,32 @@ footer {
       border: none; }
     .header__somos .header__reducido .header__menu__btn {
       margin-left: 1vw; }
+    .header__somos .header__reducido .img__canvas__redes {
+      width: 1em; }
+    .header__somos .header__reducido .header__menu__btn {
+      width: auto !important;
+      color: #f4f4f4;
+      margin-left: 1.5vw;
+      font-family: titulo !important;
+      font-size: medium; }
+    .header__somos .header__reducido .header__menu__btn:hover {
+      background-color: #ff6042 !important; }
+    .header__somos .header__reducido .header__ul__canvas {
+      font-family: titulo;
+      font-size: xx-large; }
+    .header__somos .header__reducido .header__ul__canvas li:hover {
+      color: #1ad6d5; }
     .header__somos .header__reducido .redes__canvas {
-      height: fit-content;
-      width: auto;
-      padding-left: 2rem; }
+      height: 100px;
+      width: 100%;
+      padding-left: 2rem;
+      display: flex; }
       .header__somos .header__reducido .redes__canvas .img__canvas__redes {
-        height: 40px;
-        width: 40px;
-        margin-left: 3px; }
+        width: 2em; }
+      .header__somos .header__reducido .redes__canvas .img__canvas__redes:hover {
+        width: 3em; }
+    .header__somos .header__reducido .img__canvas__redes {
+      width: 1em; }
     .header__somos .header__reducido .btn__tienda {
       background-image: url(../assets/cervezas/carrito-de-compras_negro.png); }
     .header__somos .header__reducido .btn__tienda:hover {
@@ -592,9 +708,20 @@ footer {
     object-fit: cover; }
   .footer__bc {
     width: 100vw !important; }
+    .footer__bc .footer__ul__items {
+      padding: 0 !important;
+      padding-left: 1rem !important; }
   .footer__redes {
     align-items: center !important;
-    margin-top: 5vh !important; }
+    margin-top: 5vh !important;
+    justify-content: center !important; }
+  .cont__img__footer {
+    width: 100% !important;
+    display: flex;
+    align-items: center !important; }
+    .cont__img__footer .img__footer {
+      height: 200px;
+      width: 200px; }
   /* FIN CSS INDEX */
   /* INICIO CSS CERVEZA */
   .header__cerveza {
@@ -653,6 +780,8 @@ footer {
   .main__section1 .btn__main, .main__section2 .btn__main {
     font-family: titulo !important;
     font-size: 1.5vw !important; }
+  .main__section__int__p {
+    font-size: 1.2vw !important; }
   /* fin main */
   /* incio footer */
   .footer__ul {

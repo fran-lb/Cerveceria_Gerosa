@@ -1,12 +1,13 @@
 /* inicio header */
 .header__cerveza {
     @include size(82vh, 100%);
-    background-image: url(../assets/cervezas/trama.png);
+    background-image: url(../assets/cervezas/trama.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     .header__reducido {
         @include header__reducido;
+        @include canvas;
         justify-content: space-between;  
         .btn__tienda {
             background-image: url(../assets/cervezas/carrito-de-compras_negro.png);
@@ -16,14 +17,6 @@
         }
     }
 }  
-.redes__canvas {
-    @include size(fit-content, auto);
-    padding-left: 2rem;
-    .img__canvas__redes {
-        @include size(40px, 40px);
-        margin-left: 3px;
-    }
-}
 /* fin header */
 /* inicio main */
 .main__somos__section0 {

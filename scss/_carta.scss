@@ -1,6 +1,7 @@
 /* inicio header*/
 .header__reducido {
     @include header__reducido;
+    @include canvas;
     background-color: map-get($color, $key: negro);  
     justify-content: space-between;  
     .btn__tienda {
@@ -14,7 +15,7 @@
 .main__carta {
     @include size (fit-content, 100%);
     @include flex-row;
-    background-image: url(../assets/contacto/background_form.png);
+    background-image: url(../assets/contacto/background_form.webp);
     background-size: contain;
 }
 .img__container {

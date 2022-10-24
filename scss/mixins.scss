@@ -35,7 +35,6 @@
     color: #0b1015 !important;
     transition: 0.2s;
 }
-
 /* header */
 @mixin header__reducido {
     @include size($altura__header__reducido, 100%);
@@ -64,7 +63,46 @@
     .header__menu__btn {
         margin-left: 1vw;
     }
+    .img__canvas__redes {
+        width: 1em;
+    }
 }
+
+/* inicio mixin canvas */
+@mixin canvas {
+    .header__menu__btn {
+        width: auto !important;
+        color: #f4f4f4;
+        margin-left: 1.5vw;
+        @include tipo (titulo !important, medium);
+    }
+    .header__menu__btn:hover {
+        background-color: #ff6042 !important;
+    }
+    .header__ul__canvas {
+        @include tipo (titulo, xx-large);
+    }
+    .header__ul__canvas li:hover{
+        color: map-get($map: $color, $key: celeste);
+    }
+    .redes__canvas {
+        height: 100px;
+        width: 100%;
+        padding-left: 2rem;
+        display: flex;
+        .img__canvas__redes {
+            width: 2em;
+        }
+        .img__canvas__redes:hover {
+            width: 3em;
+        }
+    }
+    .img__canvas__redes {
+        width: 1em;
+    }       
+}
+/* fin mixin canvas */
+
 /* footer */
 @mixin footer {
     height: fit-content;
@@ -76,37 +114,49 @@
         background-size: cover;
         background-position: center;
         @include flex;
-        .footer__ul__items{
-            @include tipo (titulo, xx-large); 
-            color: map-get($map: $color, $key: negro);
-        }
-        .footer__ul__items:hover {
-            color: map-get($map: $color, $key: blanco) !important;
+        .footer__ul {
+            padding-right: 1em;
+            padding-left: 1em;
+            .footer__ul__items{
+                @include tipo (titulo, xx-large); 
+                color: map-get($map: $color, $key: negro);
+                margin: 0;
+                padding: 0;
+            }
+            .footer__ul__items:hover {
+                color: map-get($map: $color, $key: blanco) !important;
+            }
         }
     }
     .footer__redes {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: end;
-        .ul__redes {
-            @include tipo (texto, medium);
-            color: map-get($map: $color, $key: blanco)
-        }
-        .icono__footer {
-            @include size(30px, 30px);
-        }
-        .ul__redes:hover {
-            font-size: 1.5vw;
-            transition: 0.5s;
-        }
+        align-items: flex-start;
+        .footer__redes__ul {
+            .footer__redes__ul li {
+                margin-top: 1vh;
+            }
+            width: fit-content;
+            .ul__redes {
+                @include tipo (texto, medium);
+                color: map-get($map: $color, $key: blanco);
+                margin-left: 1em;
+            }
+            .icono__footer {
+                @include size(30px, 30px);
+            }
+            .ul__redes:hover {
+                font-size: 1.5vw;
+                transition: 0.5s;
+            }
+        }        
     }
     .cont__img__footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        @include flex;
+        width: fit-content;
     }  
 }
 /* fin footer */
+
 

@@ -1,6 +1,7 @@
 /* inicio header */
 .header__reducido {
     @include header__reducido;
+    @include canvas;
     background-color: map-get($color, $key: negro); 
     justify-content: space-between; 
     .btn__tienda {
@@ -8,8 +9,9 @@
     }
     .btn__tienda:hover {
         background-image: url(../assets/contacto/carrito-de-compras_rojo.png);
-    }
+    }    
 }
+
 /* fin header */
 /* inicio main */
 .main__contacto {
@@ -28,7 +30,7 @@
     }
     .main__section__form {
         @include flex;
-        background-image: url(../assets/contacto/background_form.png);
+        background-image: url(../assets/contacto/background_form.webp);
         background-size: cover;
         .container__form {
             @include flex;

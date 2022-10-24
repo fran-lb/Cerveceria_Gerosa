@@ -26,22 +26,35 @@
 .header__ul__canvas {
     @include tipo (titulo, xx-large);
 }
+.header__ul__canvas li:hover{
+    color: map-get($map: $color, $key: celeste);
+}
 .redes__canvas {
-    height: fit-content;
-    width:auto;
+    height: 100px;
+    width: 100%;
     padding-left: 2rem;
+    display: flex;
     .img__canvas__redes {
-        height: 40px;
-        width: 40px;
-        margin-left: 3px;
+        width: 2em;
+    }
+    .img__canvas__redes:hover {
+        width: 3em;
     }
 }
+.img__canvas__redes {
+    width: 1em;
+}
+
 /* fin header */
 /* inicio main */
 .main__section0 {
     background-color: #0b1015;
     color: #f4f4f4;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
+    font-family: texto;
+    .ver__enlace:hover {
+        color: map-get($map: $color, $key: rojo);
+    }
     
 } 
 .main__section1 {
@@ -88,7 +101,12 @@
 }
 .main__section__int {
     background-color: #fed501;
-    color: #0b1015;    
+    color: #0b1015; 
+    letter-spacing: 0.06em;
+    font-family: texto;   
+    .ver__enlace:hover {
+        color: map-get($map: $color, $key: rojo);
+    }
 }
 .main__section2 {
     @extend .main__section1;
