@@ -57,7 +57,7 @@
 } 
 .main__section1 {
     background-color: map-get($map: $color, $key: blanco);
-    width: 100%;
+    @include size (fit-content, 100%);
     .main__section__cont {
         @include flex;
         #lalate {
