@@ -94,7 +94,8 @@
     color: #ff6042; }
 
 .main__section1, .main__section2 {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  width: 100%; }
   .main__section1 .main__section__cont, .main__section2 .main__section__cont {
     display: flex;
     flex-direction: column;

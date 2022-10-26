@@ -44,7 +44,6 @@
 .img__canvas__redes {
     width: 1em;
 }
-
 /* fin header */
 /* inicio main */
 .main__section0 {
@@ -54,11 +53,11 @@
     font-family: texto;
     .ver__enlace:hover {
         color: map-get($map: $color, $key: rojo);
-    }
-    
+    }    
 } 
 .main__section1 {
     background-color: map-get($map: $color, $key: blanco);
+    width: 100%;
     .main__section__cont {
         @include flex;
         #lalate {
