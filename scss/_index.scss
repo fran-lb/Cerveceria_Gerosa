@@ -57,7 +57,11 @@
 } 
 .main__section1 {
     background-color: map-get($map: $color, $key: blanco);
-    @include size (fit-content, 100%);
+    @include size (100vh, 100%);
+    .img__index {
+        height: 100%;
+        object-fit: cover;
+    }
     .main__section__cont {
         @include flex;
         #lalate {
@@ -79,10 +83,6 @@
             letter-spacing: 0.04em;
             padding-left: 5vh;
             padding-right: 5vh;
-        }
-        .img__index {
-            height: 100vh;
-            object-fit: cover;
         }
         .btn__main {
             @include btn;  
@@ -109,10 +109,6 @@
 }
 .main__section2 {
     @extend .main__section1;
-    .img__index {
-        height: 100vh;
-        object-fit: cover;
-    }
     background-color:map-get($map: $color, $key: rosa);
     #somos {
         @extend #lalate;

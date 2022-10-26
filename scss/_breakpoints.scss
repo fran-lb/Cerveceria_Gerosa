@@ -20,9 +20,20 @@
         min-width: 69px;
         transition: 0.2s;
     }
-    .img__index {
-        height: 65vh;
-        object-fit: cover;
+    .main__section1 {
+        @include size (fit-content, 100%);
+        .img__index {
+            height: 60%;
+            object-fit: cover;
+        }
+    }
+    .main__section2 {
+        @include size (fit-content, 100%);
+        .img__index {
+            height: 50%;
+            object-fit: cover;
+            
+        }
     }
     .footer__bc {
         width: 100vw !important;
