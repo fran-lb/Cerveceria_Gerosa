@@ -49,7 +49,24 @@
 
     /* INICIO CSS CERVEZA */
     .header__cerveza {
-        height: 70vh;
+        height: 80vh;
+        background-size: cover;
+    }
+    .section__cerveza__1__cont {
+        position: absolute;
+        @include flex;
+        top: 60% !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .section__cerveza__1__h5 {
+            @include tipo (titulo, medium !important);
+        }
+        .section__cerveza__1__h6 {
+            @include tipo (titulo, medium !important);
+        }
+        .section__cerveza__1__p {
+            @include tipo (titulo, medium !important);
+        }
     }
     /* FIN CSS CERVEZA */
 
@@ -57,14 +74,14 @@
     .header__somos {
         height: 70vh !important;
     }
-    .carousel-inner {
-        height: 55vh;
-    }
     .somos__h1 { 
         @include tipo (titulo, xx-large!important);
     }
     .img__somos {
         height: 55vh;
+    }
+    .main__section__p {
+        text-align: center;
     }
     /* FIN CSS SOMOS */
 

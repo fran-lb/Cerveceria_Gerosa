@@ -26,23 +26,34 @@
     .somos__h1 { 
       @include tipo (titulo, 5vw);
       color: map-get($map: $color, $key: blanco);
+      text-align: center;
     }
   }
 
-.carousel {
-    padding: 0!important;
-}
-    .carousel_img {
-        height: 85vh;
-        width: 100%;
-        object-fit: cover;
-    }
-    .carousel-caption {
-        @include size (fit-content, fit-content);
-        .carrousel__h5 {
-            @include tipo (lateria, xx-large);
+.section__cerveza__1 {
+    position: relative;
+    .section__cerveza__1__cont {
+        position: absolute;
+        @include flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .section__cerveza__1__h5 {
+            @include tipo (titulo, 2vw);
         }
-        .carrousel__p {
-            @include tipo (texto, medium);        }
+        .section__cerveza__1__h6 {
+            @include tipo (titulo, 2vw);
+        }
+        .section__cerveza__1__p {
+            @include tipo (texto, 2vw);
+        }
     }
+
+}  
+
+.section__cerveza__1__img {
+}
+    
+
+  
 /* fin main */

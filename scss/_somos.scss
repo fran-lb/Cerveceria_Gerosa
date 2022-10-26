@@ -27,6 +27,7 @@
       .somos__h1 { 
         @include tipo (titulo, 5vw);
         color: map-get($map: $color, $key: blanco);
+        text-align: center;
       }
     }
     .container__acordeon {

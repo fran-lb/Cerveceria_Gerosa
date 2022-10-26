@@ -170,7 +170,8 @@ footer {
     align-items: center; }
     footer .footer__bc .footer__ul {
       padding-right: 1em;
-      padding-left: 1em; }
+      padding-left: 1em;
+      margin-top: 1rem; }
       footer .footer__bc .footer__ul .footer__ul__items {
         font-family: titulo;
         font-size: xx-large;
@@ -185,6 +186,7 @@ footer {
     justify-content: center;
     align-items: flex-start; }
     footer .footer__redes .footer__redes__ul {
+      padding-right: 5rem !important;
       width: fit-content; }
       footer .footer__redes .footer__redes__ul .footer__redes__ul li {
         margin-top: 1vh; }
@@ -416,25 +418,29 @@ footer {
   .main__somos__section0 .somos__h1 {
     font-family: titulo;
     font-size: 5vw;
-    color: #f4f4f4; }
+    color: #f4f4f4;
+    text-align: center; }
 
-.carousel {
-  padding: 0 !important; }
-
-.carousel_img {
-  height: 85vh;
-  width: 100%;
-  object-fit: cover; }
-
-.carousel-caption {
-  height: fit-content;
-  width: fit-content; }
-  .carousel-caption .carrousel__h5 {
-    font-family: lateria;
-    font-size: xx-large; }
-  .carousel-caption .carrousel__p {
-    font-family: texto;
-    font-size: medium; }
+.section__cerveza__1 {
+  position: relative; }
+  .section__cerveza__1 .section__cerveza__1__cont {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section__cerveza__1 .section__cerveza__1__cont .section__cerveza__1__h5 {
+      font-family: titulo;
+      font-size: 2vw; }
+    .section__cerveza__1 .section__cerveza__1__cont .section__cerveza__1__h6 {
+      font-family: titulo;
+      font-size: 2vw; }
+    .section__cerveza__1 .section__cerveza__1__cont .section__cerveza__1__p {
+      font-family: texto;
+      font-size: 2vw; }
 
 /* fin main */
 /* inicio header */
@@ -636,7 +642,8 @@ footer {
   .main__somos .main__somos__section0 .somos__h1 {
     font-family: titulo;
     font-size: 5vw;
-    color: #f4f4f4; }
+    color: #f4f4f4;
+    text-align: center; }
 
 .main__somos .container__acordeon {
   height: 70vh;
@@ -723,18 +730,37 @@ footer {
   /* FIN CSS INDEX */
   /* INICIO CSS CERVEZA */
   .header__cerveza {
-    height: 70vh; }
+    height: 80vh;
+    background-size: cover; }
+  .section__cerveza__1__cont {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 60% !important;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section__cerveza__1__cont .section__cerveza__1__h5 {
+      font-family: titulo;
+      font-size: medium !important; }
+    .section__cerveza__1__cont .section__cerveza__1__h6 {
+      font-family: titulo;
+      font-size: medium !important; }
+    .section__cerveza__1__cont .section__cerveza__1__p {
+      font-family: titulo;
+      font-size: medium !important; }
   /* FIN CSS CERVEZA */
   /* INICIO CSS SOMOS */
   .header__somos {
     height: 70vh !important; }
-  .carousel-inner {
-    height: 55vh; }
   .somos__h1 {
     font-family: titulo;
     font-size: xx-large !important; }
   .img__somos {
     height: 55vh; }
+  .main__section__p {
+    text-align: center; }
   /* FIN CSS SOMOS */
   /* INICIO CSS CONTACTO */
   .section__form {
